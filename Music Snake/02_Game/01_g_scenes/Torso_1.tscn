@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/CommandsForTorso/Wait.gd" type="Script" id=1]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/StateMachine.gd" type="Script" id=2]
+[ext_resource path="res://02_Game/02_g_scripts/Player/Torso.gd" type="Script" id=3]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/StateActivator.gd" type="Script" id=4]
+[ext_resource path="res://02_Game/03_g_assets/snake_green_torso.png" type="Texture" id=5]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/CommandsForTorso/Destroy.gd" type="Script" id=6]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/InPause.gd" type="Script" id=7]
+[ext_resource path="res://02_Game/03_g_assets/snake_green_torso_small.png" type="Texture" id=8]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 120.0
+
+[node name="Torso_1" type="Sprite"]
+position = Vector2( -2204.22, -1524.12 )
+z_index = -1
+script = ExtResource( 3 )
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource( 2 )
+global_values_path = NodePath("../..")
+
+[node name="WaitState" type="Node" parent="StateMachine"]
+script = ExtResource( 4 )
+
+[node name="WaitState" type="Node" parent="StateMachine/WaitState"]
+script = ExtResource( 1 )
+
+[node name="DestroyState" type="Node" parent="StateMachine"]
+script = ExtResource( 4 )
+
+[node name="Destroy" type="Node" parent="StateMachine/DestroyState"]
+script = ExtResource( 6 )
+
+[node name="InPauseState" type="Node" parent="StateMachine"]
+script = ExtResource( 4 )
+
+[node name="InPause" type="Node" parent="StateMachine/InPauseState"]
+script = ExtResource( 7 )
+
+[node name="TorsoArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TorsoArea"]
+shape = SubResource( 1 )
+
+[node name="BodyTop" type="Sprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 5 )
+
+[node name="BodyBot" type="Sprite" parent="."]
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 8 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sticks.wav-804d7b1331536db55763649dbca25bba.sample"
+
+[deps]
+
+source_file="res://02_Game/04_g_sounds/drum_kit/sticks.wav"
+dest_files=[ "res://.import/sticks.wav-804d7b1331536db55763649dbca25bba.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

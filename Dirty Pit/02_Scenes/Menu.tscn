@@ -1,0 +1,4520 @@
+[gd_scene load_steps=141 format=2]
+
+[ext_resource path="res://01_Assests/Interface/Boards/Side_board.png" type="Texture" id=1]
+[ext_resource path="res://01_Assests/Fonts/BoardMenus_DynFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0010.png" type="Texture" id=4]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0005.png" type="Texture" id=5]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0006.png" type="Texture" id=6]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0014.png" type="Texture" id=7]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0008.png" type="Texture" id=8]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0016.png" type="Texture" id=9]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0017.png" type="Texture" id=10]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0018.png" type="Texture" id=11]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0002.png" type="Texture" id=12]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0009.png" type="Texture" id=13]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0011.png" type="Texture" id=14]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0013.png" type="Texture" id=15]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0019.png" type="Texture" id=16]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0010.png" type="Texture" id=17]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0003.png" type="Texture" id=18]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0004.png" type="Texture" id=19]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0015.png" type="Texture" id=20]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0001.png" type="Texture" id=21]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0007.png" type="Texture" id=22]
+[ext_resource path="res://01_Assests/Heroes/Gunther/01_MenuIdle/Nowy folder0012.png" type="Texture" id=23]
+[ext_resource path="res://01_Assests/Interface/Background_1/background_2.png" type="Texture" id=24]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/B.png" type="Texture" id=25]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/C.png" type="Texture" id=26]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/K.png" type="Texture" id=27]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/A.png" type="Texture" id=28]
+[ext_resource path="res://01_Assests/Interface/Button/ButtonMask.png" type="BitMap" id=29]
+[ext_resource path="res://01_Assests/Interface/Boards/Board_1.png" type="Texture" id=30]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/S.png" type="Texture" id=32]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/R.png" type="Texture" id=33]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/M.png" type="Texture" id=34]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/E.png" type="Texture" id=35]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/G.png" type="Texture" id=36]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/T.png" type="Texture" id=37]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/_0.png" type="Texture" id=38]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/Q.png" type="Texture" id=39]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/U.png" type="Texture" id=40]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/I.png" type="Texture" id=41]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/F.png" type="Texture" id=42]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/H.png" type="Texture" id=43]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/O.png" type="Texture" id=44]
+[ext_resource path="res://01_Assests/Interface/Button/down_button.png" type="Texture" id=45]
+[ext_resource path="res://01_Assests/Interface/Button/up_button.png" type="Texture" id=46]
+[ext_resource path="res://01_Assests/Fonts/HeroStats_DynFont.tres" type="DynamicFont" id=47]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/N.png" type="Texture" id=48]
+[ext_resource path="res://01_Assests/Interface/Symbols/test_gold.png" type="Texture" id=49]
+[ext_resource path="res://03_Scripts/Menu.gd" type="Script" id=50]
+[ext_resource path="res://01_Assests/Fonts/Dynamic_fonts/HeroNames.tres" type="DynamicFont" id=51]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/P.png" type="Texture" id=52]
+[ext_resource path="res://01_Assests/Interface/Button/previous_hero_button.png" type="Texture" id=53]
+[ext_resource path="res://01_Assests/Interface/Button/next_previous_hero_button.png" type="Texture" id=54]
+[ext_resource path="res://01_Assests/Interface/Button/test_take_hero_button_MASK.png" type="BitMap" id=55]
+[ext_resource path="res://01_Assests/Interface/HeroNameBoard/heroname_board.png" type="Texture" id=56]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/L.png" type="Texture" id=57]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/D.png" type="Texture" id=58]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/Y.png" type="Texture" id=59]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/0.png" type="Texture" id=60]
+[ext_resource path="res://02_Scenes/SmallScenes/ProgBar.tscn" type="PackedScene" id=61]
+[ext_resource path="res://01_Assests/Interface/Gold_and_won_fights/gold_and_won_fights.png" type="Texture" id=62]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/W.png" type="Texture" id=63]
+[ext_resource path="res://01_Assests/Interface/ProgressBars/live_stamina_etc/title_progress.png" type="Texture" id=64]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/1.png" type="Texture" id=65]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/ZZ_dwukropek.png" type="Texture" id=66]
+[ext_resource path="res://02_Scenes/Symbols/MoneySymbol.tscn" type="PackedScene" id=67]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0001.png" type="Texture" id=68]
+[ext_resource path="res://03_Scripts/MenuScripts/GoldContainer.gd" type="Script" id=69]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0003.png" type="Texture" id=70]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0006.png" type="Texture" id=71]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0009.png" type="Texture" id=72]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0008.png" type="Texture" id=73]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0005.png" type="Texture" id=74]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0017.png" type="Texture" id=75]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0019.png" type="Texture" id=76]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0004.png" type="Texture" id=77]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0009.png" type="Texture" id=78]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0003.png" type="Texture" id=79]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0015.png" type="Texture" id=80]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0005.png" type="Texture" id=81]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0016.png" type="Texture" id=82]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0006.png" type="Texture" id=83]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0002.png" type="Texture" id=84]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0004.png" type="Texture" id=85]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0018.png" type="Texture" id=86]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0002.png" type="Texture" id=87]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0014.png" type="Texture" id=88]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0011.png" type="Texture" id=89]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0010.png" type="Texture" id=90]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0011.png" type="Texture" id=91]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0013.png" type="Texture" id=92]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0008.png" type="Texture" id=93]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0012.png" type="Texture" id=94]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0007.png" type="Texture" id=95]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0013.png" type="Texture" id=96]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0001.png" type="Texture" id=97]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0014.png" type="Texture" id=98]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0012.png" type="Texture" id=99]
+[ext_resource path="res://01_Assests/Heroes/Lenoland/01_MenuIdle/Nowy folder0007.png" type="Texture" id=100]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0019.png" type="Texture" id=101]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0016.png" type="Texture" id=102]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0001.png" type="Texture" id=103]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0010.png" type="Texture" id=104]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0006.png" type="Texture" id=105]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0009.png" type="Texture" id=106]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0015.png" type="Texture" id=107]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0018.png" type="Texture" id=108]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0013.png" type="Texture" id=109]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0004.png" type="Texture" id=110]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0005.png" type="Texture" id=111]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0017.png" type="Texture" id=112]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0012.png" type="Texture" id=113]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0014.png" type="Texture" id=114]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0007.png" type="Texture" id=115]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0018.png" type="Texture" id=116]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0011.png" type="Texture" id=117]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0003.png" type="Texture" id=118]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0015.png" type="Texture" id=119]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0019.png" type="Texture" id=120]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0008.png" type="Texture" id=121]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0016.png" type="Texture" id=122]
+[ext_resource path="res://01_Assests/Heroes/Thog/01_MenuIdle/Nowy folder0002.png" type="Texture" id=123]
+[ext_resource path="res://01_Assests/Heroes/Bloin/01_MenuIdle/Nowy folder0017.png" type="Texture" id=124]
+
+[sub_resource type="Animation" id=1]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("TopDownBoards/BackBoard:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1440, 270 ), Vector2( 1360, 270 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Move_FightAgain"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("TopDownBoards/FightAgain:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 270 ), Vector2( 100, 270 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("TopDownBoards/IntoArenaBoard:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 270 ), Vector2( 100, 270 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("SideBoards/LeftBoard1:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 480, 810 ), Vector2( 480, 535 ), Vector2( 480, 535 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("SideBoards/RightBoard1:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 480, 0 ), Vector2( 480, 270 ), Vector2( 480, 270 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("TopDownBoards/StartFightBoard:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 270 ), Vector2( 100, 270 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TopDownBoards/StartGameBoard:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 270 ), Vector2( 480, 270 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TopDownBoards/QuitBoard:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1440, 270 ), Vector2( 955, 270 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TopDownBoards/StartGameBoard/StartGame:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TopDownBoards/QuitBoard/Quit2:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FightRank:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("FightResults:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("HeroStats:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("SideBoards:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TakeHero:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TakeHero/MarginContainer/Background/SmallStage1:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 0 ), Vector2( 600, -500 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TakeHero/MarginContainer/Background/SmallStage2:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 500 ), Vector2( 600, 500 ), Vector2( 600, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TakeHero/MarginContainer/Background/SmallStage1/Hero1:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TakeHero/MarginContainer/Background/SmallStage2/Hero2:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "1_Hero2_to_Hero3"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TakeHero/MarginContainer/Background/SmallStage2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 0 ), Vector2( 600, -500 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TakeHero/MarginContainer/Background/SmallStage3:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 500 ), Vector2( 600, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TakeHero/MarginContainer/Background/SmallStage2/Hero2:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TakeHero/MarginContainer/Background/SmallStage3/Hero3:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "2_Hero3_to_Hero4"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TakeHero/MarginContainer/Background/SmallStage3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 0 ), Vector2( 600, -500 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TakeHero/MarginContainer/Background/SmallStage4:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 500 ), Vector2( 600, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TakeHero/MarginContainer/Background/SmallStage3/Hero3:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TakeHero/MarginContainer/Background/SmallStage4/Hero4:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "3_Hero4_to_Hero1"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TakeHero/MarginContainer/Background/SmallStage4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 0 ), Vector2( 600, -500 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("TakeHero/MarginContainer/Background/SmallStage1:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 600, 500 ), Vector2( 600, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("TakeHero/MarginContainer/Background/SmallStage4/Hero4:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("TakeHero/MarginContainer/Background/SmallStage1/Hero1:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("TakeHero/HeroName:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 790 ), Vector2( 260, 790 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 12 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 22 ), ExtResource( 8 ), ExtResource( 13 ), ExtResource( 17 ), ExtResource( 14 ), ExtResource( 23 ), ExtResource( 15 ), ExtResource( 7 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Gunter",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 123 ), ExtResource( 118 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 105 ), ExtResource( 115 ), ExtResource( 121 ), ExtResource( 106 ), ExtResource( 104 ), ExtResource( 117 ), ExtResource( 113 ), ExtResource( 109 ), ExtResource( 114 ), ExtResource( 119 ), ExtResource( 102 ), ExtResource( 112 ), ExtResource( 116 ), ExtResource( 120 ) ],
+"loop": true,
+"name": "Thog",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 97 ), ExtResource( 87 ), ExtResource( 79 ), ExtResource( 77 ), ExtResource( 81 ), ExtResource( 83 ), ExtResource( 95 ), ExtResource( 93 ), ExtResource( 78 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 94 ), ExtResource( 96 ), ExtResource( 98 ), ExtResource( 107 ), ExtResource( 122 ), ExtResource( 124 ), ExtResource( 108 ), ExtResource( 101 ) ],
+"loop": true,
+"name": "Bloin",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 68 ), ExtResource( 84 ), ExtResource( 70 ), ExtResource( 85 ), ExtResource( 74 ), ExtResource( 71 ), ExtResource( 100 ), ExtResource( 73 ), ExtResource( 72 ), ExtResource( 4 ), ExtResource( 89 ), ExtResource( 99 ), ExtResource( 92 ), ExtResource( 88 ), ExtResource( 80 ), ExtResource( 82 ), ExtResource( 75 ), ExtResource( 86 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "Lenoland",
+"speed": 10.0
+} ]
+
+[node name="Menu" type="Control"]
+anchor_left = -0.5
+anchor_top = -0.5
+anchor_right = 1.5
+anchor_bottom = 1.5
+mouse_filter = 2
+script = ExtResource( 50 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/Move_BackBoard = SubResource( 1 )
+anims/Move_FightAgain = SubResource( 2 )
+anims/Move_IntoArenaBoard = SubResource( 3 )
+anims/Move_SideBoards = SubResource( 4 )
+anims/Move_StartFight = SubResource( 5 )
+anims/Move_StartGameBoard = SubResource( 6 )
+
+[node name="AnimFade" type="AnimationPlayer" parent="."]
+anims/Fade_FightRank = SubResource( 7 )
+anims/Fade_FightResults = SubResource( 8 )
+anims/Fade_HeroStats = SubResource( 9 )
+anims/Fade_SideBoards = SubResource( 10 )
+anims/Fade_TakeHero = SubResource( 11 )
+
+[node name="AnimTakeHero" type="AnimationPlayer" parent="."]
+anims/0_Hero1_to_Hero2 = SubResource( 12 )
+anims/1_Hero2_to_Hero3 = SubResource( 13 )
+anims/2_Hero3_to_Hero4 = SubResource( 14 )
+anims/3_Hero4_to_Hero1 = SubResource( 15 )
+
+[node name="AnimSign" type="AnimationPlayer" parent="."]
+anims/HeroName = SubResource( 16 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="FightResults" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Margin" type="MarginContainer" parent="FightResults"]
+anchor_left = 0.25
+anchor_top = 0.25
+anchor_right = 0.75
+anchor_bottom = 0.25
+margin_bottom = 540.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="FightResults/Margin"]
+margin_right = 960.0
+margin_bottom = 540.0
+texture = ExtResource( 24 )
+
+[node name="Background" type="ColorRect" parent="FightResults/Margin"]
+margin_right = 960.0
+margin_bottom = 540.0
+color = Color( 0.462745, 0.462745, 0.462745, 0 )
+
+[node name="SignWin" type="HBoxContainer" parent="FightResults/Margin/Background"]
+visible = false
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 130.0
+margin_right = 2290.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Y" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+margin_left = 514.0
+margin_right = 770.0
+margin_bottom = 256.0
+texture = ExtResource( 59 )
+
+[node name="O" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+margin_left = 660.0
+margin_right = 916.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="U" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+margin_left = 806.0
+margin_right = 1062.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="EMPTY" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 952.0
+margin_right = 1208.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="W" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+margin_left = 1098.0
+margin_right = 1354.0
+margin_bottom = 256.0
+texture = ExtResource( 63 )
+
+[node name="I" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+margin_left = 1244.0
+margin_right = 1500.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="N" type="TextureRect" parent="FightResults/Margin/Background/SignWin"]
+margin_left = 1390.0
+margin_right = 1646.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="SignLost" type="HBoxContainer" parent="FightResults/Margin/Background"]
+visible = false
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 130.0
+margin_right = 2290.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Y" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 441.0
+margin_right = 697.0
+margin_bottom = 256.0
+texture = ExtResource( 59 )
+
+[node name="O" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="U" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="EMPTY" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="L" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="O2" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="S" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="T" type="TextureRect" parent="FightResults/Margin/Background/SignLost"]
+margin_left = 1463.0
+margin_right = 1719.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="RankNumber" type="HBoxContainer" parent="FightResults/Margin/Background"]
+visible = false
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 2410.0
+margin_bottom = 796.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+mouse_filter = 2
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="FightResults/Margin/Background/RankNumber"]
+margin_left = 952.0
+margin_right = 1208.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="FightResults/Margin/Background/RankNumber"]
+visible = false
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="GoldContainer3" type="Node2D" parent="FightResults/Margin/Background"]
+position = Vector2( 430, 270 )
+scale = Vector2( 0.25, 0.25 )
+script = ExtResource( 69 )
+
+[node name="MoneySymbol" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 235.451, -141.271 )
+
+[node name="MoneySymbol2" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 201.815, 94.1799 )
+
+[node name="MoneySymbol3" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 195.088, -20.182 )
+
+[node name="MoneySymbol4" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 275.814, 114.361 )
+
+[node name="MoneySymbol5" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 228.724, 228.723 )
+
+[node name="MoneySymbol6" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 262.359, -6.72766 )
+
+[node name="MoneySymbol7" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 282.541, -147.998 )
+
+[node name="MoneySymbol8" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 195.088, -114.362 )
+
+[node name="MoneySymbol9" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 215.269, -0.000366211 )
+
+[node name="MoneySymbol10" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 215.269, 80.7257 )
+
+[node name="MoneySymbol11" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 181.633, 181.633 )
+
+[node name="MoneySymbol12" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 282.541, 221.996 )
+
+[node name="MoneySymbol13" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 215.269, 67.2715 )
+
+[node name="MoneySymbol14" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 154.724, 60.5443 )
+
+[node name="MoneySymbol15" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 154.724, -20.1818 )
+
+[node name="MoneySymbol16" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 228.723, -47.0905 )
+
+[node name="MoneySymbol17" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 302.722, -208.543 )
+
+[node name="MoneySymbol18" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 228.723, -201.815 )
+
+[node name="MoneySymbol19" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 181.633, -161.452 )
+
+[node name="MoneySymbol20" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 134.543, -134.544 )
+
+[node name="MoneySymbol21" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 269.086, 100.907 )
+
+[node name="MoneySymbol22" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 329.631, 215.269 )
+
+[node name="MoneySymbol23" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 366.722, -178.362 )
+
+[node name="MoneySymbol24" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 285.996, -245.634 )
+
+[node name="MoneySymbol25" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 205.27, -272.543 )
+
+[node name="MoneySymbol26" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 144.725, -205.271 )
+
+[node name="MoneySymbol27" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 111.089, -117.818 )
+
+[node name="MoneySymbol28" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 124.636, 3.27148 )
+
+[node name="MoneySymbol29" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 178.453, 3.27148 )
+
+[node name="MoneySymbol30" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 111.182, 131.088 )
+
+[node name="MoneySymbol31" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 111.182, 178.178 )
+
+[node name="MoneySymbol32" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 245.725, 265.631 )
+
+[node name="MoneySymbol33" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 299.543, 319.448 )
+
+[node name="MoneySymbol34" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 326.451, 379.993 )
+
+[node name="MoneySymbol35" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 286.088, -292.724 )
+
+[node name="MoneySymbol36" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 232.271, -299.451 )
+
+[node name="MoneySymbol37" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 151.545, -218.725 )
+
+[node name="MoneySymbol38" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 138.09, -185.089 )
+
+[node name="MoneySymbol39" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 90.7247, -137.815 )
+
+[node name="MoneySymbol40" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 43.6346, -90.7252 )
+
+[node name="MoneySymbol41" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 99.3561, -26.7252 )
+
+[node name="MoneySymbol42" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 80.7257, 36.9072 )
+
+[node name="MoneySymbol43" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 141.27, 137.815 )
+
+[node name="MoneySymbol44" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 141.27, 137.815 )
+
+[node name="MoneySymbol45" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 233.339, 153.689 )
+
+[node name="MoneySymbol46" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 169.843, -84.4214 )
+
+[node name="MoneySymbol47" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 33.3268, -27.275 )
+
+[node name="MoneySymbol48" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 35.7885, 114.178 )
+
+[node name="MoneySymbol49" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 127.724, 255.448 )
+
+[node name="MoneySymbol50" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 204.005, 293.589 )
+
+[node name="MoneySymbol51" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 55.6803, 230.021 )
+
+[node name="MoneySymbol52" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 87.3612, 131.271 )
+
+[node name="MoneySymbol53" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 16.7255, 73.8147 )
+
+[node name="MoneySymbol54" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -34.1285, 48.3876 )
+
+[node name="MoneySymbol55" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -0.225708, -23.6559 )
+
+[node name="MoneySymbol56" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -4.4635, -112.651 )
+
+[node name="MoneySymbol57" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 42.153, -184.694 )
+
+[node name="MoneySymbol58" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 97.245, -210.122 )
+
+[node name="MoneySymbol59" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 156.575, -273.689 )
+
+[node name="MoneySymbol60" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -29.8907, -87.2239 )
+
+[node name="MoneySymbol61" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -89.2206, -2.46692 )
+
+[node name="MoneySymbol62" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -76.507, 99.2415 )
+
+[node name="MoneySymbol63" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -25.6528, 145.858 )
+
+[node name="MoneySymbol64" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -4.46362, 183.998 )
+
+[node name="MoneySymbol65" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -84.9827, 82.2899 )
+
+[node name="MoneySymbol66" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -47.2744, -27.0928 )
+
+[node name="MoneySymbol67" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -64.2256, -97.4524 )
+
+[node name="MoneySymbol68" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 3.58008, -186.447 )
+
+[node name="MoneySymbol69" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 88.3372, -300.869 )
+
+[node name="MoneySymbol70" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 156.143, -334.772 )
+
+[node name="MoneySymbol71" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 214.511, -357.221 )
+
+[node name="MoneySymbol72" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 48.3865, -280.894 )
+
+[node name="MoneySymbol73" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -27.9412, -240.485 )
+
+[node name="MoneySymbol74" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -45.9006, -173.138 )
+
+[node name="MoneySymbol75" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -99.7788, -87.8304 )
+
+[node name="MoneySymbol76" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -141.731, -39.8846 )
+
+[node name="MoneySymbol77" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -117.759, 73.9867 )
+
+[node name="MoneySymbol78" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -165.705, -51.8711 )
+
+[node name="MoneySymbol79" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -135.739, -171.736 )
+
+[node name="MoneySymbol80" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -75.8062, -231.668 )
+
+[node name="MoneySymbol81" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 14.0923, -315.573 )
+
+[node name="MoneySymbol82" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 259.815, -381.499 )
+
+[node name="MoneySymbol83" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 332.438, -398.772 )
+
+[node name="MoneySymbol84" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 326.445, -308.874 )
+
+[node name="MoneySymbol85" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 356.411, -242.948 )
+
+[node name="MoneySymbol86" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 236.546, 356.375 )
+
+[node name="MoneySymbol87" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -99.0742, 170.585 )
+
+[node name="MoneySymbol88" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -99.0742, 170.585 )
+
+[node name="MoneySymbol89" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -133.054, 121.503 )
+
+[node name="MoneySymbol90" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -182.135, 79.9727 )
+
+[node name="MoneySymbol91" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -208.563, 4.46277 )
+
+[node name="MoneySymbol92" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -212.339, -97.4756 )
+
+[node name="MoneySymbol93" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -182.135, -176.761 )
+
+[node name="MoneySymbol94" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -106.625, -244.72 )
+
+[node name="MoneySymbol95" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -53.7585, 201.815 )
+
+[node name="MoneySymbol96" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 157.67, 303.753 )
+
+[node name="MoneySymbol97" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 366.212, 303.753 )
+
+[node name="MoneySymbol98" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( 83.6707, 297.026 )
+
+[node name="MoneySymbol99" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -264.918, -41.4429 )
+
+[node name="MoneySymbol100" parent="FightResults/Margin/Background/GoldContainer3" instance=ExtResource( 67 )]
+position = Vector2( -232.914, 68.6403 )
+
+[node name="AddedGold" type="Node2D" parent="FightResults/Margin/Background"]
+
+[node name="GoldAfter" type="HBoxContainer" parent="FightResults/Margin/Background"]
+margin_left = 500.0
+margin_top = 540.0
+margin_right = 2660.0
+margin_bottom = 796.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="FightResults/Margin/Background/GoldAfter"]
+margin_left = 952.0
+margin_right = 1208.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="FightResults/Margin/Background/GoldAfter"]
+visible = false
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER3" type="TextureRect" parent="FightResults/Margin/Background/GoldAfter"]
+visible = false
+margin_left = 558.0
+margin_right = 814.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER4" type="TextureRect" parent="FightResults/Margin/Background/GoldAfter"]
+visible = false
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER5" type="TextureRect" parent="FightResults/Margin/Background/GoldAfter"]
+visible = false
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="SingDescript" type="HBoxContainer" parent="FightResults/Margin/Background"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 570.0
+margin_right = 2730.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="G" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 295.0
+margin_right = 551.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="O" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 441.0
+margin_right = 697.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="L" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="D" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+
+[node name="EMPTY" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="A" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="F" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="T" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="E" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 1463.0
+margin_right = 1719.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="R" type="TextureRect" parent="FightResults/Margin/Background/SingDescript"]
+margin_left = 1609.0
+margin_right = 1865.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="SingDescript2" type="HBoxContainer" parent="FightResults/Margin/Background"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 630.0
+margin_right = 2790.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="F" type="TextureRect" parent="FightResults/Margin/Background/SingDescript2"]
+margin_left = 660.0
+margin_right = 916.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="I" type="TextureRect" parent="FightResults/Margin/Background/SingDescript2"]
+margin_left = 806.0
+margin_right = 1062.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="G" type="TextureRect" parent="FightResults/Margin/Background/SingDescript2"]
+margin_left = 952.0
+margin_right = 1208.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="H" type="TextureRect" parent="FightResults/Margin/Background/SingDescript2"]
+margin_left = 1098.0
+margin_right = 1354.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="T" type="TextureRect" parent="FightResults/Margin/Background/SingDescript2"]
+margin_left = 1244.0
+margin_right = 1500.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="SideBoards" type="Control" parent="."]
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="LeftBoard1" type="TextureRect" parent="SideBoards"]
+margin_left = 480.0
+margin_top = 638.125
+margin_right = 1440.0
+margin_bottom = 908.125
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightBoard1" type="TextureRect" parent="SideBoards"]
+margin_left = 480.0
+margin_top = 168.75
+margin_right = 1440.0
+margin_bottom = 438.75
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FightRank" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Margin" type="MarginContainer" parent="FightRank"]
+anchor_left = 0.25
+anchor_top = 0.25
+anchor_right = 0.75
+anchor_bottom = 0.25
+margin_bottom = 540.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="FightRank/Margin"]
+margin_right = 960.0
+margin_bottom = 540.0
+texture = ExtResource( 24 )
+
+[node name="Background" type="ColorRect" parent="FightRank/Margin"]
+margin_right = 960.0
+margin_bottom = 540.0
+color = Color( 0.403922, 0.403922, 0.403922, 0 )
+
+[node name="Sign" type="HBoxContainer" parent="FightRank/Margin/Background"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 100.0
+margin_right = 2260.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S2" type="TextureRect" parent="FightRank/Margin/Background/Sign"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="E" type="TextureRect" parent="FightRank/Margin/Background/Sign"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="L" type="TextureRect" parent="FightRank/Margin/Background/Sign"]
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="E2" type="TextureRect" parent="FightRank/Margin/Background/Sign"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="C" type="TextureRect" parent="FightRank/Margin/Background/Sign"]
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 26 )
+
+[node name="T2" type="TextureRect" parent="FightRank/Margin/Background/Sign"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="Sign2" type="HBoxContainer" parent="FightRank/Margin/Background"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 150.0
+margin_right = 2310.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="F" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 295.0
+margin_right = 551.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="I" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 441.0
+margin_right = 697.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="G" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="H" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="T" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="EMPTY2" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="R" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="A" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 1463.0
+margin_right = 1719.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="K" type="TextureRect" parent="FightRank/Margin/Background/Sign2"]
+margin_left = 1609.0
+margin_right = 1865.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="RankBut" type="HBoxContainer" parent="FightRank/Margin/Background"]
+margin_left = 225.0
+margin_top = 540.0
+margin_right = 1305.0
+margin_bottom = 796.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.5, 0.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="FightRank/Margin/Background/RankBut"]
+margin_top = 121.0
+margin_right = 108.0
+margin_bottom = 135.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="Label" type="Label" parent="FightRank/Margin/Background/RankBut"]
+margin_left = 112.0
+margin_top = 121.0
+margin_right = 221.0
+margin_bottom = 135.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="RankDown" type="TextureButton" parent="FightRank/Margin/Background/RankBut"]
+margin_left = 225.0
+margin_right = 481.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 45 )
+
+[node name="Label3" type="Label" parent="FightRank/Margin/Background/RankBut"]
+margin_left = 485.0
+margin_top = 121.0
+margin_right = 594.0
+margin_bottom = 135.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="RankUp" type="TextureButton" parent="FightRank/Margin/Background/RankBut"]
+margin_left = 598.0
+margin_right = 854.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 46 )
+
+[node name="Label4" type="Label" parent="FightRank/Margin/Background/RankBut"]
+margin_left = 858.0
+margin_top = 121.0
+margin_right = 967.0
+margin_bottom = 135.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="Label2" type="Label" parent="FightRank/Margin/Background/RankBut"]
+margin_left = 971.0
+margin_top = 121.0
+margin_right = 1080.0
+margin_bottom = 135.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+
+[node name="RankNumber" type="HBoxContainer" parent="FightRank/Margin/Background"]
+margin_left = 250.0
+margin_top = 540.0
+margin_right = 2410.0
+margin_bottom = 796.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+mouse_filter = 2
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="FightRank/Margin/Background/RankNumber"]
+margin_left = 952.0
+margin_right = 1208.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="FightRank/Margin/Background/RankNumber"]
+visible = false
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="GoldContainer1" type="Node2D" parent="FightRank/Margin/Background"]
+position = Vector2( 530, 135 )
+scale = Vector2( 0.25, 0.25 )
+script = ExtResource( 69 )
+
+[node name="MoneySymbol" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 235.451, -141.271 )
+
+[node name="MoneySymbol2" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 242.178, 10.0907 )
+
+[node name="MoneySymbol3" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 218.633, 171.543 )
+
+[node name="MoneySymbol4" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 262.359, 295.995 )
+
+[node name="MoneySymbol5" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 198.451, 63.9081 )
+
+[node name="MoneySymbol6" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 215.269, 269.087 )
+
+[node name="MoneySymbol7" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 258.995, 195.088 )
+
+[node name="MoneySymbol8" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 242.177, 97.5439 )
+
+[node name="MoneySymbol9" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 245.541, -84.0898 )
+
+[node name="MoneySymbol10" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 205.178, -43.7267 )
+
+[node name="MoneySymbol11" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 191.724, -127.816 )
+
+[node name="MoneySymbol12" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 178.269, 134.543 )
+
+[node name="MoneySymbol13" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 151.361, 43.7266 )
+
+[node name="MoneySymbol14" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 178.269, -3.36365 )
+
+[node name="MoneySymbol15" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 137.906, -53.8174 )
+
+[node name="MoneySymbol16" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 151.361, 104.271 )
+
+[node name="MoneySymbol17" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 168.178, 208.542 )
+
+[node name="MoneySymbol18" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 124.452, 181.634 )
+
+[node name="MoneySymbol19" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 181.633, -73.9989 )
+
+[node name="MoneySymbol20" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 117.725, 20.1815 )
+
+[node name="MoneySymbol21" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 107.634, 104.271 )
+
+[node name="MoneySymbol22" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 77.3618, 70.6354 )
+
+[node name="MoneySymbol23" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 70.6348, 6.10352e-05 )
+
+[node name="MoneySymbol24" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 121.088, -57.1809 )
+
+[node name="MoneySymbol25" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 154.724, -110.998 )
+
+[node name="MoneySymbol26" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 36.999, 50.4539 )
+
+[node name="MoneySymbol27" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 47.0896, 144.634 )
+
+[node name="MoneySymbol28" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 77.3621, 184.997 )
+
+[node name="MoneySymbol29" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 141.27, 252.269 )
+
+[node name="MoneySymbol30" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 171.543, 289.268 )
+
+[node name="MoneySymbol31" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 221.996, 332.995 )
+
+[node name="MoneySymbol32" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 299.451, 359.995 )
+
+[node name="MoneySymbol33" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 228.816, -205.087 )
+
+[node name="MoneySymbol34" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( -3.27173, 111.09 )
+
+[node name="MoneySymbol35" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( -9.99902, 53.9092 )
+
+[node name="MoneySymbol36" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 23.637, 0.0917969 )
+
+[node name="MoneySymbol37" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 60.6362, -50.362 )
+
+[node name="MoneySymbol38" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 124.544, -100.816 )
+
+[node name="MoneySymbol39" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 255.724, -194.996 )
+
+[node name="MoneySymbol40" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 255.724, -194.996 )
+
+[node name="MoneySymbol41" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 268.438, -275.515 )
+
+[node name="MoneySymbol42" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 276.914, -156.855 )
+
+[node name="MoneySymbol43" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 276.914, 156.746 )
+
+[node name="MoneySymbol44" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 145.54, -182.283 )
+
+[node name="MoneySymbol45" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 81.9727, -131.428 )
+
+[node name="MoneySymbol46" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( 35.3562, -118.715 )
+
+[node name="MoneySymbol47" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( -28.2117, -46.6713 )
+
+[node name="MoneySymbol48" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( -57.8767, 25.3722 )
+
+[node name="MoneySymbol49" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( -66.3523, -0.0549316 )
+
+[node name="MoneySymbol50" parent="FightRank/Margin/Background/GoldContainer1" instance=ExtResource( 67 )]
+position = Vector2( -66.3523, -0.0549316 )
+
+[node name="GoldContainer2" type="Node2D" parent="FightRank/Margin/Background"]
+position = Vector2( 530, 410 )
+scale = Vector2( 0.25, 0.25 )
+script = ExtResource( 69 )
+
+[node name="MoneySymbol" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 235.451, -141.271 )
+
+[node name="MoneySymbol2" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 201.815, 94.1799 )
+
+[node name="MoneySymbol3" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 195.088, -20.182 )
+
+[node name="MoneySymbol4" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 275.814, 114.361 )
+
+[node name="MoneySymbol5" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 228.724, 228.723 )
+
+[node name="MoneySymbol6" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 262.359, -6.72766 )
+
+[node name="MoneySymbol7" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 282.541, -147.998 )
+
+[node name="MoneySymbol8" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 195.088, -114.362 )
+
+[node name="MoneySymbol9" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 215.269, -0.000366211 )
+
+[node name="MoneySymbol10" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 215.269, 80.7257 )
+
+[node name="MoneySymbol11" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 181.633, 181.633 )
+
+[node name="MoneySymbol12" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 282.541, 221.996 )
+
+[node name="MoneySymbol13" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 215.269, 67.2715 )
+
+[node name="MoneySymbol14" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 154.724, 60.5443 )
+
+[node name="MoneySymbol15" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 154.724, -20.1818 )
+
+[node name="MoneySymbol16" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 228.723, -47.0905 )
+
+[node name="MoneySymbol17" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 302.722, -208.543 )
+
+[node name="MoneySymbol18" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 228.723, -201.815 )
+
+[node name="MoneySymbol19" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 181.633, -161.452 )
+
+[node name="MoneySymbol20" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 134.543, -134.544 )
+
+[node name="MoneySymbol21" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 269.086, 100.907 )
+
+[node name="MoneySymbol22" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 329.631, 215.269 )
+
+[node name="MoneySymbol23" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 366.722, -178.362 )
+
+[node name="MoneySymbol24" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 285.996, -245.634 )
+
+[node name="MoneySymbol25" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 205.27, -272.543 )
+
+[node name="MoneySymbol26" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 144.725, -205.271 )
+
+[node name="MoneySymbol27" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 111.089, -117.818 )
+
+[node name="MoneySymbol28" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 124.636, 3.27148 )
+
+[node name="MoneySymbol29" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 178.453, 3.27148 )
+
+[node name="MoneySymbol30" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 111.182, 131.088 )
+
+[node name="MoneySymbol31" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 111.182, 178.178 )
+
+[node name="MoneySymbol32" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 245.725, 265.631 )
+
+[node name="MoneySymbol33" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 299.543, 319.448 )
+
+[node name="MoneySymbol34" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 326.451, 379.993 )
+
+[node name="MoneySymbol35" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 286.088, -292.724 )
+
+[node name="MoneySymbol36" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 232.271, -299.451 )
+
+[node name="MoneySymbol37" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 151.545, -218.725 )
+
+[node name="MoneySymbol38" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 138.09, -185.089 )
+
+[node name="MoneySymbol39" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 90.7247, -137.815 )
+
+[node name="MoneySymbol40" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 43.6346, -90.7252 )
+
+[node name="MoneySymbol41" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 99.3561, -26.7252 )
+
+[node name="MoneySymbol42" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 80.7257, 36.9072 )
+
+[node name="MoneySymbol43" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 141.27, 137.815 )
+
+[node name="MoneySymbol44" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 141.27, 137.815 )
+
+[node name="MoneySymbol45" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 233.339, 153.689 )
+
+[node name="MoneySymbol46" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 169.843, -84.4214 )
+
+[node name="MoneySymbol47" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 33.3268, -27.275 )
+
+[node name="MoneySymbol48" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 35.7885, 114.178 )
+
+[node name="MoneySymbol49" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 127.724, 255.448 )
+
+[node name="MoneySymbol50" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 204.005, 293.589 )
+
+[node name="MoneySymbol51" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 55.6803, 230.021 )
+
+[node name="MoneySymbol52" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 87.3612, 131.271 )
+
+[node name="MoneySymbol53" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 16.7255, 73.8147 )
+
+[node name="MoneySymbol54" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -34.1285, 48.3876 )
+
+[node name="MoneySymbol55" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -0.225708, -23.6559 )
+
+[node name="MoneySymbol56" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -4.4635, -112.651 )
+
+[node name="MoneySymbol57" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 42.153, -184.694 )
+
+[node name="MoneySymbol58" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 97.245, -210.122 )
+
+[node name="MoneySymbol59" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 156.575, -273.689 )
+
+[node name="MoneySymbol60" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -29.8907, -87.2239 )
+
+[node name="MoneySymbol61" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -89.2206, -2.46692 )
+
+[node name="MoneySymbol62" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -76.507, 99.2415 )
+
+[node name="MoneySymbol63" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -25.6528, 145.858 )
+
+[node name="MoneySymbol64" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -4.46362, 183.998 )
+
+[node name="MoneySymbol65" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -84.9827, 82.2899 )
+
+[node name="MoneySymbol66" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -47.2744, -27.0928 )
+
+[node name="MoneySymbol67" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -64.2256, -97.4524 )
+
+[node name="MoneySymbol68" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 3.58008, -186.447 )
+
+[node name="MoneySymbol69" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 88.3372, -300.869 )
+
+[node name="MoneySymbol70" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 156.143, -334.772 )
+
+[node name="MoneySymbol71" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 214.511, -357.221 )
+
+[node name="MoneySymbol72" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 48.3865, -280.894 )
+
+[node name="MoneySymbol73" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -27.9412, -240.485 )
+
+[node name="MoneySymbol74" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -45.9006, -173.138 )
+
+[node name="MoneySymbol75" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -99.7788, -87.8304 )
+
+[node name="MoneySymbol76" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -141.731, -39.8846 )
+
+[node name="MoneySymbol77" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -117.759, 73.9867 )
+
+[node name="MoneySymbol78" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -165.705, -51.8711 )
+
+[node name="MoneySymbol79" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -135.739, -171.736 )
+
+[node name="MoneySymbol80" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -75.8062, -231.668 )
+
+[node name="MoneySymbol81" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 14.0923, -315.573 )
+
+[node name="MoneySymbol82" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 259.815, -381.499 )
+
+[node name="MoneySymbol83" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 332.438, -398.772 )
+
+[node name="MoneySymbol84" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 326.445, -308.874 )
+
+[node name="MoneySymbol85" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 356.411, -242.948 )
+
+[node name="MoneySymbol86" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 236.546, 356.375 )
+
+[node name="MoneySymbol87" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -99.0742, 170.585 )
+
+[node name="MoneySymbol88" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -99.0742, 170.585 )
+
+[node name="MoneySymbol89" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -133.054, 121.503 )
+
+[node name="MoneySymbol90" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -182.135, 79.9727 )
+
+[node name="MoneySymbol91" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -208.563, 4.46277 )
+
+[node name="MoneySymbol92" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -212.339, -97.4756 )
+
+[node name="MoneySymbol93" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -182.135, -176.761 )
+
+[node name="MoneySymbol94" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -106.625, -244.72 )
+
+[node name="MoneySymbol95" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -53.7585, 201.815 )
+
+[node name="MoneySymbol96" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 157.67, 303.753 )
+
+[node name="MoneySymbol97" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 366.212, 303.753 )
+
+[node name="MoneySymbol98" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( 83.6707, 297.026 )
+
+[node name="MoneySymbol99" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -264.918, -41.4429 )
+
+[node name="MoneySymbol100" parent="FightRank/Margin/Background/GoldContainer2" instance=ExtResource( 67 )]
+position = Vector2( -232.914, 68.6403 )
+
+[node name="Gold1" type="TextureRect" parent="FightRank/Margin/Background"]
+visible = false
+margin_left = 411.005
+margin_top = 240.898
+margin_right = 451.005
+margin_bottom = 280.898
+rect_rotation = -90.0
+rect_scale = Vector2( 5, 5 )
+texture = ExtResource( 49 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gold2" type="TextureRect" parent="FightRank/Margin/Background"]
+visible = false
+margin_left = 411.005
+margin_top = 496.573
+margin_right = 451.005
+margin_bottom = 536.573
+rect_rotation = -90.0
+rect_scale = Vector2( 5, 5 )
+texture = ExtResource( 49 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PriceAmount" type="HBoxContainer" parent="FightRank/Margin/Background"]
+margin_left = 600.0
+margin_top = 540.0
+margin_right = 1680.0
+margin_bottom = 796.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="FightRank/Margin/Background/PriceAmount"]
+margin_left = 412.0
+margin_right = 668.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="FightRank/Margin/Background/PriceAmount"]
+visible = false
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER3" type="TextureRect" parent="FightRank/Margin/Background/PriceAmount"]
+visible = false
+margin_left = 558.0
+margin_right = 814.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER4" type="TextureRect" parent="FightRank/Margin/Background/PriceAmount"]
+visible = false
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="RewardAmount" type="HBoxContainer" parent="FightRank/Margin/Background"]
+margin_left = 600.0
+margin_top = 270.0
+margin_right = 1680.0
+margin_bottom = 526.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="FightRank/Margin/Background/RewardAmount"]
+margin_left = 412.0
+margin_right = 668.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="FightRank/Margin/Background/RewardAmount"]
+visible = false
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER3" type="TextureRect" parent="FightRank/Margin/Background/RewardAmount"]
+visible = false
+margin_left = 558.0
+margin_right = 814.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER4" type="TextureRect" parent="FightRank/Margin/Background/RewardAmount"]
+visible = false
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="PriceDescript" type="VBoxContainer" parent="FightRank/Margin/Background"]
+margin_left = 680.0
+margin_top = 540.0
+margin_right = 1760.0
+margin_bottom = 1052.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="FightRank/Margin/Background/PriceDescript"]
+margin_right = 1080.0
+margin_bottom = 256.0
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign"]
+margin_left = 120.0
+margin_right = 376.0
+margin_bottom = 256.0
+texture = ExtResource( 52 )
+
+[node name="R" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign"]
+margin_left = 266.0
+margin_right = 522.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="I" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign"]
+margin_left = 412.0
+margin_right = 668.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="C2" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign"]
+margin_left = 558.0
+margin_right = 814.0
+margin_bottom = 256.0
+texture = ExtResource( 26 )
+
+[node name="E" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign"]
+margin_left = 704.0
+margin_right = 960.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="Sign2" type="HBoxContainer" parent="FightRank/Margin/Background/PriceDescript"]
+margin_top = 206.0
+margin_right = 1080.0
+margin_bottom = 462.0
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="I2" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign2"]
+margin_left = 47.0
+margin_right = 303.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="F" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign2"]
+margin_left = 193.0
+margin_right = 449.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="EMPTY" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 339.0
+margin_right = 595.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="Y" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign2"]
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 59 )
+
+[node name="O" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign2"]
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="U" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign2"]
+margin_left = 777.0
+margin_right = 1033.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="Sign3" type="HBoxContainer" parent="FightRank/Margin/Background/PriceDescript"]
+margin_top = 412.0
+margin_right = 1080.0
+margin_bottom = 668.0
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="L" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign3"]
+margin_left = 193.0
+margin_right = 449.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="O" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign3"]
+margin_left = 339.0
+margin_right = 595.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="S" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign3"]
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="T" type="TextureRect" parent="FightRank/Margin/Background/PriceDescript/Sign3"]
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="RewardDescript" type="VBoxContainer" parent="FightRank/Margin/Background"]
+margin_left = 680.0
+margin_top = 270.0
+margin_right = 1760.0
+margin_bottom = 1046.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="FightRank/Margin/Background/RewardDescript"]
+margin_right = 1080.0
+margin_bottom = 256.0
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign"]
+margin_left = 47.0
+margin_right = 303.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="E" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign"]
+margin_left = 193.0
+margin_right = 449.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="W" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign"]
+margin_left = 339.0
+margin_right = 595.0
+margin_bottom = 256.0
+texture = ExtResource( 63 )
+
+[node name="A" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign"]
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="R2" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign"]
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="D" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign"]
+margin_left = 777.0
+margin_right = 1033.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+
+[node name="Sign2" type="HBoxContainer" parent="FightRank/Margin/Background/RewardDescript"]
+margin_top = 206.0
+margin_right = 1080.0
+margin_bottom = 462.0
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="I2" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign2"]
+margin_left = 47.0
+margin_right = 303.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="F" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign2"]
+margin_left = 193.0
+margin_right = 449.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="EMPTY" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 339.0
+margin_right = 595.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="Y" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign2"]
+margin_left = 485.0
+margin_right = 741.0
+margin_bottom = 256.0
+texture = ExtResource( 59 )
+
+[node name="O" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign2"]
+margin_left = 631.0
+margin_right = 887.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="U" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign2"]
+margin_left = 777.0
+margin_right = 1033.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="Sign3" type="HBoxContainer" parent="FightRank/Margin/Background/RewardDescript"]
+margin_top = 412.0
+margin_right = 1080.0
+margin_bottom = 668.0
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="W" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign3"]
+margin_left = 266.0
+margin_right = 522.0
+margin_bottom = 256.0
+texture = ExtResource( 63 )
+
+[node name="I" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign3"]
+margin_left = 412.0
+margin_right = 668.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="N" type="TextureRect" parent="FightRank/Margin/Background/RewardDescript/Sign3"]
+margin_left = 558.0
+margin_right = 814.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="HeroStats" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Margin" type="MarginContainer" parent="HeroStats"]
+anchor_left = 0.25
+anchor_top = 0.25
+anchor_right = 0.75
+anchor_bottom = 0.25
+margin_bottom = 540.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="HeroStats/Margin"]
+margin_right = 960.0
+margin_bottom = 540.0
+texture = ExtResource( 24 )
+
+[node name="Background" type="ColorRect" parent="HeroStats/Margin"]
+margin_right = 960.0
+margin_bottom = 540.0
+color = Color( 0.388235, 0.388235, 0.388235, 0 )
+
+[node name="Margin" type="MarginContainer" parent="HeroStats/Margin/Background"]
+margin_left = 180.0
+margin_top = 500.0
+margin_right = 634.0
+margin_bottom = 1200.0
+rect_rotation = -90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="List" type="VBoxContainer" parent="HeroStats/Margin/Background/Margin"]
+margin_right = 454.0
+margin_bottom = 700.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CRankImage" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List"]
+margin_right = 454.0
+margin_bottom = 50.0
+texture = ExtResource( 64 )
+
+[node name="Sign" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/CRankImage"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -25.0
+margin_right = 3600.0
+margin_bottom = 231.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R3" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+margin_left = 1307.0
+margin_right = 1563.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="A" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+margin_left = 1453.0
+margin_right = 1709.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+margin_left = 1599.0
+margin_right = 1855.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="K" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+margin_left = 1745.0
+margin_right = 2001.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="COLON" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+visible = false
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 66 )
+
+[node name="EMPTY" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="NUMBER1" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+margin_left = 2037.0
+margin_right = 2293.0
+margin_bottom = 256.0
+texture = ExtResource( 65 )
+
+[node name="NUMBER2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/CRankImage/Sign"]
+visible = false
+margin_left = 2110.0
+margin_right = 2366.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="ProgBar1" parent="HeroStats/Margin/Background/Margin/List" instance=ExtResource( 61 )]
+margin_top = 50.0
+margin_right = 454.0
+margin_bottom = 100.0
+
+[node name="RiseRankUp" type="TextureButton" parent="HeroStats/Margin/Background/Margin/List/ProgBar1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+margin_right = 3600.0
+margin_bottom = 216.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R3" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 723.0
+margin_right = 979.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="I" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 869.0
+margin_right = 1125.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="S" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 1015.0
+margin_right = 1271.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="E" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 1161.0
+margin_right = 1417.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="EMPTY" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1307.0
+margin_right = 1563.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="Y" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 1453.0
+margin_right = 1709.0
+margin_bottom = 256.0
+texture = ExtResource( 59 )
+
+[node name="O" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 1599.0
+margin_right = 1855.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="U" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 1745.0
+margin_right = 2001.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="R2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="EMPTY2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 2037.0
+margin_right = 2293.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="R" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 2183.0
+margin_right = 2439.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 2329.0
+margin_right = 2585.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="N" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 2475.0
+margin_right = 2731.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="K" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+margin_left = 2621.0
+margin_right = 2877.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RankAnim" type="AnimationPlayer" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign"]
+anims/RankAnim = SubResource( 17 )
+
+[node name="Sign2" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp"]
+visible = false
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+margin_right = 3600.0
+margin_bottom = 216.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Y2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 504.0
+margin_right = 760.0
+margin_bottom = 256.0
+texture = ExtResource( 59 )
+
+[node name="O2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 650.0
+margin_right = 906.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="U2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 796.0
+margin_right = 1052.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="EMPTY3" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 942.0
+margin_right = 1198.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="N2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 1088.0
+margin_right = 1344.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="E" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 1234.0
+margin_right = 1490.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="E2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 1380.0
+margin_right = 1636.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="D" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 1526.0
+margin_right = 1782.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+
+[node name="EMPTY" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1672.0
+margin_right = 1928.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="NUMBER1" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 1818.0
+margin_right = 2074.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 1964.0
+margin_right = 2220.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER3" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 2110.0
+margin_right = 2366.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER4" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+visible = false
+margin_left = 2183.0
+margin_right = 2439.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="EMPTY2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 2256.0
+margin_right = 2512.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="G" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 2402.0
+margin_right = 2658.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="O" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 2548.0
+margin_right = 2804.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="L" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 2694.0
+margin_right = 2950.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="D2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp/Sign2"]
+margin_left = 2840.0
+margin_right = 3096.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LifeImage" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List"]
+margin_top = 100.0
+margin_right = 454.0
+margin_bottom = 150.0
+texture = ExtResource( 64 )
+
+[node name="Sign" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/LifeImage"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -25.0
+margin_right = 3600.0
+margin_bottom = 231.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="L" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/LifeImage/Sign"]
+margin_left = 1453.0
+margin_right = 1709.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="I" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/LifeImage/Sign"]
+margin_left = 1599.0
+margin_right = 1855.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="F" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/LifeImage/Sign"]
+margin_left = 1745.0
+margin_right = 2001.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="E" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/LifeImage/Sign"]
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="CRankLabel" type="Label" parent="HeroStats/Margin/Background/Margin/List/LifeImage"]
+visible = false
+margin_top = 4.0
+margin_right = 450.0
+margin_bottom = 68.0
+custom_fonts/font = ExtResource( 47 )
+custom_colors/font_color = Color( 0.164706, 0.117647, 0.94902, 1 )
+text = "Current rank:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgBar2" parent="HeroStats/Margin/Background/Margin/List" instance=ExtResource( 61 )]
+margin_top = 150.0
+margin_right = 454.0
+margin_bottom = 200.0
+
+[node name="StaminaImage" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List"]
+margin_top = 200.0
+margin_right = 454.0
+margin_bottom = 250.0
+texture = ExtResource( 64 )
+
+[node name="Sign" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/StaminaImage"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -25.0
+margin_right = 3600.0
+margin_bottom = 231.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 1234.0
+margin_right = 1490.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="T" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 1380.0
+margin_right = 1636.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="A" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 1526.0
+margin_right = 1782.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="M" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 1672.0
+margin_right = 1928.0
+margin_bottom = 256.0
+texture = ExtResource( 34 )
+
+[node name="I" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 1818.0
+margin_right = 2074.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="N" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 1964.0
+margin_right = 2220.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="A2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/StaminaImage/Sign"]
+margin_left = 2110.0
+margin_right = 2366.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="CRankLabel" type="Label" parent="HeroStats/Margin/Background/Margin/List/StaminaImage"]
+visible = false
+margin_top = 4.0
+margin_right = 450.0
+margin_bottom = 68.0
+custom_fonts/font = ExtResource( 47 )
+custom_colors/font_color = Color( 0.164706, 0.117647, 0.94902, 1 )
+text = "Current rank:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgBar3" parent="HeroStats/Margin/Background/Margin/List" instance=ExtResource( 61 )]
+margin_top = 250.0
+margin_right = 454.0
+margin_bottom = 300.0
+
+[node name="ListOfGandWF" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List"]
+margin_top = 300.0
+margin_right = 454.0
+margin_bottom = 450.0
+
+[node name="WonFights" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF"]
+margin_right = 225.0
+margin_bottom = 150.0
+texture = ExtResource( 62 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -125.0
+margin_right = 1800.0
+margin_bottom = 131.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="W" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 115.0
+margin_right = 371.0
+margin_bottom = 256.0
+texture = ExtResource( 63 )
+
+[node name="O" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 261.0
+margin_right = 517.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="N" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 407.0
+margin_right = 663.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="EMPTY" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 553.0
+margin_right = 809.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+
+[node name="F2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 699.0
+margin_right = 955.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="I2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 845.0
+margin_right = 1101.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="G2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 991.0
+margin_right = 1247.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="H2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 1137.0
+margin_right = 1393.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="T2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 1283.0
+margin_right = 1539.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="S" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign"]
+margin_left = 1429.0
+margin_right = 1685.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="Sign2" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -80.0
+margin_right = 900.0
+margin_bottom = 176.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign2"]
+margin_left = 322.0
+margin_right = 578.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign2"]
+visible = false
+margin_left = 395.0
+margin_right = 651.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER3" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign2"]
+visible = false
+margin_left = 468.0
+margin_right = 724.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER4" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/WonFights/Sign2"]
+visible = false
+margin_left = 541.0
+margin_right = 797.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="Gold" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF"]
+margin_left = 229.0
+margin_right = 454.0
+margin_bottom = 150.0
+texture = ExtResource( 62 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -125.0
+margin_right = 1800.0
+margin_bottom = 131.0
+rect_scale = Vector2( 0.125, 0.125 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="G2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign"]
+margin_left = 553.0
+margin_right = 809.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="O" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign"]
+margin_left = 699.0
+margin_right = 955.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="L" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign"]
+margin_left = 845.0
+margin_right = 1101.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="D" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign"]
+margin_left = 991.0
+margin_right = 1247.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+
+[node name="Sign2" type="HBoxContainer" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -80.0
+margin_right = 900.0
+margin_bottom = 176.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NUMBER1" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign2"]
+margin_left = 322.0
+margin_right = 578.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER2" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign2"]
+visible = false
+margin_left = 395.0
+margin_right = 651.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER3" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign2"]
+visible = false
+margin_left = 468.0
+margin_right = 724.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER4" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign2"]
+visible = false
+margin_left = 541.0
+margin_right = 797.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="NUMBER5" type="TextureRect" parent="HeroStats/Margin/Background/Margin/List/ListOfGandWF/Gold/Sign2"]
+visible = false
+margin_left = 614.0
+margin_right = 870.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="TakeHero" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="TakeHero"]
+anchor_left = 0.25
+anchor_top = 0.25
+anchor_right = 0.75
+anchor_bottom = 0.25
+margin_bottom = 540.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="TakeHero/MarginContainer"]
+margin_right = 960.0
+margin_bottom = 540.0
+texture = ExtResource( 24 )
+
+[node name="Background" type="ColorRect" parent="TakeHero/MarginContainer"]
+margin_right = 960.0
+margin_bottom = 540.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0 )
+
+[node name="TakeHeroButton" type="TextureButton" parent="TakeHero/MarginContainer/Background"]
+margin_left = 110.0
+margin_top = 540.0
+margin_right = 650.0
+margin_bottom = 1140.0
+rect_rotation = -90.0
+disabled = true
+texture_click_mask = ExtResource( 55 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightLeft" type="HBoxContainer" parent="TakeHero/MarginContainer/Background"]
+margin_left = 700.0
+margin_top = 540.0
+margin_right = 1780.0
+margin_bottom = 740.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.5, 0.5 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Space3" type="Control" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_right = 105.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+
+[node name="PreviousHero" type="TextureButton" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_left = 109.0
+margin_right = 373.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 53 )
+
+[node name="Space" type="Control" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_left = 377.0
+margin_right = 483.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+
+[node name="Space2" type="Control" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_left = 487.0
+margin_right = 592.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+
+[node name="Space5" type="Control" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_left = 596.0
+margin_right = 702.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+
+[node name="NextHero" type="TextureButton" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_left = 706.0
+margin_right = 970.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 54 )
+stretch_mode = 3
+
+[node name="Space4" type="Control" parent="TakeHero/MarginContainer/Background/RightLeft"]
+margin_left = 974.0
+margin_right = 1080.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SmallStage1" type="TextureRect" parent="TakeHero/MarginContainer/Background"]
+margin_left = 600.0
+margin_right = 720.0
+margin_bottom = 540.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hero1" type="AnimatedSprite" parent="TakeHero/MarginContainer/Background/SmallStage1"]
+position = Vector2( -170, 270 )
+rotation = -1.5708
+frames = SubResource( 18 )
+animation = "Gunter"
+frame = 7
+playing = true
+
+[node name="Sign" type="HBoxContainer" parent="TakeHero/MarginContainer/Background/SmallStage1"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+margin_right = 2360.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R3" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="A" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="K" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="COLON" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+visible = false
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 66 )
+
+[node name="EMPTY" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="NUMBER1" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 65 )
+
+[node name="NUMBER2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage1/Sign"]
+visible = false
+margin_left = 1390.0
+margin_right = 1646.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="SmallStage2" type="TextureRect" parent="TakeHero/MarginContainer/Background"]
+margin_left = 600.0
+margin_top = 500.0
+margin_right = 720.0
+margin_bottom = 1040.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hero2" type="AnimatedSprite" parent="TakeHero/MarginContainer/Background/SmallStage2"]
+position = Vector2( -170, 270 )
+rotation = -1.5708
+frames = SubResource( 18 )
+animation = "Lenoland"
+frame = 16
+
+[node name="Sign" type="HBoxContainer" parent="TakeHero/MarginContainer/Background/SmallStage2"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+margin_right = 2360.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R3" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="A" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="K" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="COLON" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+visible = false
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 66 )
+
+[node name="EMPTY" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="NUMBER1" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 65 )
+
+[node name="NUMBER2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage2/Sign"]
+visible = false
+margin_left = 1390.0
+margin_right = 1646.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="Condition" type="Label" parent="TakeHero/MarginContainer/Background/SmallStage2"]
+margin_left = -400.0
+margin_top = 540.0
+margin_right = 140.0
+margin_bottom = 857.0
+rect_rotation = -90.0
+custom_fonts/font = ExtResource( 51 )
+custom_colors/font_color = Color( 0.941176, 0.109804, 0.694118, 1 )
+text = "YOU NEED GUNTER
+ON RANK 2
+TO UNLOCK
+THIS HERO"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SmallStage3" type="TextureRect" parent="TakeHero/MarginContainer/Background"]
+margin_left = 600.0
+margin_top = 500.0
+margin_right = 720.0
+margin_bottom = 1040.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hero3" type="AnimatedSprite" parent="TakeHero/MarginContainer/Background/SmallStage3"]
+position = Vector2( -170, 270 )
+rotation = -1.5708
+frames = SubResource( 18 )
+animation = "Bloin"
+frame = 1
+
+[node name="Sign" type="HBoxContainer" parent="TakeHero/MarginContainer/Background/SmallStage3"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+margin_right = 2360.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R3" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="A" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="K" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="COLON" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+visible = false
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 66 )
+
+[node name="EMPTY" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="NUMBER1" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 65 )
+
+[node name="NUMBER2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage3/Sign"]
+visible = false
+margin_left = 1390.0
+margin_right = 1646.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="Condition" type="Label" parent="TakeHero/MarginContainer/Background/SmallStage3"]
+margin_left = -400.0
+margin_top = 540.0
+margin_right = 140.0
+margin_bottom = 857.0
+rect_rotation = -90.0
+custom_fonts/font = ExtResource( 51 )
+custom_colors/font_color = Color( 0.941176, 0.109804, 0.694118, 1 )
+text = "YOU NEED
+LENOLAND
+ON RANK 2
+TO UNLOCK
+THIS HERO"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SmallStage4" type="TextureRect" parent="TakeHero/MarginContainer/Background"]
+margin_left = 600.0
+margin_right = 720.0
+margin_bottom = 540.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hero4" type="AnimatedSprite" parent="TakeHero/MarginContainer/Background/SmallStage4"]
+position = Vector2( -170, 270 )
+rotation = -1.5708
+frames = SubResource( 18 )
+animation = "Thog"
+frame = 10
+playing = true
+
+[node name="Sign" type="HBoxContainer" parent="TakeHero/MarginContainer/Background/SmallStage4"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+margin_right = 2360.0
+margin_bottom = 256.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R3" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+margin_left = 587.0
+margin_right = 843.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="A" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+margin_left = 733.0
+margin_right = 989.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+margin_left = 879.0
+margin_right = 1135.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="K" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+margin_left = 1025.0
+margin_right = 1281.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="COLON" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+visible = false
+margin_left = 1891.0
+margin_right = 2147.0
+margin_bottom = 256.0
+texture = ExtResource( 66 )
+
+[node name="EMPTY" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1171.0
+margin_right = 1427.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="NUMBER1" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+margin_left = 1317.0
+margin_right = 1573.0
+margin_bottom = 256.0
+texture = ExtResource( 65 )
+
+[node name="NUMBER2" type="TextureRect" parent="TakeHero/MarginContainer/Background/SmallStage4/Sign"]
+visible = false
+margin_left = 1390.0
+margin_right = 1646.0
+margin_bottom = 256.0
+texture = ExtResource( 60 )
+
+[node name="Condition" type="Label" parent="TakeHero/MarginContainer/Background/SmallStage4"]
+margin_left = -400.0
+margin_top = 540.0
+margin_right = 140.0
+margin_bottom = 857.0
+rect_rotation = -90.0
+custom_fonts/font = ExtResource( 51 )
+custom_colors/font_color = Color( 0.941176, 0.109804, 0.694118, 1 )
+text = "YOU NEED
+BLOIN
+ON RANK 2
+TO UNLOCK
+THIS HERO"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeroName" type="TextureRect" parent="TakeHero"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 250.0
+margin_right = 500.0
+margin_bottom = 750.0
+rect_rotation = -90.0
+texture = ExtResource( 56 )
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign1" type="HBoxContainer" parent="TakeHero/HeroName"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -231.457
+margin_top = 86.8268
+margin_right = 1768.54
+margin_bottom = 342.827
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="G2" type="TextureRect" parent="TakeHero/HeroName/Sign1"]
+margin_left = 506.0
+margin_right = 762.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="U" type="TextureRect" parent="TakeHero/HeroName/Sign1"]
+margin_left = 652.0
+margin_right = 908.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="N" type="TextureRect" parent="TakeHero/HeroName/Sign1"]
+margin_left = 798.0
+margin_right = 1054.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="T" type="TextureRect" parent="TakeHero/HeroName/Sign1"]
+margin_left = 944.0
+margin_right = 1200.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="E2" type="TextureRect" parent="TakeHero/HeroName/Sign1"]
+margin_left = 1090.0
+margin_right = 1346.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="R" type="TextureRect" parent="TakeHero/HeroName/Sign1"]
+margin_left = 1236.0
+margin_right = 1492.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="Sign2" type="HBoxContainer" parent="TakeHero/HeroName"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -231.457
+margin_top = 86.8268
+margin_right = 1768.54
+margin_bottom = 342.827
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="L" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 360.0
+margin_right = 616.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="E" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 506.0
+margin_right = 762.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="N" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 652.0
+margin_right = 908.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="O" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 798.0
+margin_right = 1054.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="L2" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 944.0
+margin_right = 1200.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="A" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 1090.0
+margin_right = 1346.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="N2" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 1236.0
+margin_right = 1492.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="D" type="TextureRect" parent="TakeHero/HeroName/Sign2"]
+margin_left = 1382.0
+margin_right = 1638.0
+margin_bottom = 256.0
+texture = ExtResource( 58 )
+
+[node name="Sign3" type="HBoxContainer" parent="TakeHero/HeroName"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -231.457
+margin_top = 86.8268
+margin_right = 1768.54
+margin_bottom = 342.827
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="TextureRect" parent="TakeHero/HeroName/Sign3"]
+margin_left = 579.0
+margin_right = 835.0
+margin_bottom = 256.0
+texture = ExtResource( 25 )
+
+[node name="L" type="TextureRect" parent="TakeHero/HeroName/Sign3"]
+margin_left = 725.0
+margin_right = 981.0
+margin_bottom = 256.0
+texture = ExtResource( 57 )
+
+[node name="O" type="TextureRect" parent="TakeHero/HeroName/Sign3"]
+margin_left = 871.0
+margin_right = 1127.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="I" type="TextureRect" parent="TakeHero/HeroName/Sign3"]
+margin_left = 1017.0
+margin_right = 1273.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="N" type="TextureRect" parent="TakeHero/HeroName/Sign3"]
+margin_left = 1163.0
+margin_right = 1419.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="Sign4" type="HBoxContainer" parent="TakeHero/HeroName"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -231.457
+margin_top = 86.8268
+margin_right = 1768.54
+margin_bottom = 342.827
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="T" type="TextureRect" parent="TakeHero/HeroName/Sign4"]
+margin_left = 652.0
+margin_right = 908.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="H" type="TextureRect" parent="TakeHero/HeroName/Sign4"]
+margin_left = 798.0
+margin_right = 1054.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="O" type="TextureRect" parent="TakeHero/HeroName/Sign4"]
+margin_left = 944.0
+margin_right = 1200.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="G" type="TextureRect" parent="TakeHero/HeroName/Sign4"]
+margin_left = 1090.0
+margin_right = 1346.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="TopDownBoards" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="StartGameBoard" type="TextureRect" parent="TopDownBoards"]
+visible = false
+margin_left = 480.0
+margin_top = 270.0
+margin_right = 960.0
+margin_bottom = 810.0
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartGame" type="TextureButton" parent="TopDownBoards/StartGameBoard"]
+margin_left = 412.642
+margin_top = 401.585
+margin_right = 668.642
+margin_bottom = 449.585
+rect_rotation = -90.0
+texture_click_mask = ExtResource( 29 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="TopDownBoards/StartGameBoard/StartGame"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -237.872
+margin_top = -37.8079
+margin_right = 1762.13
+margin_bottom = 218.192
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 279.0
+margin_right = 535.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="T" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 425.0
+margin_right = 681.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="A" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 571.0
+margin_right = 827.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="R" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 717.0
+margin_right = 973.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="T2" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 863.0
+margin_right = 1119.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="void" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 1009.0
+margin_right = 1137.0
+margin_bottom = 256.0
+texture = ExtResource( 38 )
+
+[node name="G" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 1027.0
+margin_right = 1283.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="A2" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 1173.0
+margin_right = 1429.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="M" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 1319.0
+margin_right = 1575.0
+margin_bottom = 256.0
+texture = ExtResource( 34 )
+
+[node name="E" type="TextureRect" parent="TopDownBoards/StartGameBoard/StartGame/Sign"]
+margin_left = 1465.0
+margin_right = 1721.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="StartGame" type="Label" parent="TopDownBoards/StartGameBoard/StartGame"]
+visible = false
+margin_right = 256.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.101961, 0.168627, 0.733333, 1 )
+text = "START GAME"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitBoard" type="TextureRect" parent="TopDownBoards"]
+margin_left = 955.0
+margin_top = 270.0
+margin_right = 1435.0
+margin_bottom = 810.0
+texture = ExtResource( 30 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit2" type="TextureButton" parent="TopDownBoards/QuitBoard"]
+margin_left = 20.0
+margin_top = 400.0
+margin_right = 276.0
+margin_bottom = 448.0
+rect_rotation = -90.0
+texture_click_mask = ExtResource( 29 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="TopDownBoards/QuitBoard/Quit2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -239.457
+margin_top = -28.4187
+margin_right = 1744.54
+margin_bottom = 227.581
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Q" type="TextureRect" parent="TopDownBoards/QuitBoard/Quit2/Sign"]
+margin_left = 644.0
+margin_right = 900.0
+margin_bottom = 256.0
+texture = ExtResource( 39 )
+
+[node name="U" type="TextureRect" parent="TopDownBoards/QuitBoard/Quit2/Sign"]
+margin_left = 790.0
+margin_right = 1046.0
+margin_bottom = 256.0
+texture = ExtResource( 40 )
+
+[node name="I" type="TextureRect" parent="TopDownBoards/QuitBoard/Quit2/Sign"]
+margin_left = 936.0
+margin_right = 1192.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="T" type="TextureRect" parent="TopDownBoards/QuitBoard/Quit2/Sign"]
+margin_left = 1082.0
+margin_right = 1338.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="Quit" type="Label" parent="TopDownBoards/QuitBoard/Quit2"]
+visible = false
+margin_right = 256.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.101961, 0.168627, 0.733333, 1 )
+text = "QUIT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartFightBoard" type="TextureRect" parent="TopDownBoards"]
+margin_top = 270.0
+margin_right = 480.0
+margin_bottom = 810.0
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartFight" type="TextureButton" parent="TopDownBoards/StartFightBoard"]
+margin_left = 412.642
+margin_top = 401.585
+margin_right = 668.642
+margin_bottom = 449.585
+rect_rotation = -90.0
+disabled = true
+texture_click_mask = ExtResource( 29 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="TopDownBoards/StartFightBoard/StartFight"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -237.872
+margin_top = -29.8079
+margin_right = 1746.13
+margin_bottom = 226.192
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="S" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 198.0
+margin_right = 454.0
+margin_bottom = 256.0
+texture = ExtResource( 32 )
+
+[node name="T" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 344.0
+margin_right = 600.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="A" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 490.0
+margin_right = 746.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="R" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 636.0
+margin_right = 892.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="T2" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 782.0
+margin_right = 1038.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="void" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 928.0
+margin_right = 1056.0
+margin_bottom = 256.0
+texture = ExtResource( 38 )
+
+[node name="F" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 946.0
+margin_right = 1202.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="I" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 1092.0
+margin_right = 1348.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="G" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 1238.0
+margin_right = 1494.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="H" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 1384.0
+margin_right = 1640.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="T3" type="TextureRect" parent="TopDownBoards/StartFightBoard/StartFight/Sign"]
+margin_left = 1530.0
+margin_right = 1786.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="StartFight" type="Label" parent="TopDownBoards/StartFightBoard/StartFight"]
+visible = false
+margin_right = 256.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.101961, 0.168627, 0.733333, 1 )
+text = "START FIGHT"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FightAgain" type="TextureRect" parent="TopDownBoards"]
+visible = false
+margin_left = 100.0
+margin_top = 270.0
+margin_right = 580.0
+margin_bottom = 810.0
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FightAgain" type="TextureButton" parent="TopDownBoards/FightAgain"]
+margin_left = 412.642
+margin_top = 401.585
+margin_right = 668.642
+margin_bottom = 449.585
+rect_rotation = -90.0
+disabled = true
+texture_click_mask = ExtResource( 29 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="TopDownBoards/FightAgain/FightAgain"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -237.872
+margin_top = -29.8079
+margin_right = 1746.13
+margin_bottom = 226.192
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="F" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 198.0
+margin_right = 454.0
+margin_bottom = 256.0
+texture = ExtResource( 42 )
+
+[node name="I" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 344.0
+margin_right = 600.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="G" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 490.0
+margin_right = 746.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="H" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 636.0
+margin_right = 892.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="T3" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 782.0
+margin_right = 1038.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="void" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 928.0
+margin_right = 1056.0
+margin_bottom = 256.0
+texture = ExtResource( 38 )
+
+[node name="A2" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 946.0
+margin_right = 1202.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="G2" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 1092.0
+margin_right = 1348.0
+margin_bottom = 256.0
+texture = ExtResource( 36 )
+
+[node name="A" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 1238.0
+margin_right = 1494.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="I2" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 1384.0
+margin_right = 1640.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="N" type="TextureRect" parent="TopDownBoards/FightAgain/FightAgain/Sign"]
+margin_left = 1530.0
+margin_right = 1786.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="FightAgain" type="Label" parent="TopDownBoards/FightAgain/FightAgain"]
+visible = false
+margin_right = 256.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.101961, 0.168627, 0.733333, 1 )
+text = "FIGHT AGAIN"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IntoArenaBoard" type="TextureRect" parent="TopDownBoards"]
+visible = false
+margin_left = 100.0
+margin_top = 270.0
+margin_right = 580.0
+margin_bottom = 810.0
+texture = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IntoTheArena" type="TextureButton" parent="TopDownBoards/IntoArenaBoard"]
+margin_left = 412.642
+margin_top = 401.585
+margin_right = 668.642
+margin_bottom = 449.585
+rect_rotation = -90.0
+disabled = true
+texture_click_mask = ExtResource( 29 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="TopDownBoards/IntoArenaBoard/IntoTheArena"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -237.872
+margin_top = -29.8079
+margin_right = 1746.13
+margin_bottom = 226.192
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -110
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="I" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 43.0
+margin_right = 299.0
+margin_bottom = 256.0
+texture = ExtResource( 41 )
+
+[node name="N2" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 189.0
+margin_right = 445.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="T" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 335.0
+margin_right = 591.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="O" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 481.0
+margin_right = 737.0
+margin_bottom = 256.0
+texture = ExtResource( 44 )
+
+[node name="void" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 627.0
+margin_right = 755.0
+margin_bottom = 256.0
+texture = ExtResource( 38 )
+
+[node name="T2" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 645.0
+margin_right = 901.0
+margin_bottom = 256.0
+texture = ExtResource( 37 )
+
+[node name="H" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 791.0
+margin_right = 1047.0
+margin_bottom = 256.0
+texture = ExtResource( 43 )
+
+[node name="E" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 937.0
+margin_right = 1193.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="void2" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 1083.0
+margin_right = 1211.0
+margin_bottom = 256.0
+texture = ExtResource( 38 )
+
+[node name="A" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 1101.0
+margin_right = 1357.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="R" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 1247.0
+margin_right = 1503.0
+margin_bottom = 256.0
+texture = ExtResource( 33 )
+
+[node name="E2" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 1393.0
+margin_right = 1649.0
+margin_bottom = 256.0
+texture = ExtResource( 35 )
+
+[node name="N" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 1539.0
+margin_right = 1795.0
+margin_bottom = 256.0
+texture = ExtResource( 48 )
+
+[node name="A3" type="TextureRect" parent="TopDownBoards/IntoArenaBoard/IntoTheArena/Sign"]
+margin_left = 1685.0
+margin_right = 1941.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="IntoTheArena!" type="Label" parent="TopDownBoards/IntoArenaBoard/IntoTheArena"]
+visible = false
+margin_right = 256.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.101961, 0.168627, 0.733333, 1 )
+text = "INTO THE ARENA"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBoard" type="TextureRect" parent="TopDownBoards"]
+visible = false
+margin_left = 1440.0
+margin_top = 270.0
+margin_right = 1920.0
+margin_bottom = 810.0
+texture = ExtResource( 30 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back2" type="TextureButton" parent="TopDownBoards/BackBoard"]
+margin_top = 400.0
+margin_right = 256.0
+margin_bottom = 464.0
+rect_rotation = -90.0
+disabled = true
+texture_click_mask = ExtResource( 29 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="TopDownBoards/BackBoard/Back2"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -105.5
+margin_top = -32.0
+margin_right = 105.5
+margin_bottom = 32.0
+rect_scale = Vector2( 0.25, 0.25 )
+custom_constants/separation = -40
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="TextureRect" parent="TopDownBoards/BackBoard/Back2/Sign"]
+margin_right = 256.0
+margin_bottom = 256.0
+texture = ExtResource( 25 )
+
+[node name="A" type="TextureRect" parent="TopDownBoards/BackBoard/Back2/Sign"]
+margin_left = 216.0
+margin_right = 472.0
+margin_bottom = 256.0
+texture = ExtResource( 28 )
+
+[node name="C" type="TextureRect" parent="TopDownBoards/BackBoard/Back2/Sign"]
+margin_left = 432.0
+margin_right = 688.0
+margin_bottom = 256.0
+texture = ExtResource( 26 )
+
+[node name="K" type="TextureRect" parent="TopDownBoards/BackBoard/Back2/Sign"]
+margin_left = 648.0
+margin_right = 904.0
+margin_bottom = 256.0
+texture = ExtResource( 27 )
+
+[node name="Back" type="Label" parent="TopDownBoards/BackBoard/Back2"]
+visible = false
+margin_right = 256.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.101961, 0.168627, 0.733333, 1 )
+text = "BACK"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[connection signal="button_down" from="FightRank/Margin/Background/RankBut/RankDown" to="." method="_on_RankDown_button_down"]
+[connection signal="button_up" from="FightRank/Margin/Background/RankBut/RankDown" to="." method="_on_RankDown_button_up"]
+[connection signal="button_down" from="FightRank/Margin/Background/RankBut/RankUp" to="." method="_on_RankUp_button_down"]
+[connection signal="button_up" from="FightRank/Margin/Background/RankBut/RankUp" to="." method="_on_RankUp_button_up"]
+[connection signal="pressed" from="HeroStats/Margin/Background/Margin/List/ProgBar1/RiseRankUp" to="." method="_on_RiseRankUp_pressed"]
+[connection signal="button_down" from="TakeHero/MarginContainer/Background/TakeHeroButton" to="." method="_on_TakeHeroButton_button_down"]
+[connection signal="button_up" from="TakeHero/MarginContainer/Background/TakeHeroButton" to="." method="_on_TakeHeroButton_button_up"]
+[connection signal="button_down" from="TakeHero/MarginContainer/Background/RightLeft/PreviousHero" to="." method="_on_PreviousHero_button_down"]
+[connection signal="button_up" from="TakeHero/MarginContainer/Background/RightLeft/PreviousHero" to="." method="_on_PreviousHero_button_up"]
+[connection signal="button_down" from="TakeHero/MarginContainer/Background/RightLeft/NextHero" to="." method="_on_NextHero_button_down"]
+[connection signal="button_up" from="TakeHero/MarginContainer/Background/RightLeft/NextHero" to="." method="_on_NextHero_button_up"]
+[connection signal="button_down" from="TopDownBoards/StartGameBoard/StartGame" to="." method="_on_StartGame_button_down"]
+[connection signal="button_up" from="TopDownBoards/StartGameBoard/StartGame" to="." method="_on_StartGame_button_up"]
+[connection signal="button_down" from="TopDownBoards/QuitBoard/Quit2" to="." method="_on_Quit2_button_down"]
+[connection signal="button_up" from="TopDownBoards/QuitBoard/Quit2" to="." method="_on_Quit2_button_up"]
+[connection signal="button_down" from="TopDownBoards/StartFightBoard/StartFight" to="." method="_on_StartFight_button_down"]
+[connection signal="button_up" from="TopDownBoards/StartFightBoard/StartFight" to="." method="_on_StartFight_button_up"]
+[connection signal="button_down" from="TopDownBoards/FightAgain/FightAgain" to="." method="_on_FightAgain_button_down"]
+[connection signal="button_up" from="TopDownBoards/FightAgain/FightAgain" to="." method="_on_FightAgain_button_up"]
+[connection signal="button_down" from="TopDownBoards/IntoArenaBoard/IntoTheArena" to="." method="_on_IntoTheArena_button_down"]
+[connection signal="button_up" from="TopDownBoards/IntoArenaBoard/IntoTheArena" to="." method="_on_IntoTheArena_button_up"]
+[connection signal="button_down" from="TopDownBoards/BackBoard/Back2" to="." method="_on_Back2_button_down"]
+[connection signal="button_up" from="TopDownBoards/BackBoard/Back2" to="." method="_on_Back2_button_up"]

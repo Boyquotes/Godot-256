@@ -1,0 +1,54 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://03_Scripts/game_save.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Gunter_stats = {
+"armor": 0,
+"attack_force": 0,
+"available": true,
+"gained_experiance": 0,
+"gold": 25,
+"life_points": 3,
+"rank": 2,
+"stamina_points": 5,
+"top_border_of_next_rank": 4,
+"won_fights": 3
+}
+Lenoland_stats = {
+"armor": 0,
+"attack_force": 0,
+"available": true,
+"gained_experiance": 0,
+"gold": 10,
+"life_points": 3,
+"rank": 2,
+"stamina_points": 5,
+"top_border_of_next_rank": 4,
+"won_fights": 3
+}
+Bloin_stats = {
+"armor": 0,
+"attack_force": 0,
+"available": true,
+"gained_experiance": 0,
+"gold": 10,
+"life_points": 3,
+"rank": 2,
+"stamina_points": 5,
+"top_border_of_next_rank": 4,
+"won_fights": 3
+}
+Thog_stats = {
+"armor": 0,
+"attack_force": 0,
+"available": true,
+"gained_experiance": 1,
+"gold": 30,
+"life_points": 2,
+"rank": 1,
+"stamina_points": 3,
+"top_border_of_next_rank": 3,
+"won_fights": 1
+}

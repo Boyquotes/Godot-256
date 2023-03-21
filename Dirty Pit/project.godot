@@ -1,0 +1,57 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AdMob",
+"language": "GDScript",
+"path": "res://admob-lib/admob.gd"
+}, {
+"base": "Node",
+"class": "PlatformCommand",
+"language": "GDScript",
+"path": "res://03_Scripts/Hero/StateMachine/PlatformCommand.gd"
+} ]
+_global_script_class_icons={
+"AdMob": "res://admob-lib/icon.png",
+"PlatformCommand": ""
+}
+
+[application]
+
+config/name="Dirty Pit"
+run/main_scene="res://02_Scenes/Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+GlobalSignals="*res://03_Scripts/Autoload/0_GlobalSignals.gd"
+GunterStats="*res://03_Scripts/Autoload/0_GunterStats.gd"
+LenolandStats="*res://03_Scripts/Autoload/0_LenolandStats.gd"
+BloinStats="*res://03_Scripts/Autoload/0_BloinStats.gd"
+ThogStats="*res://03_Scripts/Autoload/0_ThogStats.gd"
+CurrentHero="*res://03_Scripts/Autoload/0_CurrentHero.gd"
+Numbers="*res://03_Scripts/Autoload/0_Numbers.gd"
+
+[display]
+
+window/size/width=960
+window/size/height=540
+window/size/always_on_top=true
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[network]
+
+limits/tcp/connect_timeout_seconds=10
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

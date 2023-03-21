@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://06_resources/Sign/Sign.tscn" type="PackedScene" id=1]
+[ext_resource path="res://02_scripts/Month1.gd" type="Script" id=2]
+
+[node name="Month" type="Control"]
+visible = false
+margin_right = 576.0
+margin_bottom = 1024.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" parent="." instance=ExtResource( 1 )]
+margin_right = 1712.0
+margin_bottom = -609.0
+
+[node name="Days" type="Control" parent="."]
+margin_right = 576.0
+margin_bottom = 1024.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

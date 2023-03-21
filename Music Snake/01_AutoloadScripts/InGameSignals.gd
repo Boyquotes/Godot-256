@@ -1,0 +1,37 @@
+extends Node2D
+
+#Interface
+signal pause_snake
+signal pause_world
+signal show_choose_snake_panel
+
+#ChooseSnake
+signal snake_was_choosen
+signal mute_snake_button_pressed
+signal snake_was_choosen_so_activate_interface
+signal delete_snake
+signal clear_snakes_world
+signal show_settings
+
+#Settings
+signal i_am_changing_bpm
+signal i_am_finished_changing_bpm
+signal show_main_menu_back
+signal update_metre
+signal update_key
+
+
+#Player
+signal tell_Interface_to_update_board
+signal tell_World_i_ve_gained_point
+
+#Player\Snake
+signal update_music
+signal stage_have_changed
+signal tell_ChooseSnake_i_ve_gained_point
+
+#PlayMusicFromSnake
+signal show_who_is_playing
+
+#AnimationPlayer
+signal enable_buttons_from_main_menu

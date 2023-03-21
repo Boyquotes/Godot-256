@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://03_scripts/Background.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 50, 330 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 500, 50 )
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 13.5108
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 240, 40 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 10.5672, 353.947 )
+
+[node name="Background" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Bubbles" type="Node2D" parent="."]
+
+[node name="MirrorLeft" type="StaticBody2D" parent="."]
+position = Vector2( -50, 370 )
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MirrorLeft"]
+shape = SubResource( 1 )
+
+[node name="MirrorRight" type="StaticBody2D" parent="."]
+position = Vector2( 530, 370 )
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MirrorRight"]
+shape = SubResource( 1 )
+
+[node name="MyBase" type="StaticBody2D" parent="."]
+position = Vector2( 240, 0 )
+collision_mask = 120
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MyBase"]
+position = Vector2( 0, -120 )
+shape = SubResource( 2 )
+
+[node name="EnemyBase" type="Area2D" parent="."]
+position = Vector2( 240, 740 )
+collision_layer = 2
+collision_mask = 112
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyBase"]
+shape = SubResource( 2 )
+
+[node name="Vacuum" type="Area2D" parent="."]
+position = Vector2( 240, 0 )
+collision_layer = 256
+collision_mask = 112
+
+[node name="Coll" type="CollisionShape2D" parent="Vacuum"]
+modulate = Color( 0.788235, 0.305882, 0.964706, 1 )
+position = Vector2( -400, 560 )
+shape = SubResource( 3 )
+
+[node name="BackToBase" type="Area2D" parent="."]
+position = Vector2( 240, 0 )
+collision_layer = 128
+collision_mask = 112
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackToBase"]
+position = Vector2( 0, 20 )
+shape = SubResource( 4 )
+
+[node name="RightSide" type="CollisionShape2D" parent="BackToBase"]
+position = Vector2( 300, 360 )
+shape = SubResource( 5 )
+
+[node name="LeftSide" type="CollisionShape2D" parent="BackToBase"]
+position = Vector2( -300, 360 )
+shape = SubResource( 5 )
+
+[node name="EnemySpawner" type="Timer" parent="."]
+[connection signal="timeout" from="EnemySpawner" to="." method="_on_EnemySpawner_timeout"]

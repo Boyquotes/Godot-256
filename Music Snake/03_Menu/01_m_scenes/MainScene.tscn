@@ -1,0 +1,245 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://03_Menu/02_m_scripts/Music.gd" type="Script" id=1]
+[ext_resource path="res://03_Menu/02_m_scripts/MainScene.gd" type="Script" id=2]
+[ext_resource path="res://03_Menu/02_m_scripts/Menu.gd" type="Script" id=3]
+[ext_resource path="res://03_Menu/02_m_scripts/BootAnim.gd" type="Script" id=4]
+[ext_resource path="res://03_Menu/02_m_scripts/Sounds.gd" type="Script" id=5]
+[ext_resource path="res://03_Menu/03_m_assets/button_sound.png" type="Texture" id=6]
+[ext_resource path="res://03_Menu/03_m_assets/button_play.png" type="Texture" id=7]
+[ext_resource path="res://03_Menu/05_m_music/Juanitos - Mondo Wack.wav" type="AudioStream" id=8]
+[ext_resource path="res://03_Menu/03_m_assets/button_music.png" type="Texture" id=9]
+[ext_resource path="res://03_Menu/03_m_assets/background.png" type="Texture" id=10]
+[ext_resource path="res://03_Menu/03_m_assets/button_exit.png" type="Texture" id=11]
+[ext_resource path="res://03_Menu/04_m_sounds/one_click.wav" type="AudioStream" id=12]
+[ext_resource path="res://03_Menu/03_m_assets/logo.png" type="Texture" id=13]
+[ext_resource path="res://02_Game/01_g_scenes/Snake.tscn" type="PackedScene" id=14]
+
+[sub_resource type="Animation" id=1]
+resource_name = "BootAnim"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("BootAnim:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.2, 2.6, 3.3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3.3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Game" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Snake_2" parent="Game" instance=ExtResource( 14 )]
+
+[node name="BootAnim" type="Node2D" parent="."]
+z_index = 11
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="BootAnim"]
+margin_right = 2304.0
+margin_bottom = 4096.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="BootAnim/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BootAnim" type="TextureRect" parent="BootAnim"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 2304.0
+margin_bottom = 4096.0
+texture = ExtResource( 13 )
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BootAnim"]
+anims/BootAnim = SubResource( 1 )
+
+[node name="Menu" type="Control" parent="."]
+visible = false
+light_mask = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="Menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 2304.0
+margin_bottom = 4096.0
+texture = ExtResource( 10 )
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="Control" parent="Menu"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartGame" type="Button" parent="Menu/Buttons"]
+margin_left = 740.0
+margin_top = 1400.0
+margin_right = 1764.0
+margin_bottom = 2424.0
+disabled = true
+toggle_mode = true
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Buttons/StartGame"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="Button" parent="Menu/Buttons"]
+margin_left = 1680.0
+margin_top = 160.0
+margin_right = 2192.0
+margin_bottom = 672.0
+focus_mode = 0
+disabled = true
+toggle_mode = true
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Buttons/Music"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+expand = true
+
+[node name="Sounds" type="Button" parent="Menu/Buttons"]
+margin_left = 256.0
+margin_top = 120.0
+margin_right = 768.0
+margin_bottom = 632.0
+focus_mode = 0
+disabled = true
+toggle_mode = true
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Buttons/Sounds"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Button" parent="Menu/Buttons"]
+margin_left = 940.0
+margin_top = 3480.0
+margin_right = 1452.0
+margin_bottom = 3992.0
+focus_mode = 0
+disabled = true
+toggle_mode = true
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Buttons/Exit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -7.55957
+margin_top = -2.0
+margin_right = -7.55957
+margin_bottom = -2.0
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuSpecialEffects" type="Node" parent="Menu"]
+
+[node name="Music" type="Node2D" parent="."]
+position = Vector2( 288, 512 )
+script = ExtResource( 1 )
+
+[node name="Menu" type="Node" parent="Music"]
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="Music/Menu"]
+stream = ExtResource( 8 )
+
+[node name="Game" type="Node" parent="Music"]
+
+[node name="Sounds" type="Node2D" parent="."]
+position = Vector2( 288, 512 )
+script = ExtResource( 5 )
+
+[node name="Menu" type="Node" parent="Sounds"]
+
+[node name="Click" type="AudioStreamPlayer" parent="Sounds/Menu"]
+stream = ExtResource( 12 )
+
+[node name="Game" type="Node" parent="Sounds"]
+
+[connection signal="animation_finished" from="BootAnim/AnimationPlayer" to="BootAnim" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="button_down" from="Menu/Buttons/StartGame" to="Menu" method="_on_StartGame_button_down"]
+[connection signal="button_up" from="Menu/Buttons/StartGame" to="Menu" method="_on_StartGame_button_up"]
+[connection signal="toggled" from="Menu/Buttons/StartGame" to="Menu" method="_on_StartGame_toggled"]
+[connection signal="button_down" from="Menu/Buttons/Music" to="Menu" method="_on_Music_button_down"]
+[connection signal="button_up" from="Menu/Buttons/Music" to="Menu" method="_on_Music_button_up"]
+[connection signal="toggled" from="Menu/Buttons/Music" to="Menu" method="_on_Music_toggled"]
+[connection signal="button_down" from="Menu/Buttons/Sounds" to="Menu" method="_on_Sounds_button_down"]
+[connection signal="button_up" from="Menu/Buttons/Sounds" to="Menu" method="_on_Sounds_button_up"]
+[connection signal="toggled" from="Menu/Buttons/Sounds" to="Menu" method="_on_Sounds_toggled"]
+[connection signal="button_down" from="Menu/Buttons/Exit" to="Menu" method="_on_Exit_button_down"]
+[connection signal="button_up" from="Menu/Buttons/Exit" to="Menu" method="_on_Exit_button_up"]
+[connection signal="toggled" from="Menu/Buttons/Exit" to="Menu" method="_on_Exit_toggled"]
+[connection signal="finished" from="Music/Menu/MenuMusic" to="Music" method="_on_MenuMusic_finished"]

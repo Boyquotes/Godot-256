@@ -1,0 +1,85 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/CommandsForHead/InField.gd" type="Script" id=1]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/StateActivator.gd" type="Script" id=2]
+[ext_resource path="res://02_Game/02_g_scripts/Player/Head.gd" type="Script" id=3]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/StateMachine.gd" type="Script" id=4]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/InPause.gd" type="Script" id=5]
+[ext_resource path="res://02_Game/02_g_scripts/Player/Snake1.gd" type="Script" id=6]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/CommandsForHead/Transit.gd" type="Script" id=7]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/CommandsForHead/GoingIntoField.gd" type="Script" id=8]
+[ext_resource path="res://02_Game/03_g_assets/snake_green_head.png" type="Texture" id=9]
+[ext_resource path="res://02_Game/02_g_scripts/StateMachines/CommandsForHead/InFreeze.gd" type="Script" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 34.6848, 25.938 )
+
+[node name="Snake1" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Head" type="Sprite" parent="."]
+position = Vector2( -7892.1, -6304.64 )
+texture = ExtResource( 9 )
+script = ExtResource( 3 )
+
+[node name="HeadCamera" type="Camera2D" parent="Head"]
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.3
+drag_margin_top = 0.3
+drag_margin_right = 0.3
+drag_margin_bottom = 0.3
+editor_draw_drag_margin = true
+
+[node name="HeadColl" type="Area2D" parent="Head"]
+collision_layer = 2
+collision_mask = 9
+
+[node name="Shape" type="CollisionShape2D" parent="Head/HeadColl"]
+position = Vector2( 0, 92.8949 )
+shape = SubResource( 1 )
+
+[node name="Orientation" type="Node2D" parent="Head"]
+
+[node name="Top" type="Node2D" parent="Head/Orientation"]
+position = Vector2( 0, 200 )
+
+[node name="Down" type="Node2D" parent="Head/Orientation"]
+
+[node name="StateMachine" type="Node" parent="Head"]
+script = ExtResource( 4 )
+global_values_path = NodePath("../..")
+
+[node name="InFieldState" type="Node" parent="Head/StateMachine"]
+script = ExtResource( 2 )
+
+[node name="InField" type="Node" parent="Head/StateMachine/InFieldState"]
+script = ExtResource( 1 )
+
+[node name="TransitState" type="Node" parent="Head/StateMachine"]
+script = ExtResource( 2 )
+
+[node name="Transit" type="Node" parent="Head/StateMachine/TransitState"]
+script = ExtResource( 7 )
+
+[node name="GoingIntoFieldState" type="Node" parent="Head/StateMachine"]
+script = ExtResource( 2 )
+
+[node name="GoingIntoField" type="Node" parent="Head/StateMachine/GoingIntoFieldState"]
+script = ExtResource( 8 )
+
+[node name="InPauseState" type="Node" parent="Head/StateMachine"]
+script = ExtResource( 2 )
+
+[node name="InPause" type="Node" parent="Head/StateMachine/InPauseState"]
+script = ExtResource( 5 )
+
+[node name="InFreezeState" type="Node" parent="Head/StateMachine"]
+script = ExtResource( 2 )
+
+[node name="InFreeze" type="Node" parent="Head/StateMachine/InFreezeState"]
+script = ExtResource( 10 )
+
+[connection signal="area_entered" from="Head/HeadColl" to="Head" method="_on_HeadColl_area_entered"]
+[connection signal="area_exited" from="Head/HeadColl" to="Head" method="_on_HeadColl_area_exited"]

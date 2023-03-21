@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/Mask_pause.png-828403ffd266a9623729b494b0425c29.res"
+
+[deps]
+
+source_file="res://01_Assests/Interface/Boards/Random_board_mask/Mask_pause.png"
+dest_files=[ "res://.import/Mask_pause.png-828403ffd266a9623729b494b0425c29.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

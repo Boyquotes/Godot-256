@@ -1,0 +1,32 @@
+extends Resource
+
+export(String) var dif_1
+export(String) var lev_1
+export(String) var kills_1
+export(String) var dif_2
+export(String) var lev_2
+export(String) var kills_2
+export(String) var dif_3
+export(String) var lev_3
+export(String) var kills_3
+export(String) var dif_4
+export(String) var lev_4
+export(String) var kills_4
+export(String) var dif_5
+export(String) var lev_5
+export(String) var kills_5
+export(String) var dif_6
+export(String) var lev_6
+export(String) var kills_6
+export(String) var dif_7
+export(String) var lev_7
+export(String) var kills_7
+export(String) var dif_8
+export(String) var lev_8
+export(String) var kills_8
+export(String) var dif_9
+export(String) var lev_9
+export(String) var kills_9
+export(String) var dif_10
+export(String) var lev_10
+export(String) var kills_10

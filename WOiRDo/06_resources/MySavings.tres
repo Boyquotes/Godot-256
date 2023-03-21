@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://02_scripts/game_save.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Saved_Content = {
+2021: {
+1: {
+1: [ [ "CAT", "KOT" ], [ "DOG", "PIES" ], [ "MOUSE", "MYSZ" ], [ "HORSE", "KON" ], [ "BIRD", "PTAK" ], [ "CHAIR", "KRZESLO" ], [ "WINDOW", "OKNO" ], [ "TABLE", "STOL" ], [ "TEETH", "ZEBY" ], [ "EYE", "OKO" ], [ "WALL", "SCIANA" ], [ "FLOOR", "PODLOGA" ], [ "SCREEN", "EKRAN" ], [ "LIGHT", "SWIATLO" ], [ "LAMP", "LAMPA" ], [ "WARDROBE", "SZAFA" ], [ "EDGE", "BRZEG" ], [ "SEA", "MORZE" ], [ "LAKE", "JEZIORO" ], [ "BAT", "NIETOPERZ" ] ]
+}
+}
+}

@@ -1,0 +1,160 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://02_Game/06_g_resources/01_Alfabeth/Sign/Sign.gd" type="Script" id=1]
+
+[node name="Sign" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 137.0
+margin_top = 153.0
+margin_right = -467.0
+margin_bottom = -2988.0
+rect_scale = Vector2( 0.25, 0.25 )
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+word = "0"
+
+[node name="SIGN1" type="TextureRect" parent="."]
+visible = false
+margin_left = 850.0
+margin_right = 850.0
+margin_bottom = 955.0
+stretch_mode = 4
+
+[node name="SIGN2" type="TextureRect" parent="."]
+visible = false
+margin_left = 852.0
+margin_right = 852.0
+margin_bottom = 955.0
+stretch_mode = 4
+
+[node name="SIGN3" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN4" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN5" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN6" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN7" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN8" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN9" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN10" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN11" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN12" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN13" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN14" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN15" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN16" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN17" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN18" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN19" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="SIGN20" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+stretch_mode = 6
+
+[node name="Tween" type="Tween" parent="."]

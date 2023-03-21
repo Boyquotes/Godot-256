@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/00_G1.wav-4a1e487bad1ccb6c043d8234b01a9c15.sample"
+
+[deps]
+
+source_file="res://02_Game/04_g_sounds/bass/00_G1.wav"
+dest_files=[ "res://.import/00_G1.wav-4a1e487bad1ccb6c043d8234b01a9c15.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

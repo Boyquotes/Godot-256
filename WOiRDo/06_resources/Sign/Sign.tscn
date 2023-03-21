@@ -1,0 +1,763 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://06_resources/Sign/Sign.gd" type="Script" id=1]
+
+[node name="Sign" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1752.0
+margin_bottom = -816.0
+rect_scale = Vector2( 0.25, 0.25 )
+mouse_filter = 2
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+word = "0"
+
+[node name="SIGN1" type="TextureRect" parent="."]
+visible = false
+margin_left = 850.0
+margin_right = 850.0
+margin_bottom = 955.0
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="SIGN2" type="TextureRect" parent="."]
+visible = false
+margin_left = 852.0
+margin_right = 852.0
+margin_bottom = 955.0
+mouse_filter = 2
+stretch_mode = 4
+
+[node name="SIGN3" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN4" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN5" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN6" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN7" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN8" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN9" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN10" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN11" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN12" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN13" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN14" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN15" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN16" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN17" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN18" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN19" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN20" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN21" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN22" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN23" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN24" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN25" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN26" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN27" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN28" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN29" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN30" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN31" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN32" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN33" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN34" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN35" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN36" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN37" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN38" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN39" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN40" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN41" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN42" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN43" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN44" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN45" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN46" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN47" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN48" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN49" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN50" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN51" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN52" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN53" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN54" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN55" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN56" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN57" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN58" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN59" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN60" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN61" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN62" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN63" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN64" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN65" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN66" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN67" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN68" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN69" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN70" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN71" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN72" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN73" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN74" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN75" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN76" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN77" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN78" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN79" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN80" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN81" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN82" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN83" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN84" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN85" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN86" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN87" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN88" type="TextureRect" parent="."]
+visible = false
+margin_left = 1164.0
+margin_right = 1164.0
+margin_bottom = 208.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN89" type="TextureRect" parent="."]
+visible = false
+margin_left = 1166.0
+margin_right = 1166.0
+margin_bottom = 208.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN90" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN91" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN92" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="SIGN93" type="TextureRect" parent="."]
+visible = false
+margin_left = 2269.0
+margin_right = 2269.0
+margin_bottom = 652.0
+mouse_filter = 2
+stretch_mode = 6
+
+[node name="Tween" type="Tween" parent="."]

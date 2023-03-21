@@ -1,0 +1,444 @@
+[gd_scene load_steps=53 format=2]
+
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0003.png" type="Texture" id=1]
+[ext_resource path="res://04_assets/Selected_frame.png" type="Texture" id=2]
+[ext_resource path="res://03_scripts/Unit/Unit.gd" type="Script" id=3]
+[ext_resource path="res://04_assets/UNIT/Unit_body/unit_body_withoutthornes.png" type="Texture" id=4]
+[ext_resource path="res://03_scripts/StateMachine/StateMachine.gd" type="Script" id=5]
+[ext_resource path="res://03_scripts/StateMachine/StateActivator.gd" type="Script" id=6]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/MovingAway.gd" type="Script" id=7]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/Moving.gd" type="Script" id=8]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/Waiting.gd" type="Script" id=9]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/BeingEated.gd" type="Script" id=10]
+[ext_resource path="res://03_scripts/Unit/AnimnTree.gd" type="Script" id=11]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/SendToBase.gd" type="Script" id=12]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/Dieing.gd" type="Script" id=13]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/SendToBase2.gd" type="Script" id=14]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/BounceAway.gd" type="Script" id=15]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/MoveToSpecificTarget.gd" type="Script" id=16]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/PrepareNewGame.gd" type="Script" id=17]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/TakingOutOfBox.gd" type="Script" id=18]
+[ext_resource path="res://04_assets/UNIT/Unit_body/unit_body.png" type="Texture" id=19]
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0002.png" type="Texture" id=20]
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0006.png" type="Texture" id=21]
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0001.png" type="Texture" id=22]
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0007.png" type="Texture" id=23]
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0004.png" type="Texture" id=24]
+[ext_resource path="res://04_assets/UNIT/Unit_body/mug.png" type="Texture" id=25]
+[ext_resource path="res://04_assets/UNIT/Unit_face_anim/Nowy folder0005.png" type="Texture" id=26]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/Tutorial.gd" type="Script" id=27]
+[ext_resource path="res://03_scripts/StateMachine/CammandsForUnit/FloatingAway.gd" type="Script" id=28]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "BaunceAway"
+
+[sub_resource type="Animation" id=3]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Eyes:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "02_Dieing" ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Eyes:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "02_Dieing" ]
+}
+
+[sub_resource type="Animation" id=5]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Eyes:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "5" ]
+}
+
+[sub_resource type="Animation" id=6]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Eyes:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "5" ]
+}
+
+[sub_resource type="Animation" id=7]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.4, 0.4 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Unit_out_of_box"
+step = 0.01
+
+[sub_resource type="Animation" id=9]
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Mug:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.627451, 0.4, 0.4, 1 ), Color( 0.611765, 0, 0, 1 ), Color( 0.627451, 0.4, 0.4, 1 ), Color( 0.611765, 0, 0, 1 ), Color( 0.627451, 0.4, 0.4, 1 ), Color( 0.611765, 0, 0, 1 ), Color( 0.627451, 0.4, 0.4, 1 ), Color( 0.611765, 0, 0, 1 ), Color( 0.627451, 0.4, 0.4, 1 ), Color( 0.611765, 0, 0, 1 ), Color( 0.627451, 0.4, 0.4, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "_to_draw_animation"
+}, {
+"args": [  ],
+"method": "create_eyes_anim"
+} ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "BeingEated"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "BaunceAway"
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "Dieing"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "Moving"
+
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "MovingAway"
+
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "SendToBase"
+
+[sub_resource type="AnimationNodeAnimation" id=16]
+animation = "Unit_out_of_box"
+
+[sub_resource type="AnimationNodeTransition" id=17]
+input_count = 8
+input_0/name = "InBattleState"
+input_0/auto_advance = false
+input_1/name = "MovingState"
+input_1/auto_advance = false
+input_2/name = "MovingAwayState"
+input_2/auto_advance = false
+input_3/name = "EatedState"
+input_3/auto_advance = false
+input_4/name = "SendToBaseState"
+input_4/auto_advance = false
+input_5/name = "DieingState"
+input_5/auto_advance = false
+input_6/name = "BounceAwayState"
+input_6/auto_advance = false
+input_7/name = "TakingOutOfBoxState"
+input_7/auto_advance = false
+
+[sub_resource type="AnimationNodeAnimation" id=18]
+animation = "Waiting"
+
+[sub_resource type="AnimationNodeBlendTree" id=19]
+graph_offset = Vector2( 0, -116.5 )
+nodes/BeingEated/node = SubResource( 10 )
+nodes/BeingEated/position = Vector2( 180, 60 )
+nodes/BounceAway/node = SubResource( 11 )
+nodes/BounceAway/position = Vector2( 180, 300 )
+nodes/Dieing/node = SubResource( 12 )
+nodes/Dieing/position = Vector2( 0, 200 )
+nodes/Moving/node = SubResource( 13 )
+nodes/Moving/position = Vector2( 20, -60 )
+nodes/MovingAway/node = SubResource( 14 )
+nodes/MovingAway/position = Vector2( 0, 80 )
+nodes/SendToBase/node = SubResource( 15 )
+nodes/SendToBase/position = Vector2( 180, 180 )
+nodes/TakingOutOfBox/node = SubResource( 16 )
+nodes/TakingOutOfBox/position = Vector2( -40, 320 )
+nodes/Transition/node = SubResource( 17 )
+nodes/Transition/position = Vector2( 480, 20 )
+nodes/Waiting/node = SubResource( 18 )
+nodes/Waiting/position = Vector2( 180, -60 )
+nodes/output/position = Vector2( 740, 20 )
+node_connections = [ "output", 0, "Transition", "Transition", 0, "Waiting", "Transition", 1, "Moving", "Transition", 2, "MovingAway", "Transition", 3, "BeingEated", "Transition", 4, "SendToBase", "Transition", 5, "Dieing", "Transition", 6, "BounceAway", "Transition", 7, "TakingOutOfBox" ]
+
+[sub_resource type="SpriteFrames" id=20]
+animations = [ {
+"frames": [ ExtResource( 19 ) ],
+"loop": false,
+"name": "Idle_with_thorns",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ ExtResource( 26 ) ],
+"loop": true,
+"name": "4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ) ],
+"loop": true,
+"name": "5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "02_Dieing",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "01_Idle",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=22]
+radius = 27.6816
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 14.0997, 5.99845 )
+
+[sub_resource type="CircleShape2D" id=24]
+radius = 33.0
+
+[node name="Unit" type="KinematicBody2D"]
+light_mask = 1024
+material = SubResource( 1 )
+z_index = 1
+input_pickable = true
+collision_layer = 2048
+collision_mask = 8
+script = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Tween2" type="Tween" parent="."]
+
+[node name="BodyAnim" type="AnimationPlayer" parent="."]
+
+[node name="EyesAnim" type="AnimationPlayer" parent="."]
+
+[node name="AnimPlayer" type="AnimationPlayer" parent="."]
+anims/BaunceAway = SubResource( 2 )
+anims/BeingEated = SubResource( 3 )
+anims/Dieing = SubResource( 4 )
+anims/Moving = SubResource( 5 )
+anims/MovingAway = SubResource( 6 )
+anims/SendToBase = SubResource( 7 )
+anims/Unit_out_of_box = SubResource( 8 )
+anims/Waiting = SubResource( 9 )
+
+[node name="AnimTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 19 )
+anim_player = NodePath("../AnimPlayer")
+active = true
+parameters/Transition/current = 0
+script = ExtResource( 11 )
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource( 5 )
+
+[node name="TakingOutOfBoxState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="TakingOutOfBox" type="Node" parent="StateMachine/TakingOutOfBoxState"]
+script = ExtResource( 18 )
+
+[node name="InBattleState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="Waiting" type="Node" parent="StateMachine/InBattleState"]
+script = ExtResource( 9 )
+
+[node name="MovingState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="Moving" type="Node" parent="StateMachine/MovingState"]
+script = ExtResource( 8 )
+
+[node name="MovingAwayState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="MovingAway" type="Node" parent="StateMachine/MovingAwayState"]
+script = ExtResource( 7 )
+
+[node name="EatedState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="BeingEated" type="Node" parent="StateMachine/EatedState"]
+script = ExtResource( 10 )
+
+[node name="SendToBaseState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="SendToBase" type="Node" parent="StateMachine/SendToBaseState"]
+script = ExtResource( 12 )
+
+[node name="SendToBaseState2" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="SendToBase2" type="Node" parent="StateMachine/SendToBaseState2"]
+script = ExtResource( 14 )
+
+[node name="DieingState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="Dieing" type="Node" parent="StateMachine/DieingState"]
+script = ExtResource( 13 )
+
+[node name="BounceAwayState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="BounceAway" type="Node" parent="StateMachine/BounceAwayState"]
+script = ExtResource( 15 )
+
+[node name="MoveToSpecificTargetState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="MoveToSpecificTarget" type="Node" parent="StateMachine/MoveToSpecificTargetState"]
+script = ExtResource( 16 )
+
+[node name="PrepareNewGameState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="PrepareNewGame" type="Node" parent="StateMachine/PrepareNewGameState"]
+script = ExtResource( 17 )
+
+[node name="TutorialState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="Tutorial" type="Node" parent="StateMachine/TutorialState"]
+script = ExtResource( 27 )
+
+[node name="FloatingAwayState" type="Node" parent="StateMachine"]
+script = ExtResource( 6 )
+
+[node name="FloatingAway" type="Node" parent="StateMachine/FloatingAwayState"]
+script = ExtResource( 28 )
+
+[node name="Unit" type="AnimatedSprite" parent="."]
+light_mask = 1024
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 20 )
+animation = "Idle"
+playing = true
+
+[node name="Eyes" type="AnimatedSprite" parent="."]
+light_mask = 1024
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 21 )
+animation = "01_Idle"
+
+[node name="Mug" type="Sprite" parent="."]
+modulate = Color( 0.62173, 0.254108, 0.254108, 1 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 25 )
+
+[node name="Frame" type="Sprite" parent="."]
+visible = false
+scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 22 )
+
+[node name="Mouth" type="Area2D" parent="."]
+position = Vector2( 0, 21 )
+monitoring = false
+monitorable = false
+collision_layer = 0
+collision_mask = 0
+
+[node name="MouthShape" type="CollisionShape2D" parent="Mouth"]
+modulate = Color( 0, 1, 0, 1 )
+light_mask = 0
+position = Vector2( 0.110184, 2.86475 )
+shape = SubResource( 23 )
+
+[node name="Body" type="Area2D" parent="."]
+visible = false
+monitoring = false
+monitorable = false
+collision_layer = 512
+collision_mask = 1658
+
+[node name="BodyShape" type="CollisionShape2D" parent="Body"]
+shape = SubResource( 24 )
+
+[node name="Timer_in_battle_state" type="Timer" parent="."]
+one_shot = true
+
+[node name="Timer_2" type="Timer" parent="."]
+one_shot = true
+[connection signal="body_entered" from="Mouth" to="." method="_on_Mouth_body_entered"]
+[connection signal="area_entered" from="Body" to="." method="_on_Body_area_entered"]
+[connection signal="area_exited" from="Body" to="." method="_on_Body_area_exited"]
+[connection signal="timeout" from="Timer_in_battle_state" to="." method="_on_Timer_in_battle_state_timeout"]

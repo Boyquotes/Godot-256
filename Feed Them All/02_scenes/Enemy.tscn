@@ -1,0 +1,866 @@
+[gd_scene load_steps=362 format=2]
+
+[ext_resource path="res://04_assets/OTHER/Pointer_for_enemy/pointer.png" type="Texture" id=1]
+[ext_resource path="res://03_scripts/Enemy/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0052.png" type="Texture" id=3]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0022.png" type="Texture" id=4]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0023.png" type="Texture" id=5]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0051.png" type="Texture" id=6]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0054.png" type="Texture" id=7]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0053.png" type="Texture" id=8]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0007.png" type="Texture" id=9]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0024.png" type="Texture" id=10]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0055.png" type="Texture" id=11]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0005.png" type="Texture" id=12]
+[ext_resource path="res://03_scripts/StateMachine/CommandsForEnemy/Tutorial.gd" type="Script" id=13]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0002.png" type="Texture" id=14]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0014.png" type="Texture" id=15]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0003.png" type="Texture" id=16]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0011.png" type="Texture" id=17]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0026.png" type="Texture" id=18]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0029.png" type="Texture" id=19]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0030.png" type="Texture" id=20]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0017.png" type="Texture" id=21]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0035.png" type="Texture" id=22]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0021.png" type="Texture" id=23]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0037.png" type="Texture" id=24]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0038.png" type="Texture" id=25]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0006.png" type="Texture" id=26]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0039.png" type="Texture" id=27]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0040.png" type="Texture" id=28]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0010.png" type="Texture" id=29]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0015.png" type="Texture" id=30]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0031.png" type="Texture" id=31]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0004.png" type="Texture" id=32]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0009.png" type="Texture" id=33]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0012.png" type="Texture" id=34]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0014.png" type="Texture" id=35]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0016.png" type="Texture" id=36]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0025.png" type="Texture" id=37]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0028.png" type="Texture" id=38]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0032.png" type="Texture" id=39]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0002.png" type="Texture" id=40]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0033.png" type="Texture" id=41]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0034.png" type="Texture" id=42]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0008.png" type="Texture" id=43]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0013.png" type="Texture" id=44]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0001.png" type="Texture" id=45]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0011.png" type="Texture" id=46]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0018.png" type="Texture" id=47]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0019.png" type="Texture" id=48]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0027.png" type="Texture" id=49]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0036.png" type="Texture" id=50]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0020.png" type="Texture" id=51]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0003.png" type="Texture" id=52]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0042.png" type="Texture" id=53]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0050.png" type="Texture" id=54]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0021.png" type="Texture" id=55]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0022.png" type="Texture" id=56]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0001.png" type="Texture" id=57]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0002.png" type="Texture" id=58]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0033.png" type="Texture" id=59]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0007.png" type="Texture" id=60]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0053.png" type="Texture" id=61]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0014.png" type="Texture" id=62]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0012.png" type="Texture" id=63]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0018.png" type="Texture" id=64]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0032.png" type="Texture" id=65]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0016.png" type="Texture" id=66]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0055.png" type="Texture" id=67]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0026.png" type="Texture" id=68]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0030.png" type="Texture" id=69]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0018.png" type="Texture" id=70]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0025.png" type="Texture" id=71]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0023.png" type="Texture" id=72]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0040.png" type="Texture" id=73]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0008.png" type="Texture" id=74]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0027.png" type="Texture" id=75]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0005.png" type="Texture" id=76]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0015.png" type="Texture" id=77]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0033.png" type="Texture" id=78]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0017.png" type="Texture" id=79]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0022.png" type="Texture" id=80]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0007.png" type="Texture" id=81]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0013.png" type="Texture" id=82]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0031.png" type="Texture" id=83]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0034.png" type="Texture" id=84]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0006.png" type="Texture" id=85]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0035.png" type="Texture" id=86]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0039.png" type="Texture" id=87]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0016.png" type="Texture" id=88]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0012.png" type="Texture" id=89]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0036.png" type="Texture" id=90]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0029.png" type="Texture" id=91]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0037.png" type="Texture" id=92]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0010.png" type="Texture" id=93]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0001.png" type="Texture" id=94]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0019.png" type="Texture" id=95]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0020.png" type="Texture" id=96]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0021.png" type="Texture" id=97]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0024.png" type="Texture" id=98]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0028.png" type="Texture" id=99]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0004.png" type="Texture" id=100]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0009.png" type="Texture" id=101]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0032.png" type="Texture" id=102]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Eyes_v2_320px/Nowy folder0038.png" type="Texture" id=103]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0035.png" type="Texture" id=104]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0003.png" type="Texture" id=105]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0004.png" type="Texture" id=106]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0010.png" type="Texture" id=107]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0005.png" type="Texture" id=108]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0006.png" type="Texture" id=109]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0007.png" type="Texture" id=110]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0030.png" type="Texture" id=111]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0046.png" type="Texture" id=112]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0051.png" type="Texture" id=113]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0008.png" type="Texture" id=114]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0001.png" type="Texture" id=115]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0009.png" type="Texture" id=116]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0008.png" type="Texture" id=117]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0009.png" type="Texture" id=118]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0015.png" type="Texture" id=119]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0003.png" type="Texture" id=120]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0011.png" type="Texture" id=121]
+[ext_resource path="res://03_scripts/StateMachine/StateMachine.gd" type="Script" id=122]
+[ext_resource path="res://03_scripts/StateMachine/StateActivator.gd" type="Script" id=123]
+[ext_resource path="res://03_scripts/StateMachine/CommandsForEnemy/Eating.gd" type="Script" id=124]
+[ext_resource path="res://03_scripts/StateMachine/CommandsForEnemy/Swim.gd" type="Script" id=125]
+[ext_resource path="res://03_scripts/Enemy/AnimTree.gd" type="Script" id=126]
+[ext_resource path="res://03_scripts/StateMachine/CommandsForEnemy/HittingBase.gd" type="Script" id=127]
+[ext_resource path="res://03_scripts/StateMachine/CommandsForEnemy/Prepare.gd" type="Script" id=128]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0008.png" type="Texture" id=129]
+[ext_resource path="res://03_scripts/StateMachine/CommandsForEnemy/Dieing.gd" type="Script" id=130]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0026.png" type="Texture" id=131]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0045.png" type="Texture" id=132]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0043.png" type="Texture" id=133]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0029.png" type="Texture" id=134]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0005.png" type="Texture" id=135]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0011.png" type="Texture" id=136]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0013.png" type="Texture" id=137]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0052.png" type="Texture" id=138]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0024.png" type="Texture" id=139]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0025.png" type="Texture" id=140]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0027.png" type="Texture" id=141]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0017.png" type="Texture" id=142]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0012.png" type="Texture" id=143]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0006.png" type="Texture" id=144]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0013.png" type="Texture" id=145]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0004.png" type="Texture" id=146]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0005.png" type="Texture" id=147]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0001.png" type="Texture" id=148]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0009.png" type="Texture" id=149]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0002.png" type="Texture" id=150]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0007.png" type="Texture" id=151]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0010.png" type="Texture" id=152]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0045.png" type="Texture" id=153]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0034.png" type="Texture" id=154]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0040.png" type="Texture" id=155]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0030.png" type="Texture" id=156]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0023.png" type="Texture" id=157]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0025.png" type="Texture" id=158]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0035.png" type="Texture" id=159]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0027.png" type="Texture" id=160]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0038.png" type="Texture" id=161]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0022.png" type="Texture" id=162]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0037.png" type="Texture" id=163]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0017.png" type="Texture" id=164]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0014.png" type="Texture" id=165]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0026.png" type="Texture" id=166]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0019.png" type="Texture" id=167]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0031.png" type="Texture" id=168]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0042.png" type="Texture" id=169]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0044.png" type="Texture" id=170]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0020.png" type="Texture" id=171]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0024.png" type="Texture" id=172]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0032.png" type="Texture" id=173]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0021.png" type="Texture" id=174]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0033.png" type="Texture" id=175]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0039.png" type="Texture" id=176]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0041.png" type="Texture" id=177]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0015.png" type="Texture" id=178]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0036.png" type="Texture" id=179]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0016.png" type="Texture" id=180]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0018.png" type="Texture" id=181]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0028.png" type="Texture" id=182]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0029.png" type="Texture" id=183]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0043.png" type="Texture" id=184]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0049.png" type="Texture" id=185]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0028.png" type="Texture" id=186]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0041.png" type="Texture" id=187]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0048.png" type="Texture" id=188]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0002.png" type="Texture" id=189]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0023.png" type="Texture" id=190]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0003.png" type="Texture" id=191]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0031.png" type="Texture" id=192]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0046.png" type="Texture" id=193]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0047.png" type="Texture" id=194]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0054.png" type="Texture" id=195]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0006.png" type="Texture" id=196]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0020.png" type="Texture" id=197]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0049.png" type="Texture" id=198]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0019.png" type="Texture" id=199]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0037.png" type="Texture" id=200]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0048.png" type="Texture" id=201]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0038.png" type="Texture" id=202]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Eyes_v2_320x160px/Nowy folder0044.png" type="Texture" id=203]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0004.png" type="Texture" id=204]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0039.png" type="Texture" id=205]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0036.png" type="Texture" id=206]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0034.png" type="Texture" id=207]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0050.png" type="Texture" id=208]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Eyes_v2_320x160px/Nowy folder0040.png" type="Texture" id=209]
+[ext_resource path="res://04_assets/ENEMY/01_Start_anim/Body/Nowy folder0047.png" type="Texture" id=210]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0017.png" type="Texture" id=211]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0011.png" type="Texture" id=212]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0026.png" type="Texture" id=213]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0028.png" type="Texture" id=214]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0016.png" type="Texture" id=215]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0024.png" type="Texture" id=216]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0027.png" type="Texture" id=217]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0019.png" type="Texture" id=218]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0020.png" type="Texture" id=219]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0023.png" type="Texture" id=220]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0029.png" type="Texture" id=221]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0022.png" type="Texture" id=222]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0013.png" type="Texture" id=223]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0025.png" type="Texture" id=224]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0015.png" type="Texture" id=225]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0018.png" type="Texture" id=226]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0014.png" type="Texture" id=227]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0030.png" type="Texture" id=228]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0021.png" type="Texture" id=229]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0010.png" type="Texture" id=230]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Eyes_v2_320x160px/Nowy folder0012.png" type="Texture" id=231]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0038.png" type="Texture" id=245]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0040.png" type="Texture" id=246]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0034.png" type="Texture" id=251]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0036.png" type="Texture" id=259]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0033.png" type="Texture" id=262]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0035.png" type="Texture" id=266]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0037.png" type="Texture" id=267]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0039.png" type="Texture" id=268]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0015.png" type="Texture" id=272]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0017.png" type="Texture" id=273]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0016.png" type="Texture" id=274]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0018.png" type="Texture" id=275]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0019.png" type="Texture" id=276]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0012.png" type="Texture" id=277]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0004.png" type="Texture" id=278]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0005.png" type="Texture" id=279]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0006.png" type="Texture" id=280]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0007.png" type="Texture" id=281]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0008.png" type="Texture" id=282]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0002.png" type="Texture" id=283]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0010.png" type="Texture" id=284]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0001.png" type="Texture" id=285]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0013.png" type="Texture" id=286]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0003.png" type="Texture" id=287]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0009.png" type="Texture" id=288]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0011.png" type="Texture" id=289]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0014.png" type="Texture" id=290]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0024.png" type="Texture" id=291]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0031.png" type="Texture" id=292]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0022.png" type="Texture" id=293]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0023.png" type="Texture" id=294]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0028.png" type="Texture" id=295]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0025.png" type="Texture" id=296]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0027.png" type="Texture" id=297]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0030.png" type="Texture" id=298]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0029.png" type="Texture" id=299]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0026.png" type="Texture" id=300]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0021.png" type="Texture" id=301]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0032.png" type="Texture" id=302]
+[ext_resource path="res://04_assets/ENEMY/02_Swim_anim/Body/Nowy folder0020.png" type="Texture" id=303]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0009.png" type="Texture" id=338]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0010.png" type="Texture" id=339]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0019.png" type="Texture" id=340]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0005.png" type="Texture" id=341]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0013.png" type="Texture" id=342]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0011.png" type="Texture" id=343]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0003.png" type="Texture" id=344]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0014.png" type="Texture" id=345]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0002.png" type="Texture" id=346]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0021.png" type="Texture" id=347]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0022.png" type="Texture" id=348]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0006.png" type="Texture" id=349]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0001.png" type="Texture" id=350]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0020.png" type="Texture" id=351]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0008.png" type="Texture" id=352]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0016.png" type="Texture" id=353]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0017.png" type="Texture" id=354]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0012.png" type="Texture" id=355]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0007.png" type="Texture" id=356]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0015.png" type="Texture" id=357]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0004.png" type="Texture" id=358]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0018.png" type="Texture" id=359]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0034.png" type="Texture" id=360]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0027.png" type="Texture" id=361]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0026.png" type="Texture" id=362]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0030.png" type="Texture" id=363]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0025.png" type="Texture" id=364]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0028.png" type="Texture" id=365]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0023.png" type="Texture" id=366]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0031.png" type="Texture" id=367]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0035.png" type="Texture" id=368]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0032.png" type="Texture" id=369]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0024.png" type="Texture" id=370]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0033.png" type="Texture" id=371]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0029.png" type="Texture" id=372]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0036.png" type="Texture" id=381]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0037.png" type="Texture" id=385]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0039.png" type="Texture" id=397]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0038.png" type="Texture" id=398]
+[ext_resource path="res://04_assets/ENEMY/03_Eat_anim/Body/Nowy folder0040.png" type="Texture" id=399]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0009.png" type="Texture" id=418]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0011.png" type="Texture" id=419]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0002.png" type="Texture" id=420]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0001.png" type="Texture" id=421]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0012.png" type="Texture" id=422]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0003.png" type="Texture" id=423]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0005.png" type="Texture" id=424]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0007.png" type="Texture" id=425]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0004.png" type="Texture" id=426]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0008.png" type="Texture" id=427]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0006.png" type="Texture" id=428]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0010.png" type="Texture" id=429]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0025.png" type="Texture" id=430]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0030.png" type="Texture" id=431]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0016.png" type="Texture" id=433]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0023.png" type="Texture" id=434]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0027.png" type="Texture" id=435]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0017.png" type="Texture" id=436]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0026.png" type="Texture" id=437]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0024.png" type="Texture" id=438]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0028.png" type="Texture" id=439]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0014.png" type="Texture" id=440]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0019.png" type="Texture" id=445]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0021.png" type="Texture" id=446]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0015.png" type="Texture" id=450]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0022.png" type="Texture" id=457]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0018.png" type="Texture" id=458]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0013.png" type="Texture" id=459]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0029.png" type="Texture" id=460]
+[ext_resource path="res://04_assets/ENEMY/04_Die_anim/Body/Nowy folder0020.png" type="Texture" id=461]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="Animation" id=2]
+resource_name = "Dieing"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyBody:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "04_DIE_Body" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("EnemyBody:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 29 ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("StateMachine/DieingState/Dieing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.8, 0.85, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "explode"
+}, {
+"args": [  ],
+"method": "release_units"
+}, {
+"args": [ null ],
+"method": "float_away_corps"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyEyes:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "04_DIE_Eyes" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("EnemyEyes:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 29 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Eating"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyBody:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "03_EAT_Body" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("EnemyBody:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 39 ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("StateMachine/EatingState/Eating")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1.4, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "jaw_closed"
+}, {
+"args": [  ],
+"method": "call_swim_state"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyEyes:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "03_EAT_Eyes" ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("EnemyEyes:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 39 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "HittingBase"
+length = 0.5
+
+[sub_resource type="Animation" id=5]
+resource_name = "Prepare"
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyBody:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "01_PREPARE_Body" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("EnemyBody:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 49 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("EnemyEyes:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "01_PREPARE_Eyes" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyEyes:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 49 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Swim"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyBody:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 48 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("EnemyBody:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "02_SWIM_Body" ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("EnemyEyes:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "02_SWIM_Eyes" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("EnemyEyes:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 48 ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "Dieing"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "Eating"
+
+[sub_resource type="AnimationNodeAnimation" id=9]
+animation = "HittingBase"
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "Prepare"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "Swim"
+
+[sub_resource type="AnimationNodeTransition" id=12]
+input_count = 5
+input_0/name = "PreparingState"
+input_0/auto_advance = false
+input_1/name = "SwimmingState"
+input_1/auto_advance = false
+input_2/name = "HittingBase"
+input_2/auto_advance = false
+input_3/name = "Eating"
+input_3/auto_advance = false
+input_4/name = "Dieing"
+input_4/auto_advance = false
+
+[sub_resource type="AnimationNodeBlendTree" id=13]
+graph_offset = Vector2( -93, 89 )
+nodes/Dieing/node = SubResource( 7 )
+nodes/Dieing/position = Vector2( -40, 240 )
+nodes/Eating/node = SubResource( 8 )
+nodes/Eating/position = Vector2( 140, 200 )
+nodes/HittingBase/node = SubResource( 9 )
+nodes/HittingBase/position = Vector2( 120, 340 )
+nodes/Prepare/node = SubResource( 10 )
+nodes/Prepare/position = Vector2( -20, 60 )
+nodes/Swim/node = SubResource( 11 )
+nodes/Swim/position = Vector2( 140, 80 )
+nodes/Transition/node = SubResource( 12 )
+nodes/Transition/position = Vector2( 320, 100 )
+nodes/output/position = Vector2( 560, 140 )
+node_connections = [ "output", 0, "Transition", "Transition", 0, "Prepare", "Transition", 1, "Swim", "Transition", 2, "HittingBase", "Transition", 3, "Eating", "Transition", 4, "Dieing" ]
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ ExtResource( 421 ), ExtResource( 420 ), ExtResource( 423 ), ExtResource( 426 ), ExtResource( 424 ), ExtResource( 428 ), ExtResource( 425 ), ExtResource( 427 ), ExtResource( 418 ), ExtResource( 429 ), ExtResource( 419 ), ExtResource( 422 ), ExtResource( 459 ), ExtResource( 440 ), ExtResource( 450 ), ExtResource( 433 ), ExtResource( 436 ), ExtResource( 458 ), ExtResource( 445 ), ExtResource( 461 ), ExtResource( 446 ), ExtResource( 457 ), ExtResource( 434 ), ExtResource( 438 ), ExtResource( 430 ), ExtResource( 437 ), ExtResource( 435 ), ExtResource( 439 ), ExtResource( 460 ), ExtResource( 431 ) ],
+"loop": true,
+"name": "04_DIE_Body",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 285 ), ExtResource( 283 ), ExtResource( 287 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 288 ), ExtResource( 284 ), ExtResource( 289 ), ExtResource( 277 ), ExtResource( 286 ), ExtResource( 290 ), ExtResource( 272 ), ExtResource( 274 ), ExtResource( 273 ), ExtResource( 275 ), ExtResource( 276 ), ExtResource( 303 ), ExtResource( 301 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 291 ), ExtResource( 296 ), ExtResource( 300 ), ExtResource( 297 ), ExtResource( 295 ), ExtResource( 299 ), ExtResource( 298 ), ExtResource( 292 ), ExtResource( 302 ), ExtResource( 262 ), ExtResource( 251 ), ExtResource( 266 ), ExtResource( 259 ), ExtResource( 267 ), ExtResource( 245 ), ExtResource( 268 ), ExtResource( 246 ) ],
+"loop": true,
+"name": "02_SWIM_Body",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 148 ), ExtResource( 150 ), ExtResource( 120 ), ExtResource( 146 ), ExtResource( 147 ), ExtResource( 144 ), ExtResource( 151 ), ExtResource( 129 ), ExtResource( 149 ), ExtResource( 152 ), ExtResource( 121 ), ExtResource( 143 ), ExtResource( 145 ), ExtResource( 165 ), ExtResource( 178 ), ExtResource( 180 ), ExtResource( 164 ), ExtResource( 181 ), ExtResource( 167 ), ExtResource( 171 ), ExtResource( 174 ), ExtResource( 162 ), ExtResource( 157 ), ExtResource( 172 ), ExtResource( 158 ), ExtResource( 166 ), ExtResource( 160 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 156 ), ExtResource( 168 ), ExtResource( 173 ), ExtResource( 175 ), ExtResource( 154 ), ExtResource( 159 ), ExtResource( 179 ), ExtResource( 163 ), ExtResource( 161 ), ExtResource( 176 ), ExtResource( 155 ), ExtResource( 177 ), ExtResource( 169 ), ExtResource( 184 ), ExtResource( 170 ), ExtResource( 153 ), ExtResource( 193 ), ExtResource( 210 ), ExtResource( 201 ), ExtResource( 185 ), ExtResource( 208 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "01_PREPARE_Body",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 350 ), ExtResource( 346 ), ExtResource( 344 ), ExtResource( 358 ), ExtResource( 341 ), ExtResource( 349 ), ExtResource( 356 ), ExtResource( 352 ), ExtResource( 338 ), ExtResource( 339 ), ExtResource( 343 ), ExtResource( 355 ), ExtResource( 342 ), ExtResource( 345 ), ExtResource( 357 ), ExtResource( 353 ), ExtResource( 354 ), ExtResource( 359 ), ExtResource( 340 ), ExtResource( 351 ), ExtResource( 347 ), ExtResource( 348 ), ExtResource( 366 ), ExtResource( 370 ), ExtResource( 364 ), ExtResource( 362 ), ExtResource( 361 ), ExtResource( 365 ), ExtResource( 372 ), ExtResource( 363 ), ExtResource( 367 ), ExtResource( 369 ), ExtResource( 371 ), ExtResource( 360 ), ExtResource( 368 ), ExtResource( 381 ), ExtResource( 385 ), ExtResource( 398 ), ExtResource( 397 ), ExtResource( 399 ) ],
+"loop": true,
+"name": "03_EAT_Body",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 45 ), ExtResource( 40 ), ExtResource( 52 ), ExtResource( 32 ), ExtResource( 12 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 43 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 46 ), ExtResource( 34 ), ExtResource( 44 ), ExtResource( 35 ), ExtResource( 30 ), ExtResource( 36 ), ExtResource( 21 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 51 ), ExtResource( 23 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 37 ), ExtResource( 18 ), ExtResource( 49 ), ExtResource( 38 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 31 ), ExtResource( 39 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 22 ), ExtResource( 50 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 187 ), ExtResource( 53 ), ExtResource( 133 ), ExtResource( 203 ), ExtResource( 132 ), ExtResource( 112 ), ExtResource( 194 ), ExtResource( 188 ), ExtResource( 198 ), ExtResource( 54 ), ExtResource( 113 ), ExtResource( 138 ), ExtResource( 61 ), ExtResource( 195 ), ExtResource( 67 ) ],
+"loop": true,
+"name": "01_PREPARE_Eyes",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 57 ), ExtResource( 58 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 114 ), ExtResource( 116 ), ExtResource( 230 ), ExtResource( 212 ), ExtResource( 231 ), ExtResource( 223 ), ExtResource( 227 ), ExtResource( 225 ), ExtResource( 215 ), ExtResource( 211 ), ExtResource( 226 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 229 ), ExtResource( 222 ), ExtResource( 220 ), ExtResource( 216 ), ExtResource( 224 ), ExtResource( 213 ), ExtResource( 217 ), ExtResource( 214 ), ExtResource( 221 ), ExtResource( 228 ) ],
+"loop": true,
+"name": "04_DIE_Eyes",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 100 ), ExtResource( 76 ), ExtResource( 85 ), ExtResource( 81 ), ExtResource( 74 ), ExtResource( 101 ), ExtResource( 93 ), ExtResource( 17 ), ExtResource( 89 ), ExtResource( 82 ), ExtResource( 15 ), ExtResource( 77 ), ExtResource( 88 ), ExtResource( 79 ), ExtResource( 70 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 80 ), ExtResource( 72 ), ExtResource( 98 ), ExtResource( 71 ), ExtResource( 68 ), ExtResource( 75 ), ExtResource( 99 ), ExtResource( 91 ), ExtResource( 69 ), ExtResource( 83 ), ExtResource( 102 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 92 ), ExtResource( 103 ), ExtResource( 87 ), ExtResource( 73 ) ],
+"loop": true,
+"name": "02_SWIM_Eyes",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 115 ), ExtResource( 189 ), ExtResource( 191 ), ExtResource( 204 ), ExtResource( 135 ), ExtResource( 196 ), ExtResource( 60 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 107 ), ExtResource( 136 ), ExtResource( 63 ), ExtResource( 137 ), ExtResource( 62 ), ExtResource( 119 ), ExtResource( 66 ), ExtResource( 142 ), ExtResource( 64 ), ExtResource( 199 ), ExtResource( 197 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 190 ), ExtResource( 139 ), ExtResource( 140 ), ExtResource( 131 ), ExtResource( 141 ), ExtResource( 186 ), ExtResource( 134 ), ExtResource( 111 ), ExtResource( 192 ), ExtResource( 65 ), ExtResource( 59 ), ExtResource( 207 ), ExtResource( 104 ), ExtResource( 206 ), ExtResource( 200 ), ExtResource( 202 ), ExtResource( 205 ), ExtResource( 209 ) ],
+"loop": true,
+"name": "03_EAT_Eyes",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=16]
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 10.102, 62.5078 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 10, 70 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 47.3524, 145.098 )
+
+[sub_resource type="Animation" id=20]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PointerShape:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.63, 0.4, 0.4, 1 ), Color( 0.61, 0, 0, 1 ), Color( 0.63, 0.4, 0.4, 1 ) ]
+}
+
+[node name="Enemy" type="RigidBody2D"]
+z_index = -1
+collision_layer = 0
+collision_mask = 7
+mode = 2
+physics_material_override = SubResource( 1 )
+gravity_scale = 0.0
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="AnimPlayer" type="AnimationPlayer" parent="."]
+anims/Dieing = SubResource( 2 )
+anims/Eating = SubResource( 3 )
+anims/HittingBase = SubResource( 4 )
+anims/Prepare = SubResource( 5 )
+anims/Swim = SubResource( 6 )
+
+[node name="AnimTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 13 )
+anim_player = NodePath("../AnimPlayer")
+active = true
+parameters/Transition/current = 0
+script = ExtResource( 126 )
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource( 122 )
+
+[node name="PreparingState" type="Node" parent="StateMachine"]
+script = ExtResource( 123 )
+
+[node name="Prepare" type="Node" parent="StateMachine/PreparingState"]
+script = ExtResource( 128 )
+
+[node name="SwimmingState" type="Node" parent="StateMachine"]
+script = ExtResource( 123 )
+
+[node name="Swim" type="Node" parent="StateMachine/SwimmingState"]
+script = ExtResource( 125 )
+
+[node name="EatingState" type="Node" parent="StateMachine"]
+script = ExtResource( 123 )
+
+[node name="Eating" type="Node" parent="StateMachine/EatingState"]
+script = ExtResource( 124 )
+
+[node name="DieingState" type="Node" parent="StateMachine"]
+script = ExtResource( 123 )
+
+[node name="Dieing" type="Node" parent="StateMachine/DieingState"]
+script = ExtResource( 130 )
+
+[node name="HittingBaseState" type="Node" parent="StateMachine"]
+script = ExtResource( 123 )
+
+[node name="HittingBase" type="Node" parent="StateMachine/HittingBaseState"]
+script = ExtResource( 127 )
+
+[node name="TutorialState" type="Node" parent="StateMachine"]
+script = ExtResource( 123 )
+
+[node name="Tutorial" type="Node" parent="StateMachine/TutorialState"]
+script = ExtResource( 13 )
+
+[node name="EnemyBody" type="AnimatedSprite" parent="."]
+light_mask = 0
+scale = Vector2( 4, 4 )
+frames = SubResource( 14 )
+animation = "01_PREPARE_Body"
+frame = 49
+
+[node name="EnemyEyes" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -160 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 15 )
+animation = "01_PREPARE_Eyes"
+frame = 49
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 16 )
+
+[node name="EnemyHead" type="Area2D" parent="."]
+collision_layer = 520
+collision_mask = 0
+
+[node name="Shape" type="CollisionPolygon2D" parent="EnemyHead"]
+position = Vector2( 0, -240 )
+polygon = PoolVector2Array( -40, -37, 40, -37, 0, -120 )
+
+[node name="EnemySides" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 119
+
+[node name="Shape" type="CollisionShape2D" parent="EnemySides"]
+position = Vector2( -50, -200 )
+rotation = 0.872665
+shape = SubResource( 17 )
+
+[node name="Shape2" type="CollisionShape2D" parent="EnemySides"]
+position = Vector2( 50, -200 )
+rotation = -0.872665
+shape = SubResource( 17 )
+
+[node name="Shape3" type="CollisionShape2D" parent="EnemySides"]
+position = Vector2( -50, -120 )
+rotation = -0.872665
+shape = SubResource( 18 )
+
+[node name="Shape4" type="CollisionShape2D" parent="EnemySides"]
+position = Vector2( 40, -120 )
+rotation = 0.872665
+shape = SubResource( 18 )
+
+[node name="UnitSensor" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 112
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UnitSensor"]
+position = Vector2( 0, -418.735 )
+shape = SubResource( 19 )
+disabled = true
+
+[node name="WaitForAttackTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Pointer" type="Node2D" parent="."]
+
+[node name="PointerShape" type="TextureRect" parent="Pointer"]
+modulate = Color( 0.63, 0.4, 0.4, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -42.0
+margin_top = -360.0
+margin_right = 598.0
+margin_bottom = 280.0
+rect_scale = Vector2( 0.13, 0.13 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PointerAnimPlayer" type="AnimationPlayer" parent="Pointer"]
+anims/Pointer = SubResource( 20 )
+[connection signal="body_entered" from="." to="." method="_on_Enemy_1_body_entered"]
+[connection signal="tree_exiting" from="." to="." method="_on_Enemy_tree_exiting"]
+[connection signal="area_entered" from="EnemyHead" to="." method="_on_EnemyHead_area_entered"]
+[connection signal="area_entered" from="UnitSensor" to="." method="_on_UnitSensor_area_entered"]
+[connection signal="area_exited" from="UnitSensor" to="." method="_on_UnitSensor_area_exited"]

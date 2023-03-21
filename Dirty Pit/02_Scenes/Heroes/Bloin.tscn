@@ -1,0 +1,1837 @@
+[gd_scene load_steps=361 format=2]
+
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/N.png" type="Texture" id=1]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/I.png" type="Texture" id=2]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/O.png" type="Texture" id=3]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/L.png" type="Texture" id=4]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0004.png" type="Texture" id=5]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0006.png" type="Texture" id=6]
+[ext_resource path="res://01_Assests/Interface/Boards/Random_board.png" type="Texture" id=7]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0001.png" type="Texture" id=8]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0002.png" type="Texture" id=9]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0002.png" type="Texture" id=10]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0005.png" type="Texture" id=11]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0007.png" type="Texture" id=12]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0007.png" type="Texture" id=13]
+[ext_resource path="res://01_Assests/Interface/Symbols/attack_mid.png" type="Texture" id=14]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0002.png" type="Texture" id=15]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0001.png" type="Texture" id=19]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0007.png" type="Texture" id=20]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0008.png" type="Texture" id=23]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0007.png" type="Texture" id=26]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0003.png" type="Texture" id=29]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0003.png" type="Texture" id=31]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0001.png" type="Texture" id=33]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0004.png" type="Texture" id=35]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0004.png" type="Texture" id=36]
+[ext_resource path="res://02_Scenes/SmallScenes/ProgBar.tscn" type="PackedScene" id=39]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0005.png" type="Texture" id=40]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0009.png" type="Texture" id=41]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0001.png" type="Texture" id=42]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0005.png" type="Texture" id=43]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0010.png" type="Texture" id=44]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0004.png" type="Texture" id=46]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0010.png" type="Texture" id=48]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0010.png" type="Texture" id=49]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0003.png" type="Texture" id=50]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0006.png" type="Texture" id=51]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0002.png" type="Texture" id=52]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0002.png" type="Texture" id=54]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/DefendMid.gd" type="Script" id=57]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/StateMachine.gd" type="Script" id=58]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/DefendTop.gd" type="Script" id=59]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/StateActivator.gd" type="Script" id=60]
+[ext_resource path="res://03_Scripts/Hero/AnimTree.gd" type="Script" id=61]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/DefendBot.gd" type="Script" id=62]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackBot.gd" type="Script" id=63]
+[ext_resource path="res://03_Scripts/Hero/Hero.gd" type="Script" id=64]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/ReadyIdle.gd" type="Script" id=65]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/SwingSideways.gd" type="Script" id=66]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackMid.gd" type="Script" id=67]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackTop.gd" type="Script" id=68]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/Ready.gd" type="Script" id=69]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/MoveIN.gd" type="Script" id=70]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/MoveOUT.gd" type="Script" id=71]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0009.png" type="Texture" id=72]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0008.png" type="Texture" id=73]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0003.png" type="Texture" id=74]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0010.png" type="Texture" id=75]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0010.png" type="Texture" id=76]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0006.png" type="Texture" id=77]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0008.png" type="Texture" id=78]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0005.png" type="Texture" id=79]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0007.png" type="Texture" id=80]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0009.png" type="Texture" id=81]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_success/Nowy folder0003.png" type="Texture" id=82]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0001.png" type="Texture" id=83]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0009.png" type="Texture" id=84]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0004.png" type="Texture" id=85]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0006.png" type="Texture" id=86]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0008.png" type="Texture" id=87]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid/Nowy folder0009.png" type="Texture" id=88]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_fail/Nowy folder0006.png" type="Texture" id=89]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0001.png" type="Texture" id=90]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot/Nowy folder0005.png" type="Texture" id=91]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_bot_fail/Nowy folder0008.png" type="Texture" id=92]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0004.png" type="Texture" id=93]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0001.png" type="Texture" id=94]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0010.png" type="Texture" id=95]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0007.png" type="Texture" id=96]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0003.png" type="Texture" id=97]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0003.png" type="Texture" id=98]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0003.png" type="Texture" id=99]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0008.png" type="Texture" id=100]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0009.png" type="Texture" id=101]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0008.png" type="Texture" id=102]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0001.png" type="Texture" id=103]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0010.png" type="Texture" id=104]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0005.png" type="Texture" id=105]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0010.png" type="Texture" id=106]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0005.png" type="Texture" id=107]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0006.png" type="Texture" id=108]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0004.png" type="Texture" id=109]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0009.png" type="Texture" id=110]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0004.png" type="Texture" id=111]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0005.png" type="Texture" id=112]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0011.png" type="Texture" id=113]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0001.png" type="Texture" id=114]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0002.png" type="Texture" id=115]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0007.png" type="Texture" id=116]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0001.png" type="Texture" id=117]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0014.png" type="Texture" id=118]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0016.png" type="Texture" id=119]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0017.png" type="Texture" id=120]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0009.png" type="Texture" id=121]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0003.png" type="Texture" id=122]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0002.png" type="Texture" id=123]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0006.png" type="Texture" id=124]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0004.png" type="Texture" id=125]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0008.png" type="Texture" id=126]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_fail/Nowy folder0002.png" type="Texture" id=127]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0002.png" type="Texture" id=128]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0008.png" type="Texture" id=129]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0009.png" type="Texture" id=130]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0012.png" type="Texture" id=131]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0018.png" type="Texture" id=132]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0005.png" type="Texture" id=133]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0020.png" type="Texture" id=134]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0001.png" type="Texture" id=135]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0002.png" type="Texture" id=136]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0013.png" type="Texture" id=137]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0001.png" type="Texture" id=138]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0010.png" type="Texture" id=139]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0010.png" type="Texture" id=140]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0015.png" type="Texture" id=141]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0007.png" type="Texture" id=142]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0007.png" type="Texture" id=143]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0019.png" type="Texture" id=144]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0008.png" type="Texture" id=145]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top/Nowy folder0003.png" type="Texture" id=146]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defeated/Nowy folder0006.png" type="Texture" id=147]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0007.png" type="Texture" id=148]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0002.png" type="Texture" id=149]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0003.png" type="Texture" id=150]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_top_success/Nowy folder0006.png" type="Texture" id=151]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0004.png" type="Texture" id=152]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0009.png" type="Texture" id=153]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0006.png" type="Texture" id=154]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0004.png" type="Texture" id=155]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Attack_mid_success/Nowy folder0005.png" type="Texture" id=156]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0007.png" type="Texture" id=157]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0033.png" type="Texture" id=158]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0005.png" type="Texture" id=159]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0035.png" type="Texture" id=160]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0036.png" type="Texture" id=162]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0037.png" type="Texture" id=164]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0027.png" type="Texture" id=165]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0038.png" type="Texture" id=166]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0003.png" type="Texture" id=167]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0001.png" type="Texture" id=168]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0005.png" type="Texture" id=169]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0010.png" type="Texture" id=170]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0006.png" type="Texture" id=171]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0007.png" type="Texture" id=172]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0010.png" type="Texture" id=173]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0015.png" type="Texture" id=174]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0020.png" type="Texture" id=175]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0025.png" type="Texture" id=176]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0007.png" type="Texture" id=177]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0009.png" type="Texture" id=178]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0002.png" type="Texture" id=179]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0017.png" type="Texture" id=180]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0008.png" type="Texture" id=181]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0026.png" type="Texture" id=182]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0028.png" type="Texture" id=183]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0029.png" type="Texture" id=184]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0005.png" type="Texture" id=185]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0007.png" type="Texture" id=186]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0005.png" type="Texture" id=187]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0009.png" type="Texture" id=188]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0010.png" type="Texture" id=189]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0006.png" type="Texture" id=190]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0021.png" type="Texture" id=191]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0004.png" type="Texture" id=193]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0003.png" type="Texture" id=194]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0009.png" type="Texture" id=195]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0001.png" type="Texture" id=196]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0011.png" type="Texture" id=197]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0003.png" type="Texture" id=198]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0022.png" type="Texture" id=199]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0006.png" type="Texture" id=200]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0006.png" type="Texture" id=201]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0014.png" type="Texture" id=202]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0030.png" type="Texture" id=203]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0023.png" type="Texture" id=204]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0002.png" type="Texture" id=205]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0008.png" type="Texture" id=206]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0024.png" type="Texture" id=207]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0004.png" type="Texture" id=208]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0008.png" type="Texture" id=209]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0012.png" type="Texture" id=210]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0013.png" type="Texture" id=211]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0016.png" type="Texture" id=212]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0018.png" type="Texture" id=213]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0019.png" type="Texture" id=214]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0031.png" type="Texture" id=215]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0032.png" type="Texture" id=216]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0004.png" type="Texture" id=217]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_mid/Nowy folder0008.png" type="Texture" id=218]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_top/Nowy folder0010.png" type="Texture" id=219]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0034.png" type="Texture" id=222]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0002.png" type="Texture" id=223]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0001.png" type="Texture" id=224]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Defend_bot/Nowy folder0009.png" type="Texture" id=225]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0008.png" type="Texture" id=226]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0009.png" type="Texture" id=227]
+[ext_resource path="res://01_Assests/Interface/Symbols/def_bot.png" type="Texture" id=228]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0007.png" type="Texture" id=229]
+[ext_resource path="res://01_Assests/Interface/Symbols/attack_bot.png" type="Texture" id=230]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0002.png" type="Texture" id=231]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0013.png" type="Texture" id=232]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0015.png" type="Texture" id=233]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0025.png" type="Texture" id=234]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0024.png" type="Texture" id=235]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0029.png" type="Texture" id=236]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0033.png" type="Texture" id=237]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0010.png" type="Texture" id=239]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0020.png" type="Texture" id=240]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0039.png" type="Texture" id=241]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0016.png" type="Texture" id=242]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0001.png" type="Texture" id=244]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0023.png" type="Texture" id=245]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0001.png" type="Texture" id=246]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0005.png" type="Texture" id=247]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0035.png" type="Texture" id=248]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0028.png" type="Texture" id=249]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0027.png" type="Texture" id=250]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0032.png" type="Texture" id=251]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0014.png" type="Texture" id=252]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0002.png" type="Texture" id=253]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepIN/Nowy folder0040.png" type="Texture" id=254]
+[ext_resource path="res://01_Assests/Interface/Symbols/attack_top.png" type="Texture" id=255]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0003.png" type="Texture" id=256]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0005.png" type="Texture" id=258]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0011.png" type="Texture" id=259]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0034.png" type="Texture" id=260]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0013.png" type="Texture" id=261]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0002.png" type="Texture" id=262]
+[ext_resource path="res://01_Assests/Interface/Symbols/def_mid.png" type="Texture" id=263]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0021.png" type="Texture" id=264]
+[ext_resource path="res://01_Assests/Interface/Symbols/def_top.png" type="Texture" id=265]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0031.png" type="Texture" id=266]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0003.png" type="Texture" id=267]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0007.png" type="Texture" id=268]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0012.png" type="Texture" id=269]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0018.png" type="Texture" id=270]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0009.png" type="Texture" id=271]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0008.png" type="Texture" id=273]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0011.png" type="Texture" id=274]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0007.png" type="Texture" id=275]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0015.png" type="Texture" id=276]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0004.png" type="Texture" id=277]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0008.png" type="Texture" id=279]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0017.png" type="Texture" id=280]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0003.png" type="Texture" id=281]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0026.png" type="Texture" id=282]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0030.png" type="Texture" id=284]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0004.png" type="Texture" id=285]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0006.png" type="Texture" id=286]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0017.png" type="Texture" id=287]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0019.png" type="Texture" id=288]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0020.png" type="Texture" id=289]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0014.png" type="Texture" id=290]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0004.png" type="Texture" id=291]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0005.png" type="Texture" id=292]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0016.png" type="Texture" id=293]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0006.png" type="Texture" id=294]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0010.png" type="Texture" id=295]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0018.png" type="Texture" id=296]
+[ext_resource path="res://01_Assests/Heroes/Bloin/StepOUT/Nowy folder0022.png" type="Texture" id=297]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0012.png" type="Texture" id=298]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Ready_Idle/Nowy folder0019.png" type="Texture" id=299]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0006.png" type="Texture" id=300]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackMidFail.gd" type="Script" id=301]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackMidSuccess.gd" type="Script" id=302]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackTopSuccess.gd" type="Script" id=303]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/NoAction.gd" type="Script" id=304]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackBotSuccess.gd" type="Script" id=305]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackTopFail.gd" type="Script" id=306]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/AttackBotFail.gd" type="Script" id=307]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/Defeated.gd" type="Script" id=308]
+[ext_resource path="res://03_Scripts/Hero/StateMachine/CommandsFoHero/UnReady.gd" type="Script" id=309]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0014.png" type="Texture" id=310]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0017.png" type="Texture" id=311]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0010.png" type="Texture" id=312]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0018.png" type="Texture" id=313]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0021.png" type="Texture" id=314]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0023.png" type="Texture" id=315]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0024.png" type="Texture" id=316]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0026.png" type="Texture" id=317]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0028.png" type="Texture" id=318]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0030.png" type="Texture" id=319]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0013.png" type="Texture" id=320]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0027.png" type="Texture" id=321]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0009.png" type="Texture" id=322]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0020.png" type="Texture" id=323]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0011.png" type="Texture" id=324]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0025.png" type="Texture" id=325]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0015.png" type="Texture" id=326]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0019.png" type="Texture" id=327]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/B.png" type="Texture" id=328]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0012.png" type="Texture" id=329]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0029.png" type="Texture" id=330]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0022.png" type="Texture" id=331]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0031.png" type="Texture" id=332]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0032.png" type="Texture" id=333]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0033.png" type="Texture" id=334]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0034.png" type="Texture" id=335]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0016.png" type="Texture" id=336]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0035.png" type="Texture" id=337]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0039.png" type="Texture" id=338]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0036.png" type="Texture" id=339]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0038.png" type="Texture" id=340]
+[ext_resource path="res://01_Assests/Heroes/Bloin/Swing_sideways/Nowy folder0037.png" type="Texture" id=341]
+
+[sub_resource type="Animation" id=1]
+resource_name = "AttackBot"
+length = 0.55
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Attack_bot" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "AttackBotFail"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Attack_bot", "Attack_bot_fail" ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "AttackBotSuccess"
+length = 1.05
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 8, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Attack_bot", "Attack_bot_success" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "AttackMid"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Attack_mid" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "AttackMidFail"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Attack_mid", "Attack_mid_fail" ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "AttackMidSuccess"
+length = 1.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 0.6, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 9, 8, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Attack_mid", "Attack_mid_success" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "AttackTop"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Attack_top" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "AttackTopFail"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Attack_top", "Attack_top_fail" ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "AttackTopSuccess"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "Attack_top", "Attack_top_success" ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Defeated"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 19 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defeated" ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.55
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defend_bot" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "DefendBotLong"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defend_bot" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.55
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defend_mid" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "DefendMidLong"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defend_mid" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 0.55
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defend_top" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "DefendTopLong"
+length = 1.05
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Defend_top" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "MoveIN"
+length = 1.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 38 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "MoveIN" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ true ],
+"method": "set_is_ready"
+} ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "MoveOUT"
+length = 1.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 39 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "MoveOUT" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_ready"
+} ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 1.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 19 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Ready_idle" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ false ],
+"method": "set_is_performing_action"
+} ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 38 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Ready" ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ true ],
+"method": "set_is_ready"
+} ]
+}
+
+[sub_resource type="Animation" id=21]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 19 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Ready_idle" ]
+}
+
+[sub_resource type="Animation" id=22]
+length = 2.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 38 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "Swing_sideways" ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=23]
+animation = "UnReady"
+
+[sub_resource type="AnimationNodeAnimation" id=24]
+animation = "NoAction"
+
+[sub_resource type="AnimationNodeAnimation" id=25]
+animation = "AttackTopFail"
+
+[sub_resource type="AnimationNodeAnimation" id=26]
+animation = "AttackTopSuccess"
+
+[sub_resource type="AnimationNodeAnimation" id=27]
+animation = "AttackMidFail"
+
+[sub_resource type="AnimationNodeAnimation" id=28]
+animation = "AttackMidSuccess"
+
+[sub_resource type="AnimationNodeAnimation" id=29]
+animation = "AttackBotFail"
+
+[sub_resource type="AnimationNodeAnimation" id=30]
+animation = "AttackBotSuccess"
+
+[sub_resource type="AnimationNodeAnimation" id=31]
+animation = "MoveIN"
+
+[sub_resource type="AnimationNodeAnimation" id=32]
+animation = "MoveOUT"
+
+[sub_resource type="AnimationNodeAnimation" id=33]
+animation = "Ready"
+
+[sub_resource type="AnimationNodeAnimation" id=34]
+animation = "DefendTopLong"
+
+[sub_resource type="AnimationNodeAnimation" id=35]
+animation = "DefendMidLong"
+
+[sub_resource type="AnimationNodeAnimation" id=36]
+animation = "DefendBotLong"
+
+[sub_resource type="AnimationNodeAnimation" id=37]
+animation = "Defeated"
+
+[sub_resource type="AnimationNodeAnimation" id=38]
+animation = "ReadyIdle"
+
+[sub_resource type="AnimationNodeAnimation" id=39]
+animation = "DefendTop"
+
+[sub_resource type="AnimationNodeAnimation" id=40]
+animation = "DefendMid"
+
+[sub_resource type="AnimationNodeAnimation" id=41]
+animation = "DefendBot"
+
+[sub_resource type="AnimationNodeAnimation" id=42]
+animation = "AttackTop"
+
+[sub_resource type="AnimationNodeAnimation" id=43]
+animation = "AttackMid"
+
+[sub_resource type="AnimationNodeAnimation" id=44]
+animation = "AttackBot"
+
+[sub_resource type="AnimationNodeAnimation" id=45]
+animation = "SwingSideways"
+
+[sub_resource type="AnimationNodeTransition" id=46]
+input_count = 23
+input_0/name = "SwingSidewaysState"
+input_0/auto_advance = false
+input_1/name = "ReadyState"
+input_1/auto_advance = false
+input_2/name = "ReadyIdleState"
+input_2/auto_advance = false
+input_3/name = "DefendTopState"
+input_3/auto_advance = false
+input_4/name = "DefendMidState"
+input_4/auto_advance = false
+input_5/name = "DefendBotState"
+input_5/auto_advance = false
+input_6/name = "AttackTopState"
+input_6/auto_advance = false
+input_7/name = "AttackMidState"
+input_7/auto_advance = false
+input_8/name = "AttackBotState"
+input_8/auto_advance = false
+input_9/name = "UnReadyState"
+input_9/auto_advance = false
+input_10/name = "NoActionState"
+input_10/auto_advance = false
+input_11/name = "AttackTopFailState"
+input_11/auto_advance = false
+input_12/name = "AttackTopSuccessState"
+input_12/auto_advance = false
+input_13/name = "AttackMidFailState"
+input_13/auto_advance = false
+input_14/name = "AttackMidSuccessState"
+input_14/auto_advance = false
+input_15/name = "AttackBotFailState"
+input_15/auto_advance = false
+input_16/name = "AttackBotSuccessState"
+input_16/auto_advance = false
+input_17/name = "MoveINState"
+input_17/auto_advance = false
+input_18/name = "MoveOUTState"
+input_18/auto_advance = false
+input_19/name = "DefendTopLong"
+input_19/auto_advance = false
+input_20/name = "DefendMidLongState"
+input_20/auto_advance = false
+input_21/name = "DefendBotLong"
+input_21/auto_advance = false
+input_22/name = "DefeatedState"
+input_22/auto_advance = false
+
+[sub_resource type="AnimationNodeBlendTree" id=47]
+graph_offset = Vector2( -56.6192, 672.5 )
+nodes/Animation/node = SubResource( 45 )
+nodes/Animation/position = Vector2( 140, -20 )
+"nodes/Animation 10/node" = SubResource( 23 )
+"nodes/Animation 10/position" = Vector2( 180, 440 )
+"nodes/Animation 11/node" = SubResource( 24 )
+"nodes/Animation 11/position" = Vector2( -20, 440 )
+"nodes/Animation 12/node" = SubResource( 25 )
+"nodes/Animation 12/position" = Vector2( 200, 560 )
+"nodes/Animation 13/node" = SubResource( 26 )
+"nodes/Animation 13/position" = Vector2( 0, 560 )
+"nodes/Animation 14/node" = SubResource( 27 )
+"nodes/Animation 14/position" = Vector2( 200, 680 )
+"nodes/Animation 15/node" = SubResource( 28 )
+"nodes/Animation 15/position" = Vector2( 0, 680 )
+"nodes/Animation 16/node" = SubResource( 29 )
+"nodes/Animation 16/position" = Vector2( 200, 800 )
+"nodes/Animation 17/node" = SubResource( 30 )
+"nodes/Animation 17/position" = Vector2( 0, 800 )
+"nodes/Animation 18/node" = SubResource( 31 )
+"nodes/Animation 18/position" = Vector2( 240, 920 )
+"nodes/Animation 19/node" = SubResource( 32 )
+"nodes/Animation 19/position" = Vector2( 60, 920 )
+"nodes/Animation 2/node" = SubResource( 33 )
+"nodes/Animation 2/position" = Vector2( -40, -20 )
+"nodes/Animation 20/node" = SubResource( 34 )
+"nodes/Animation 20/position" = Vector2( 280, 1040 )
+"nodes/Animation 21/node" = SubResource( 35 )
+"nodes/Animation 21/position" = Vector2( 80, 1040 )
+"nodes/Animation 22/node" = SubResource( 36 )
+"nodes/Animation 22/position" = Vector2( -120, 1040 )
+"nodes/Animation 23/node" = SubResource( 37 )
+"nodes/Animation 23/position" = Vector2( 300, 1160 )
+"nodes/Animation 3/node" = SubResource( 38 )
+"nodes/Animation 3/position" = Vector2( 180, 100 )
+"nodes/Animation 4/node" = SubResource( 39 )
+"nodes/Animation 4/position" = Vector2( 0, 100 )
+"nodes/Animation 5/node" = SubResource( 40 )
+"nodes/Animation 5/position" = Vector2( -160, 100 )
+"nodes/Animation 6/node" = SubResource( 41 )
+"nodes/Animation 6/position" = Vector2( 180, 200 )
+"nodes/Animation 7/node" = SubResource( 42 )
+"nodes/Animation 7/position" = Vector2( 0, 200 )
+"nodes/Animation 8/node" = SubResource( 43 )
+"nodes/Animation 8/position" = Vector2( 180, 320 )
+"nodes/Animation 9/node" = SubResource( 44 )
+"nodes/Animation 9/position" = Vector2( 0, 320 )
+nodes/Transition/node = SubResource( 46 )
+nodes/Transition/position = Vector2( 580, 80 )
+nodes/output/position = Vector2( 720, 40 )
+node_connections = [ "output", 0, "Transition", "Transition", 0, "Animation", "Transition", 1, "Animation 2", "Transition", 2, "Animation 3", "Transition", 3, "Animation 4", "Transition", 4, "Animation 5", "Transition", 5, "Animation 6", "Transition", 6, "Animation 7", "Transition", 7, "Animation 8", "Transition", 8, "Animation 9", "Transition", 9, "Animation 10", "Transition", 10, "Animation 11", "Transition", 11, "Animation 12", "Transition", 12, "Animation 13", "Transition", 13, "Animation 14", "Transition", 14, "Animation 15", "Transition", 15, "Animation 16", "Transition", 16, "Animation 17", "Transition", 17, "Animation 18", "Transition", 18, "Animation 19", "Transition", 19, "Animation 20", "Transition", 20, "Animation 21", "Transition", 21, "Animation 22", "Transition", 22, "Animation 23" ]
+
+[sub_resource type="SpriteFrames" id=48]
+animations = [ {
+"frames": [ ExtResource( 244 ), ExtResource( 231 ), ExtResource( 281 ), ExtResource( 277 ), ExtResource( 247 ), ExtResource( 294 ), ExtResource( 229 ), ExtResource( 279 ), ExtResource( 227 ), ExtResource( 295 ), ExtResource( 274 ), ExtResource( 269 ), ExtResource( 232 ), ExtResource( 252 ), ExtResource( 233 ), ExtResource( 242 ), ExtResource( 280 ), ExtResource( 270 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 264 ), ExtResource( 297 ), ExtResource( 245 ), ExtResource( 235 ), ExtResource( 234 ), ExtResource( 282 ), ExtResource( 250 ), ExtResource( 249 ), ExtResource( 236 ), ExtResource( 284 ), ExtResource( 266 ), ExtResource( 251 ), ExtResource( 237 ), ExtResource( 260 ), ExtResource( 248 ) ],
+"loop": true,
+"name": "MoveOUT",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 138 ), ExtResource( 128 ), ExtResource( 98 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 147 ), ExtResource( 143 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 139 ), ExtResource( 113 ), ExtResource( 131 ), ExtResource( 137 ), ExtResource( 118 ), ExtResource( 141 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 132 ), ExtResource( 144 ), ExtResource( 134 ) ],
+"loop": true,
+"name": "Defeated",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 224 ), ExtResource( 223 ), ExtResource( 167 ), ExtResource( 208 ), ExtResource( 185 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 206 ), ExtResource( 178 ), ExtResource( 173 ), ExtResource( 197 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 202 ), ExtResource( 174 ), ExtResource( 212 ), ExtResource( 180 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 175 ), ExtResource( 191 ), ExtResource( 199 ), ExtResource( 204 ), ExtResource( 207 ), ExtResource( 176 ), ExtResource( 182 ), ExtResource( 165 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 203 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 158 ), ExtResource( 222 ), ExtResource( 160 ), ExtResource( 162 ), ExtResource( 164 ), ExtResource( 166 ), ExtResource( 241 ), ExtResource( 254 ) ],
+"loop": true,
+"name": "MoveIN",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 52 ), ExtResource( 29 ), ExtResource( 85 ), ExtResource( 40 ), ExtResource( 86 ), ExtResource( 20 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "Attack_mid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 196 ), ExtResource( 205 ), ExtResource( 198 ), ExtResource( 193 ), ExtResource( 169 ), ExtResource( 201 ), ExtResource( 157 ), ExtResource( 181 ), ExtResource( 188 ), ExtResource( 219 ) ],
+"loop": true,
+"name": "Defend_top",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 83 ), ExtResource( 262 ), ExtResource( 267 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 300 ), ExtResource( 268 ), ExtResource( 273 ), ExtResource( 322 ), ExtResource( 312 ), ExtResource( 324 ), ExtResource( 329 ), ExtResource( 320 ), ExtResource( 310 ), ExtResource( 326 ), ExtResource( 336 ), ExtResource( 311 ), ExtResource( 313 ), ExtResource( 327 ), ExtResource( 323 ), ExtResource( 314 ), ExtResource( 331 ), ExtResource( 315 ), ExtResource( 316 ), ExtResource( 325 ), ExtResource( 317 ), ExtResource( 321 ), ExtResource( 318 ), ExtResource( 330 ), ExtResource( 319 ), ExtResource( 332 ), ExtResource( 333 ), ExtResource( 334 ), ExtResource( 335 ), ExtResource( 337 ), ExtResource( 339 ), ExtResource( 341 ), ExtResource( 340 ), ExtResource( 338 ) ],
+"loop": false,
+"name": "Swing_sideways",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 114 ), ExtResource( 149 ), ExtResource( 99 ), ExtResource( 155 ), ExtResource( 156 ), ExtResource( 154 ), ExtResource( 148 ), ExtResource( 145 ), ExtResource( 153 ), ExtResource( 106 ) ],
+"loop": true,
+"name": "Attack_mid_success",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 246 ), ExtResource( 253 ), ExtResource( 256 ), ExtResource( 285 ), ExtResource( 258 ), ExtResource( 286 ), ExtResource( 275 ), ExtResource( 226 ), ExtResource( 271 ), ExtResource( 239 ), ExtResource( 259 ), ExtResource( 298 ), ExtResource( 261 ), ExtResource( 290 ), ExtResource( 276 ), ExtResource( 293 ), ExtResource( 287 ), ExtResource( 296 ), ExtResource( 299 ), ExtResource( 240 ) ],
+"loop": true,
+"name": "Ready_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 117 ), ExtResource( 127 ), ExtResource( 122 ), ExtResource( 93 ), ExtResource( 105 ), ExtResource( 124 ), ExtResource( 96 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 104 ) ],
+"loop": true,
+"name": "Attack_top_fail",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 135 ), ExtResource( 136 ), ExtResource( 150 ), ExtResource( 152 ), ExtResource( 187 ), ExtResource( 200 ), ExtResource( 177 ), ExtResource( 209 ), ExtResource( 225 ), ExtResource( 189 ) ],
+"loop": true,
+"name": "Defend_bot",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 54 ), ExtResource( 74 ), ExtResource( 46 ), ExtResource( 91 ), ExtResource( 77 ), ExtResource( 13 ), ExtResource( 78 ), ExtResource( 72 ), ExtResource( 48 ) ],
+"loop": true,
+"name": "Attack_bot",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 10 ), ExtResource( 82 ), ExtResource( 5 ), ExtResource( 79 ), ExtResource( 6 ), ExtResource( 80 ), ExtResource( 73 ), ExtResource( 81 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "Attack_bot_success",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 115 ), ExtResource( 146 ), ExtResource( 125 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 116 ), ExtResource( 126 ), ExtResource( 121 ), ExtResource( 95 ) ],
+"loop": true,
+"name": "Attack_top",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 123 ), ExtResource( 97 ), ExtResource( 109 ), ExtResource( 133 ), ExtResource( 151 ), ExtResource( 142 ), ExtResource( 102 ), ExtResource( 110 ), ExtResource( 140 ) ],
+"loop": false,
+"name": "Attack_top_success",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 90 ), ExtResource( 15 ), ExtResource( 50 ), ExtResource( 36 ), ExtResource( 43 ), ExtResource( 51 ), ExtResource( 26 ), ExtResource( 92 ), ExtResource( 84 ), ExtResource( 75 ) ],
+"loop": true,
+"name": "Attack_bot_fail",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 9 ), ExtResource( 31 ), ExtResource( 35 ), ExtResource( 11 ), ExtResource( 89 ), ExtResource( 12 ), ExtResource( 23 ), ExtResource( 41 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "Attack_mid_fail",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 168 ), ExtResource( 179 ), ExtResource( 194 ), ExtResource( 217 ), ExtResource( 159 ), ExtResource( 190 ), ExtResource( 186 ), ExtResource( 218 ), ExtResource( 195 ), ExtResource( 170 ) ],
+"loop": true,
+"name": "Defend_mid",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=49]
+animations = [ {
+"frames": [ ExtResource( 83 ) ],
+"loop": true,
+"name": "Freeze",
+"speed": 5.0
+} ]
+
+[node name="Hero" type="Node2D"]
+z_index = -1
+script = ExtResource( 64 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/AttackBot = SubResource( 1 )
+anims/AttackBotFail = SubResource( 2 )
+anims/AttackBotSuccess = SubResource( 3 )
+anims/AttackMid = SubResource( 4 )
+anims/AttackMidFail = SubResource( 5 )
+anims/AttackMidSuccess = SubResource( 6 )
+anims/AttackTop = SubResource( 7 )
+anims/AttackTopFail = SubResource( 8 )
+anims/AttackTopSuccess = SubResource( 9 )
+anims/Defeated = SubResource( 10 )
+anims/DefendBot = SubResource( 11 )
+anims/DefendBotLong = SubResource( 12 )
+anims/DefendMid = SubResource( 13 )
+anims/DefendMidLong = SubResource( 14 )
+anims/DefendTop = SubResource( 15 )
+anims/DefendTopLong = SubResource( 16 )
+anims/MoveIN = SubResource( 17 )
+anims/MoveOUT = SubResource( 18 )
+anims/NoAction = SubResource( 19 )
+anims/Ready = SubResource( 20 )
+anims/ReadyIdle = SubResource( 21 )
+anims/SwingSideways = SubResource( 22 )
+
+[node name="AnimTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 47 )
+anim_player = NodePath("../Anim")
+active = true
+parameters/Transition/current = 0
+script = ExtResource( 61 )
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource( 58 )
+
+[node name="SwingSidewaysState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="SwingSideways" type="Node" parent="StateMachine/SwingSidewaysState"]
+script = ExtResource( 66 )
+
+[node name="ReadyState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="Ready" type="Node" parent="StateMachine/ReadyState"]
+script = ExtResource( 69 )
+
+[node name="ReadyIdleState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="ReadyIdle" type="Node" parent="StateMachine/ReadyIdleState"]
+script = ExtResource( 65 )
+
+[node name="DefendTopState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="DefendTop" type="Node" parent="StateMachine/DefendTopState"]
+script = ExtResource( 59 )
+
+[node name="DefendMidState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="DefendMid" type="Node" parent="StateMachine/DefendMidState"]
+script = ExtResource( 57 )
+
+[node name="DefendBotState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="DefendBot" type="Node" parent="StateMachine/DefendBotState"]
+script = ExtResource( 62 )
+
+[node name="AttackTopState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackTop" type="Node" parent="StateMachine/AttackTopState"]
+script = ExtResource( 68 )
+
+[node name="AttackMidState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackMid" type="Node" parent="StateMachine/AttackMidState"]
+script = ExtResource( 67 )
+
+[node name="AttackBotState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackBot" type="Node" parent="StateMachine/AttackBotState"]
+script = ExtResource( 63 )
+
+[node name="UnReadyState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="UnReady" type="Node" parent="StateMachine/UnReadyState"]
+script = ExtResource( 309 )
+
+[node name="NoActionState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="NoAction" type="Node" parent="StateMachine/NoActionState"]
+script = ExtResource( 304 )
+
+[node name="AttackTopFailState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackTopFail" type="Node" parent="StateMachine/AttackTopFailState"]
+script = ExtResource( 306 )
+
+[node name="AttackTopSuccessState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackTopSuccess" type="Node" parent="StateMachine/AttackTopSuccessState"]
+script = ExtResource( 303 )
+
+[node name="AttackMidFailState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackMidFail" type="Node" parent="StateMachine/AttackMidFailState"]
+script = ExtResource( 301 )
+
+[node name="AttackMidSuccessState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackMidSuccess" type="Node" parent="StateMachine/AttackMidSuccessState"]
+script = ExtResource( 302 )
+
+[node name="AttackBotFailState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackBotFail" type="Node" parent="StateMachine/AttackBotFailState"]
+script = ExtResource( 307 )
+
+[node name="AttackBotSuccessState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="AttackBotSuccess" type="Node" parent="StateMachine/AttackBotSuccessState"]
+script = ExtResource( 305 )
+
+[node name="MoveINState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="MoveIN" type="Node" parent="StateMachine/MoveINState"]
+script = ExtResource( 70 )
+
+[node name="MoveOUTState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="MoveOUT" type="Node" parent="StateMachine/MoveOUTState"]
+script = ExtResource( 71 )
+
+[node name="DefendBotLongState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="DefendBotLong" type="Node" parent="StateMachine/DefendBotLongState"]
+script = ExtResource( 71 )
+
+[node name="DefendMidLongState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="DefendMidLong" type="Node" parent="StateMachine/DefendMidLongState"]
+script = ExtResource( 71 )
+
+[node name="DefendTopLongState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="DefendTopLong" type="Node" parent="StateMachine/DefendTopLongState"]
+script = ExtResource( 71 )
+
+[node name="DefeatedState" type="Node" parent="StateMachine"]
+script = ExtResource( 60 )
+
+[node name="Defeated" type="Node" parent="StateMachine/DefeatedState"]
+script = ExtResource( 308 )
+
+[node name="HeroInerface" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stats" type="VBoxContainer" parent="HeroInerface"]
+margin_left = -135.0
+margin_top = 180.0
+margin_right = 315.0
+margin_bottom = 284.0
+rect_rotation = -90.0
+rect_scale = Vector2( 0.75, 0.75 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgBar1" parent="HeroInerface/Stats" instance=ExtResource( 39 )]
+
+[node name="ProgBar2" parent="HeroInerface/Stats" instance=ExtResource( 39 )]
+margin_top = 54.0
+margin_bottom = 104.0
+
+[node name="Actions" type="Control" parent="HeroInerface"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.7, 0.7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionsTOP" type="HBoxContainer" parent="HeroInerface/Actions"]
+margin_left = 28.1877
+margin_top = -238.401
+margin_right = 544.188
+margin_bottom = 17.5992
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/separation = -30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopDef" type="TextureButton" parent="HeroInerface/Actions/ActionsTOP"]
+margin_right = 256.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 265 )
+
+[node name="TopAtt" type="TextureButton" parent="HeroInerface/Actions/ActionsTOP"]
+margin_left = 226.0
+margin_right = 482.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 255 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ActionsMID" type="HBoxContainer" parent="HeroInerface/Actions"]
+margin_left = 78.6938
+margin_top = -60.4101
+margin_right = 594.694
+margin_bottom = 195.59
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/separation = -30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MidDef" type="TextureButton" parent="HeroInerface/Actions/ActionsMID"]
+margin_right = 256.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 263 )
+
+[node name="MidAtt" type="TextureButton" parent="HeroInerface/Actions/ActionsMID"]
+margin_left = 226.0
+margin_right = 482.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 14 )
+
+[node name="ActionsBOT" type="HBoxContainer" parent="HeroInerface/Actions"]
+margin_left = 28.7621
+margin_top = 121.878
+margin_right = 544.762
+margin_bottom = 377.878
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/separation = -30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotDef" type="TextureButton" parent="HeroInerface/Actions/ActionsBOT"]
+margin_right = 256.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 228 )
+
+[node name="BotAtt" type="TextureButton" parent="HeroInerface/Actions/ActionsBOT"]
+margin_left = 226.0
+margin_right = 482.0
+margin_bottom = 256.0
+texture_normal = ExtResource( 230 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 48 )
+animation = "Swing_sideways"
+frame = 36
+speed_scale = 0.0
+
+[node name="Name" type="NinePatchRect" parent="AnimatedSprite"]
+margin_left = -59.6561
+margin_top = -207.335
+margin_right = 36.3439
+margin_bottom = -165.335
+texture = ExtResource( 7 )
+patch_margin_left = 43
+patch_margin_top = 14
+patch_margin_right = 33
+patch_margin_bottom = 17
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sign" type="HBoxContainer" parent="AnimatedSprite/Name"]
+margin_top = 9.7998
+margin_right = 1036.0
+margin_bottom = 265.8
+rect_scale = Vector2( 0.1, 0.1 )
+custom_constants/separation = -100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="TextureRect" parent="AnimatedSprite/Name/Sign"]
+margin_right = 256.0
+margin_bottom = 256.0
+texture = ExtResource( 328 )
+
+[node name="L" type="TextureRect" parent="AnimatedSprite/Name/Sign"]
+margin_left = 156.0
+margin_right = 412.0
+margin_bottom = 256.0
+texture = ExtResource( 4 )
+
+[node name="O" type="TextureRect" parent="AnimatedSprite/Name/Sign"]
+margin_left = 312.0
+margin_right = 568.0
+margin_bottom = 256.0
+texture = ExtResource( 3 )
+
+[node name="I" type="TextureRect" parent="AnimatedSprite/Name/Sign"]
+margin_left = 468.0
+margin_right = 724.0
+margin_bottom = 256.0
+texture = ExtResource( 2 )
+
+[node name="N" type="TextureRect" parent="AnimatedSprite/Name/Sign"]
+margin_left = 624.0
+margin_right = 880.0
+margin_bottom = 256.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FreezePosture" type="AnimatedSprite" parent="."]
+visible = false
+frames = SubResource( 49 )
+animation = "Freeze"
+[connection signal="button_down" from="HeroInerface/Actions/ActionsTOP/TopDef" to="." method="_on_TopDef_button_down"]
+[connection signal="button_up" from="HeroInerface/Actions/ActionsTOP/TopDef" to="." method="_on_TopDef_button_up"]
+[connection signal="button_down" from="HeroInerface/Actions/ActionsTOP/TopAtt" to="." method="_on_TopAtt_button_down"]
+[connection signal="button_up" from="HeroInerface/Actions/ActionsTOP/TopAtt" to="." method="_on_TopAtt_button_up"]
+[connection signal="button_down" from="HeroInerface/Actions/ActionsMID/MidDef" to="." method="_on_MidDef_button_down"]
+[connection signal="button_up" from="HeroInerface/Actions/ActionsMID/MidDef" to="." method="_on_MidDef_button_up"]
+[connection signal="button_down" from="HeroInerface/Actions/ActionsMID/MidAtt" to="." method="_on_MidAtt_button_down"]
+[connection signal="button_up" from="HeroInerface/Actions/ActionsMID/MidAtt" to="." method="_on_MidAtt_button_up"]
+[connection signal="button_down" from="HeroInerface/Actions/ActionsBOT/BotDef" to="." method="_on_BotDef_button_down"]
+[connection signal="button_up" from="HeroInerface/Actions/ActionsBOT/BotDef" to="." method="_on_BotDef_button_up"]
+[connection signal="button_down" from="HeroInerface/Actions/ActionsBOT/BotAtt" to="." method="_on_BotAtt_button_down"]
+[connection signal="button_up" from="HeroInerface/Actions/ActionsBOT/BotAtt" to="." method="_on_BotAtt_button_up"]

@@ -1,0 +1,1049 @@
+[gd_scene load_steps=169 format=2]
+
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0008.png" type="Texture" id=1]
+[ext_resource path="res://03_scripts/Interface.gd" type="Script" id=2]
+[ext_resource path="res://04_assets/fonts/abel-regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://04_assets/ENEMY_BASE/base_v3.png" type="Texture" id=4]
+[ext_resource path="res://04_assets/OTHER/pause.png" type="Texture" id=5]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/BoxLight_2.png" type="Texture" id=6]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0005.png" type="Texture" id=7]
+[ext_resource path="res://04_assets/RIVER/pic_3.png" type="Texture" id=8]
+[ext_resource path="res://04_assets/RIVER/floor_2.png" type="Texture" id=9]
+[ext_resource path="res://03_scripts/Interface_Floor.gd" type="Script" id=10]
+[ext_resource path="res://04_assets/RIVER/floor_shadermaterial.tres" type="Material" id=11]
+[ext_resource path="res://03_scripts/Interface_River.gd" type="Script" id=12]
+[ext_resource path="res://04_assets/RIVER/river_shadermaterial.tres" type="Material" id=13]
+[ext_resource path="res://02_scenes/Number_of_avaible_units.tscn" type="PackedScene" id=16]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0032.png" type="Texture" id=19]
+[ext_resource path="res://02_scenes/BoxFoUnits.tscn" type="PackedScene" id=20]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0019.png" type="Texture" id=84]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0014.png" type="Texture" id=85]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0004.png" type="Texture" id=86]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0022.png" type="Texture" id=87]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0007.png" type="Texture" id=88]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0016.png" type="Texture" id=89]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0023.png" type="Texture" id=90]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0024.png" type="Texture" id=91]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0001.png" type="Texture" id=92]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0028.png" type="Texture" id=93]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0008.png" type="Texture" id=94]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0003.png" type="Texture" id=95]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0010.png" type="Texture" id=96]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0015.png" type="Texture" id=97]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0017.png" type="Texture" id=98]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0020.png" type="Texture" id=99]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0025.png" type="Texture" id=100]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0026.png" type="Texture" id=101]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0011.png" type="Texture" id=102]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0013.png" type="Texture" id=103]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0012.png" type="Texture" id=104]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0018.png" type="Texture" id=105]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0021.png" type="Texture" id=106]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0027.png" type="Texture" id=107]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0002.png" type="Texture" id=108]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0009.png" type="Texture" id=109]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0006.png" type="Texture" id=110]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0055.png" type="Texture" id=111]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0059.png" type="Texture" id=112]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0036.png" type="Texture" id=113]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0038.png" type="Texture" id=114]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0060.png" type="Texture" id=115]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0058.png" type="Texture" id=116]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0032.png" type="Texture" id=117]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0037.png" type="Texture" id=118]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0044.png" type="Texture" id=119]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0030.png" type="Texture" id=120]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0046.png" type="Texture" id=121]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0049.png" type="Texture" id=122]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0034.png" type="Texture" id=123]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0042.png" type="Texture" id=124]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0043.png" type="Texture" id=125]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0031.png" type="Texture" id=126]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0045.png" type="Texture" id=127]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0047.png" type="Texture" id=128]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0041.png" type="Texture" id=129]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0051.png" type="Texture" id=130]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0029.png" type="Texture" id=131]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0050.png" type="Texture" id=132]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0040.png" type="Texture" id=133]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0052.png" type="Texture" id=134]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0053.png" type="Texture" id=135]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0054.png" type="Texture" id=136]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0056.png" type="Texture" id=137]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0039.png" type="Texture" id=138]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0035.png" type="Texture" id=139]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0057.png" type="Texture" id=140]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0033.png" type="Texture" id=141]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0048.png" type="Texture" id=142]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0062.png" type="Texture" id=143]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0070.png" type="Texture" id=144]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0063.png" type="Texture" id=145]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0068.png" type="Texture" id=146]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0067.png" type="Texture" id=147]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0069.png" type="Texture" id=148]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0061.png" type="Texture" id=149]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0065.png" type="Texture" id=150]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0064.png" type="Texture" id=151]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/tree_anim_2/Nowy folder0066.png" type="Texture" id=152]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0019.png" type="Texture" id=153]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0007.png" type="Texture" id=154]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0009.png" type="Texture" id=155]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0008.png" type="Texture" id=156]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0010.png" type="Texture" id=157]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0011.png" type="Texture" id=158]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0006.png" type="Texture" id=159]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0012.png" type="Texture" id=160]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0013.png" type="Texture" id=161]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0005.png" type="Texture" id=162]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0004.png" type="Texture" id=163]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0002.png" type="Texture" id=164]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0001.png" type="Texture" id=165]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0003.png" type="Texture" id=166]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0030.png" type="Texture" id=167]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0025.png" type="Texture" id=168]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0018.png" type="Texture" id=169]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0023.png" type="Texture" id=170]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0019.png" type="Texture" id=171]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0029.png" type="Texture" id=172]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0024.png" type="Texture" id=173]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0026.png" type="Texture" id=174]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0027.png" type="Texture" id=175]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0016.png" type="Texture" id=176]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0014.png" type="Texture" id=177]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0021.png" type="Texture" id=178]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0017.png" type="Texture" id=179]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0015.png" type="Texture" id=180]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0022.png" type="Texture" id=181]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0020.png" type="Texture" id=182]
+[ext_resource path="res://04_assets/TREE_AND_UNIT_BUTTONS/box_grow_anim/Nowy folder0028.png" type="Texture" id=183]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0029.png" type="Texture" id=184]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0002.png" type="Texture" id=185]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0003.png" type="Texture" id=186]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0001.png" type="Texture" id=187]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0009.png" type="Texture" id=188]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0010.png" type="Texture" id=189]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0011.png" type="Texture" id=190]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0014.png" type="Texture" id=191]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0017.png" type="Texture" id=192]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0006.png" type="Texture" id=193]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0018.png" type="Texture" id=194]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0015.png" type="Texture" id=195]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0013.png" type="Texture" id=196]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0020.png" type="Texture" id=197]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0021.png" type="Texture" id=198]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0023.png" type="Texture" id=199]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0024.png" type="Texture" id=200]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0026.png" type="Texture" id=201]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0005.png" type="Texture" id=202]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0004.png" type="Texture" id=203]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0016.png" type="Texture" id=204]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0012.png" type="Texture" id=205]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0027.png" type="Texture" id=206]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0025.png" type="Texture" id=207]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0022.png" type="Texture" id=208]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0028.png" type="Texture" id=209]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0030.png" type="Texture" id=210]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0007.png" type="Texture" id=211]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0031.png" type="Texture" id=212]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0035.png" type="Texture" id=213]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0034.png" type="Texture" id=214]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0037.png" type="Texture" id=215]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0033.png" type="Texture" id=216]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0038.png" type="Texture" id=217]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0036.png" type="Texture" id=218]
+[ext_resource path="res://04_assets/VACUUM/Vacuum_anim/Nowy folder0039.png" type="Texture" id=219]
+
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath("Masks/Mask_1/MaskViewport")
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 165 ), ExtResource( 164 ), ExtResource( 166 ), ExtResource( 163 ), ExtResource( 162 ), ExtResource( 159 ), ExtResource( 154 ), ExtResource( 156 ), ExtResource( 155 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 177 ), ExtResource( 180 ), ExtResource( 176 ), ExtResource( 179 ), ExtResource( 169 ), ExtResource( 171 ), ExtResource( 182 ), ExtResource( 178 ), ExtResource( 181 ), ExtResource( 170 ), ExtResource( 173 ), ExtResource( 168 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 183 ), ExtResource( 172 ), ExtResource( 167 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="ViewportTexture" id=3]
+viewport_path = NodePath("Masks/Mask_1/MaskViewport")
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 165 ), ExtResource( 164 ), ExtResource( 166 ), ExtResource( 163 ), ExtResource( 162 ), ExtResource( 159 ), ExtResource( 154 ), ExtResource( 156 ), ExtResource( 155 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 177 ), ExtResource( 180 ), ExtResource( 176 ), ExtResource( 179 ), ExtResource( 169 ), ExtResource( 171 ), ExtResource( 182 ), ExtResource( 178 ), ExtResource( 181 ), ExtResource( 170 ), ExtResource( 173 ), ExtResource( 168 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 183 ), ExtResource( 172 ), ExtResource( 167 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 165 ), ExtResource( 164 ), ExtResource( 166 ), ExtResource( 163 ), ExtResource( 162 ), ExtResource( 159 ), ExtResource( 154 ), ExtResource( 156 ), ExtResource( 155 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 177 ), ExtResource( 180 ), ExtResource( 176 ), ExtResource( 179 ), ExtResource( 169 ), ExtResource( 171 ), ExtResource( 182 ), ExtResource( 178 ), ExtResource( 181 ), ExtResource( 170 ), ExtResource( 173 ), ExtResource( 168 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 183 ), ExtResource( 172 ), ExtResource( 167 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+outline_size = 1
+outline_color = Color( 0.772549, 0.254902, 0.254902, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+outline_size = 1
+outline_color = Color( 1, 0, 0, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=8]
+length = 2.0
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Clear:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1, 1.19, 1.39, 1.51, 1.91, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.4, 0.4 ), Vector2( 0.4, 0.4 ), Vector2( 0.35, 0.35 ), Vector2( 0.4, 0.4 ), Vector2( 0.45, 0.45 ), Vector2( 0.125, 0.125 ), Vector2( 0.005, 0.005 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pause_loc:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1.1, 1.55, 1.63, 1.74, 1.84, 1.97 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.244, 0.244 ), Vector2( 0.2, 0.2 ), Vector2( 0.244, 0.244 ), Vector2( 0.27, 0.27 ), Vector2( 0.244, 0.244 ), Vector2( 0.005, 0.005 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LevelNumber:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1.09, 1.24, 1.58 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 169, 640 ), Vector2( 100, 640 ), Vector2( 550, 640 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.01, 0.1, 1.95, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "hide_boxes_content"
+}, {
+"args": [  ],
+"method": "hide_label_with_number_of_avaible_units"
+}, {
+"args": [  ],
+"method": "disabled_vacuum_and_pause_button"
+}, {
+"args": [  ],
+"method": "hide_tree"
+}, {
+"args": [  ],
+"method": "hide_vacuum_and_pause_button"
+} ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Tree/TreeSprites:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69, 0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("TopMenus/Control/Blue/BlueButton:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 29, 0, 0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("TopMenus/Control2/Yellow/YellowButton:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.7, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 29, 0, 0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("TopMenus/Control3/Green/GreenButton:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 29, 0, 0 ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 3.0
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Clear:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.3, 0.41, 0.7, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.005, 0.005 ), Vector2( 0.4, 0.4 ), Vector2( 0.45, 0.45 ), Vector2( 0.4, 0.4 ), Vector2( 0.35, 0.35 ), Vector2( 0.4, 0.4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pause_loc:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.19, 0.32, 0.41, 0.51, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.005, 0.005 ), Vector2( 0.244, 0.244 ), Vector2( 0.27, 0.27 ), Vector2( 0.244, 0.244 ), Vector2( 0.2, 0.2 ), Vector2( 0.244, 0.244 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LevelNumber:rect_position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 0.34, 0.52, 0.58, 0.64, 0.7, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 169, 800 ), Vector2( 169, 540 ), Vector2( 169, 640 ), Vector2( 169, 600 ), Vector2( 169, 640 ), Vector2( 169, 620 ), Vector2( 169, 640 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.05, 0.1, 2.98, 2.99, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "show_vacuum_and_pause_button"
+}, {
+"args": [  ],
+"method": "show_tree"
+}, {
+"args": [  ],
+"method": "activate_vacuum_and_pause_button"
+}, {
+"args": [  ],
+"method": "show_boxes_content"
+}, {
+"args": [  ],
+"method": "show_label_with_number_of_avaible_units"
+} ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Tree/TreeSprites:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 69, 69 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("TopMenus/Control/Blue/BlueButton:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1, 1.99 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 29 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("TopMenus/Control2/Yellow/YellowButton:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 1.5, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 29 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("TopMenus/Control3/Green/GreenButton:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 29 ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "In_tuto_clear_off"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Clear:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.4, 0.4 ), Vector2( 0.4, 0.4 ), Vector2( 0.4, 0.4 ), Vector2( 0.45, 0.45 ), Vector2( 0.125, 0.125 ), Vector2( 0.005, 0.005 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.01, 0.1, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "hide_boxes_content"
+}, {
+"args": [  ],
+"method": "hide_label_with_number_of_avaible_units"
+}, {
+"args": [  ],
+"method": "disabled_vacuum_and_pause_button"
+}, {
+"args": [  ],
+"method": "hide_vacuum_and_pause_button"
+} ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 2.0
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Clear:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1, 1.19, 1.39, 1.51, 1.91, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.4, 0.4 ), Vector2( 0.4, 0.4 ), Vector2( 0.35, 0.35 ), Vector2( 0.4, 0.4 ), Vector2( 0.45, 0.45 ), Vector2( 0.125, 0.125 ), Vector2( 0.005, 0.005 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LevelNumber:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/keys = {
+"times": PoolRealArray( 1.09, 1.24, 1.58 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 169, 640 ), Vector2( 100, 640 ), Vector2( 550, 640 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.01, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "hide_boxes_content"
+}, {
+"args": [  ],
+"method": "hide_label_with_number_of_avaible_units"
+}, {
+"args": [  ],
+"method": "hide_tree"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Tree/TreeSprites:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69, 0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("TopMenus/Control/Blue/BlueButton:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 29, 0, 0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("TopMenus/Control2/Yellow/YellowButton:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 29, 0, 0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("TopMenus/Control3/Green/GreenButton:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 29, 0, 0 ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 3.0
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Clear:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.3, 0.41, 0.7, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.005, 0.005 ), Vector2( 0.4, 0.4 ), Vector2( 0.45, 0.45 ), Vector2( 0.4, 0.4 ), Vector2( 0.35, 0.35 ), Vector2( 0.4, 0.4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Pause_loc:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.19, 0.32, 0.41, 0.51, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.005, 0.005 ), Vector2( 0.244, 0.244 ), Vector2( 0.27, 0.27 ), Vector2( 0.244, 0.244 ), Vector2( 0.2, 0.2 ), Vector2( 0.244, 0.244 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.05, 2.99, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "show_tree"
+}, {
+"args": [  ],
+"method": "show_boxes_content"
+}, {
+"args": [  ],
+"method": "show_label_with_number_of_avaible_units"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Tree/TreeSprites:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 69, 69 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("TopMenus/Control/Blue/BlueButton:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 29 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("TopMenus/Control2/Yellow/YellowButton:frame")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 1.5, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 29 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("TopMenus/Control3/Green/GreenButton:frame")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 0, 29 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Intuto_clear_on"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Clear:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.3, 0.41, 0.7, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.005, 0.005 ), Vector2( 0.4, 0.4 ), Vector2( 0.45, 0.45 ), Vector2( 0.4, 0.4 ), Vector2( 0.35, 0.35 ), Vector2( 0.4, 0.4 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"values": [ {
+"args": [  ],
+"method": "hide_vacuum_and_pause_button"
+}, {
+"args": [  ],
+"method": "disabled_vacuum_and_pause_button"
+}, {
+"args": [  ],
+"method": "show_vacuum_"
+}, {
+"args": [  ],
+"method": "activate_vacuum"
+} ]
+}
+
+[sub_resource type="Animation" id=14]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Pause_loc:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 40, 620 ), Vector2( 100, 620 ), Vector2( 40, 620 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 187 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 203 ), ExtResource( 202 ), ExtResource( 193 ), ExtResource( 211 ), ExtResource( 1 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 205 ), ExtResource( 196 ), ExtResource( 191 ), ExtResource( 195 ), ExtResource( 204 ), ExtResource( 192 ), ExtResource( 194 ), ExtResource( 153 ), ExtResource( 197 ), ExtResource( 198 ), ExtResource( 208 ), ExtResource( 199 ), ExtResource( 200 ), ExtResource( 207 ), ExtResource( 201 ), ExtResource( 206 ), ExtResource( 209 ), ExtResource( 184 ), ExtResource( 210 ), ExtResource( 212 ), ExtResource( 19 ), ExtResource( 216 ), ExtResource( 214 ), ExtResource( 213 ), ExtResource( 218 ), ExtResource( 215 ), ExtResource( 217 ), ExtResource( 219 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 92 ), ExtResource( 108 ), ExtResource( 95 ), ExtResource( 86 ), ExtResource( 7 ), ExtResource( 110 ), ExtResource( 88 ), ExtResource( 94 ), ExtResource( 109 ), ExtResource( 96 ), ExtResource( 102 ), ExtResource( 104 ), ExtResource( 103 ), ExtResource( 85 ), ExtResource( 97 ), ExtResource( 89 ), ExtResource( 98 ), ExtResource( 105 ), ExtResource( 84 ), ExtResource( 99 ), ExtResource( 106 ), ExtResource( 87 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 107 ), ExtResource( 93 ), ExtResource( 131 ), ExtResource( 120 ), ExtResource( 126 ), ExtResource( 117 ), ExtResource( 141 ), ExtResource( 123 ), ExtResource( 139 ), ExtResource( 113 ), ExtResource( 118 ), ExtResource( 114 ), ExtResource( 138 ), ExtResource( 133 ), ExtResource( 129 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 119 ), ExtResource( 127 ), ExtResource( 121 ), ExtResource( 128 ), ExtResource( 142 ), ExtResource( 122 ), ExtResource( 132 ), ExtResource( 130 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 111 ), ExtResource( 137 ), ExtResource( 140 ), ExtResource( 116 ), ExtResource( 112 ), ExtResource( 115 ), ExtResource( 149 ), ExtResource( 143 ), ExtResource( 145 ), ExtResource( 151 ), ExtResource( 150 ), ExtResource( 152 ), ExtResource( 147 ), ExtResource( 146 ), ExtResource( 148 ), ExtResource( 144 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[node name="Interface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Masks" type="Node" parent="."]
+
+[node name="Mask_1" type="Node" parent="Masks"]
+
+[node name="MaskViewport" type="Viewport" parent="Masks/Mask_1"]
+size = Vector2( 320, 160 )
+transparent_bg = true
+render_target_v_flip = true
+
+[node name="Mask" type="Sprite" parent="Masks/Mask_1/MaskViewport"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="MaskTextureHolder" type="Sprite" parent="Masks/Mask_1"]
+position = Vector2( 232, 760 )
+z_index = -5
+texture = SubResource( 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+light_mask = 1024
+z_index = -4
+
+[node name="Floor" type="TextureRect" parent="Node2D"]
+material = ExtResource( 11 )
+margin_right = 960.0
+margin_bottom = 1440.0
+rect_scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 9 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="River" type="TextureRect" parent="Node2D"]
+modulate = Color( 1, 1, 1, 0.376471 )
+material = ExtResource( 13 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -136.0
+margin_top = -69.0
+margin_right = 1827.0
+margin_bottom = 1559.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+stretch_mode = 6
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnemyBase" type="Sprite" parent="Node2D"]
+position = Vector2( 240, 688 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="TopMenus" type="HBoxContainer" parent="."]
+light_mask = 1024
+margin_right = 960.0
+margin_bottom = 300.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/separation = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="TopMenus"]
+margin_right = 318.0
+margin_bottom = 300.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Blue" type="TextureButton" parent="TopMenus/Control"]
+light_mask = 0
+margin_right = 323.0
+margin_bottom = 160.0
+size_flags_vertical = 0
+disabled = true
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlueButton" type="AnimatedSprite" parent="TopMenus/Control/Blue"]
+position = Vector2( -2, 0 )
+frames = SubResource( 2 )
+animation = "New Anim"
+centered = false
+
+[node name="Label" parent="TopMenus/Control/Blue" instance=ExtResource( 16 )]
+visible = false
+margin_top = -54.0
+margin_bottom = 0.0
+
+[node name="Light_1" type="Light2D" parent="TopMenus/Control/Blue"]
+show_behind_parent = true
+light_mask = 1024
+z_index = -1
+texture = SubResource( 3 )
+offset = Vector2( 160, 80 )
+color = Color( 1, 1, 1, 0.996078 )
+mode = 3
+range_item_cull_mask = 1024
+shadow_color = Color( 1, 1, 1, 0 )
+shadow_item_cull_mask = 0
+
+[node name="Control2" type="Control" parent="TopMenus"]
+margin_left = 320.0
+margin_right = 639.0
+margin_bottom = 300.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Yellow" type="TextureButton" parent="TopMenus/Control2"]
+margin_right = 323.0
+margin_bottom = 160.0
+size_flags_vertical = 0
+disabled = true
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowButton" type="AnimatedSprite" parent="TopMenus/Control2/Yellow"]
+frames = SubResource( 4 )
+animation = "New Anim"
+centered = false
+
+[node name="Label" parent="TopMenus/Control2/Yellow" instance=ExtResource( 16 )]
+visible = false
+margin_bottom = 4.0
+
+[node name="Light_2" type="Light2D" parent="TopMenus/Control2/Yellow"]
+show_behind_parent = true
+light_mask = 1024
+z_index = -1
+texture = SubResource( 3 )
+offset = Vector2( 160, 80 )
+color = Color( 1, 1, 1, 0.996078 )
+mode = 3
+range_item_cull_mask = 1024
+shadow_color = Color( 1, 1, 1, 0 )
+shadow_item_cull_mask = 0
+
+[node name="Control3" type="Control" parent="TopMenus"]
+margin_left = 641.0
+margin_right = 960.0
+margin_bottom = 300.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Green" type="TextureButton" parent="TopMenus/Control3"]
+margin_right = 323.0
+margin_bottom = 160.0
+size_flags_vertical = 0
+disabled = true
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenButton" type="AnimatedSprite" parent="TopMenus/Control3/Green"]
+frames = SubResource( 5 )
+animation = "New Anim"
+centered = false
+
+[node name="Label" parent="TopMenus/Control3/Green" instance=ExtResource( 16 )]
+visible = false
+margin_bottom = 4.0
+
+[node name="Light_3" type="Light2D" parent="TopMenus/Control3/Green"]
+show_behind_parent = true
+light_mask = 1024
+z_index = -1
+texture = SubResource( 3 )
+offset = Vector2( 160, 80 )
+color = Color( 1, 1, 1, 0.996078 )
+mode = 3
+range_item_cull_mask = 1024
+shadow_color = Color( 1, 1, 1, 0 )
+shadow_item_cull_mask = 0
+
+[node name="LevelNumber" type="Label" parent="."]
+pause_mode = 2
+margin_left = 169.0
+margin_top = 789.167
+margin_right = 322.0
+margin_bottom = 863.89
+custom_fonts/font = SubResource( 6 )
+text = "Level number"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TUTORIAL1" type="Label" parent="."]
+visible = false
+modulate = Color( 0, 0.368627, 1, 1 )
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 430.0
+margin_bottom = 200.0
+custom_fonts/font = SubResource( 7 )
+text = "A"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TUTORIAL2" type="Label" parent="."]
+visible = false
+modulate = Color( 0, 0.368627, 1, 1 )
+margin_left = 50.0
+margin_top = 250.0
+margin_right = 430.0
+margin_bottom = 500.0
+custom_fonts/font = SubResource( 7 )
+text = "A"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimPlayer" type="AnimationPlayer" parent="."]
+pause_mode = 2
+anims/In_game_interface_off = SubResource( 8 )
+anims/In_game_interface_on = SubResource( 9 )
+anims/In_tuto_clear_off = SubResource( 10 )
+anims/In_tutorial_interface_off = SubResource( 11 )
+anims/In_tutorial_interface_on = SubResource( 12 )
+anims/Intuto_clear_on = SubResource( 13 )
+anims/Pause = SubResource( 14 )
+
+[node name="TweenSquize" type="Tween" parent="."]
+
+[node name="Pause_loc" type="Control" parent="."]
+visible = false
+margin_left = 20.0
+margin_top = 600.0
+margin_right = 20.0
+margin_bottom = 600.0
+rect_scale = Vector2( 0.0315556, 0.0315556 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="TextureButton" parent="Pause_loc"]
+pause_mode = 2
+margin_right = 256.0
+margin_bottom = 256.0
+disabled = true
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Clear" type="TextureButton" parent="."]
+visible = false
+margin_top = 490.0
+margin_right = 255.0
+margin_bottom = 740.0
+rect_scale = Vector2( 0.005, 0.005 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Clear"]
+z_index = -3
+frames = SubResource( 15 )
+frame = 2
+playing = true
+centered = false
+
+[node name="Boxes" type="Node2D" parent="."]
+light_mask = 1024
+z_index = -3
+
+[node name="BoxFoUnits" parent="Boxes" instance=ExtResource( 20 )]
+light_mask = 1024
+
+[node name="BoxFoUnits2" parent="Boxes" instance=ExtResource( 20 )]
+position = Vector2( 160, 0 )
+kind_of_box = 1
+
+[node name="BoxFoUnits3" parent="Boxes" instance=ExtResource( 20 )]
+position = Vector2( 320, 0 )
+kind_of_box = 2
+
+[node name="Tree" type="Node2D" parent="."]
+visible = false
+position = Vector2( 0, -13 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="TreeSprites" type="AnimatedSprite" parent="Tree"]
+position = Vector2( 0, 0.880249 )
+frames = SubResource( 16 )
+animation = "New Anim"
+centered = false
+[connection signal="item_rect_changed" from="Node2D/Floor" to="Node2D/Floor" method="_on_Floor_item_rect_changed"]
+[connection signal="item_rect_changed" from="Node2D/River" to="Node2D/River" method="_on_River_item_rect_changed"]
+[connection signal="button_down" from="TopMenus/Control/Blue" to="." method="_on_Blue_button_down"]
+[connection signal="button_up" from="TopMenus/Control/Blue" to="." method="_on_Blue_button_up"]
+[connection signal="button_down" from="TopMenus/Control2/Yellow" to="." method="_on_Yellow_button_down"]
+[connection signal="button_up" from="TopMenus/Control2/Yellow" to="." method="_on_Yellow_button_up"]
+[connection signal="button_down" from="TopMenus/Control3/Green" to="." method="_on_Green_button_down"]
+[connection signal="button_up" from="TopMenus/Control3/Green" to="." method="_on_Green_button_up"]
+[connection signal="button_down" from="Pause_loc/Pause" to="." method="_on_Pause_button_down"]
+[connection signal="button_up" from="Pause_loc/Pause" to="." method="_on_Pause_button_up"]
+[connection signal="button_down" from="Clear" to="." method="_on_Clear_button_down"]
+[connection signal="button_up" from="Clear" to="." method="_on_Clear_button_up"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/HelpSong_v5.wav-f1cf222b88c66875d132f5de85cc9c7c.sample"
+
+[deps]
+
+source_file="res://04_assets/sound/HelpSong_v5.wav"
+dest_files=[ "res://.import/HelpSong_v5.wav-f1cf222b88c66875d132f5de85cc9c7c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/06_A3.wav-6af1c225a1177d874be3f28ceab1ee7e.sample"
+
+[deps]
+
+source_file="res://02_Game/04_g_sounds/piano/06_A3.wav"
+dest_files=[ "res://.import/06_A3.wav-6af1c225a1177d874be3f28ceab1ee7e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

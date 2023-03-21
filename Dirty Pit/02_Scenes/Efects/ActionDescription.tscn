@@ -1,0 +1,135 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://03_Scripts/Effects/ActionDescription.gd" type="Script" id=1]
+[ext_resource path="res://01_Assests/Fonts/Dynamic_fonts/LabelsAtEffectsDescription_DynFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://01_Assests/Interface/Symbols/attack_mid.png" type="Texture" id=3]
+[ext_resource path="res://01_Assests/Interface/Symbols/attack_top.png" type="Texture" id=4]
+[ext_resource path="res://01_Assests/Interface/Symbols/def_bot.png" type="Texture" id=5]
+[ext_resource path="res://01_Assests/Interface/Symbols/attack_bot.png" type="Texture" id=6]
+[ext_resource path="res://01_Assests/Interface/Symbols/def_mid.png" type="Texture" id=7]
+[ext_resource path="res://01_Assests/Interface/Symbols/def_top.png" type="Texture" id=8]
+
+[node name="ActionDescription" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -54.5
+margin_top = -26.0
+margin_right = 54.5
+margin_bottom = 26.0
+custom_fonts/font = ExtResource( 2 )
+text = "ACTION"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Action" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.3, 0.3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotAtck" type="TextureRect" parent="Action"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 6 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotDef" type="TextureRect" parent="Action"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 5 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MidAtck" type="TextureRect" parent="Action"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 3 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MidDef" type="TextureRect" parent="Action"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 7 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopAtck" type="TextureRect" parent="Action"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 4 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopDef" type="TextureRect" parent="Action"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -128.0
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 8 )
+flip_h = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

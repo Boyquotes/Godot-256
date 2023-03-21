@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/SaveIt_MASK.png-97fe092bf469882121e6bb8db53eca88.res"
+
+[deps]
+
+source_file="res://04_assets/BUTTONS_SMALL/Yes_No_Saveit/SaveIt_MASK.png"
+dest_files=[ "res://.import/SaveIt_MASK.png-97fe092bf469882121e6bb8db53eca88.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,0 +1,100 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "AdMob",
+"language": "GDScript",
+"path": "res://admob-lib/admob.gd"
+}, {
+"base": "Node",
+"class": "PlatformCommand",
+"language": "GDScript",
+"path": "res://03_scripts/StateMachine/PlatformCommand.gd"
+} ]
+_global_script_class_icons={
+"AdMob": "res://admob-lib/icon.png",
+"PlatformCommand": ""
+}
+
+[application]
+
+config/name="Feed Them All"
+run/main_scene="res://02_scenes/MainSceneOfGame.tscn"
+config/icon="res://04_assets/ICONS/mainicon_192x192.png"
+
+[autoload]
+
+Movement="*res://03_scripts/Autoload/Movement.gd"
+RectSelection="*res://03_scripts/Autoload/RectSelection.gd"
+SettingTarget="*res://03_scripts/Autoload/SettingTarget.gd"
+StateChanger="*res://03_scripts/Autoload/StateChanger.gd"
+DifficultyScaler="*res://03_scripts/Autoload/DifficultyScaler.gd"
+
+[display]
+
+window/size/width=480
+window/size/height=720
+window/size/always_on_top=true
+window/handheld/orientation="portrait"
+mouse_cursor/custom_image="res://hand.png"
+mouse_cursor/custom_image_hotspot=Vector2( 18, 5 )
+mouse_cursor/tooltip_position_offset=Vector2( 0, 0 )
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[input]
+
+mouse_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+mouse_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[layer_names]
+
+2d_render/layer_1="MyBase"
+2d_physics/layer_1="MyBase"
+2d_render/layer_2="EnemyBase"
+2d_physics/layer_2="EnemyBase"
+2d_render/layer_3="Mirrors"
+2d_physics/layer_3="Mirrors"
+2d_render/layer_4="EnemyUnits"
+2d_physics/layer_4="EnemyUnits"
+2d_render/layer_5="BlueUnits"
+2d_physics/layer_5="BlueUnits"
+2d_render/layer_6="YellowUnits"
+2d_physics/layer_6="YellowUnits"
+2d_render/layer_7="GreenUnits"
+2d_physics/layer_7="GreenUnits"
+2d_physics/layer_8="BackToBase"
+2d_physics/layer_9="Vacuum"
+2d_physics/layer_10="UnitBody"
+2d_physics/layer_11="EnemyDieZone"
+2d_physics/layer_12="UnitPickerArea"
+2d_physics/layer_13="BoxForUnits"
+
+[network]
+
+limits/tcp/connect_timeout_seconds=10
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

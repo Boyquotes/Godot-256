@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/Mask_play.png-ac6ae9acbe33a5b385804e64fe7738ce.res"
+
+[deps]
+
+source_file="res://01_Assests/Interface/Boards/Random_board_mask/Mask_play.png"
+dest_files=[ "res://.import/Mask_play.png-ac6ae9acbe33a5b385804e64fe7738ce.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

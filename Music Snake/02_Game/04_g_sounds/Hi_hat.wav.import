@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Hi_hat.wav-371a4ed03e10e37fc1388467a16c633e.sample"
+
+[deps]
+
+source_file="res://02_Game/04_g_sounds/Hi_hat.wav"
+dest_files=[ "res://.import/Hi_hat.wav-371a4ed03e10e37fc1388467a16c633e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/drum_bass.wav-d94b4eb4775cd3ea0ec3d95e06504e1e.sample"
+
+[deps]
+
+source_file="res://02_Game/04_g_sounds/drum_kit/drum_bass.wav"
+dest_files=[ "res://.import/drum_bass.wav-d94b4eb4775cd3ea0ec3d95e06504e1e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

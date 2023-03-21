@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/test_take_hero_button_MASK.png-33482f73d66956894aba7b78a41f4819.res"
+
+[deps]
+
+source_file="res://01_Assests/Interface/Button/test_take_hero_button_MASK.png"
+dest_files=[ "res://.import/test_take_hero_button_MASK.png-33482f73d66956894aba7b78a41f4819.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

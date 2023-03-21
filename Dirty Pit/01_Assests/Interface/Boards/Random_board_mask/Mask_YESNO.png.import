@@ -1,0 +1,15 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+path="res://.import/Mask_YESNO.png-6fde1d786d454cfa8db1593f38a5d1b3.res"
+
+[deps]
+
+source_file="res://01_Assests/Interface/Boards/Random_board_mask/Mask_YESNO.png"
+dest_files=[ "res://.import/Mask_YESNO.png-6fde1d786d454cfa8db1593f38a5d1b3.res" ]
+
+[params]
+
+create_from=0
+threshold=0.5

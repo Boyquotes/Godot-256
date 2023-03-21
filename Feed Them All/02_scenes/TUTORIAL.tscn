@@ -1,0 +1,656 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://04_assets/OTHER/Hand/touch_anim/Nowy folder0003.png" type="Texture" id=1]
+[ext_resource path="res://03_scripts/TUTORIAL.gd" type="Script" id=2]
+[ext_resource path="res://04_assets/OTHER/Hand/touch_anim/Nowy folder0004.png" type="Texture" id=3]
+[ext_resource path="res://04_assets/OTHER/Hand/touch_anim/Nowy folder0005.png" type="Texture" id=4]
+[ext_resource path="res://04_assets/OTHER/Hand/touch_anim/Nowy folder0002.png" type="Texture" id=5]
+[ext_resource path="res://04_assets/OTHER/Hand/touch_anim/Nowy folder0001.png" type="Texture" id=6]
+[ext_resource path="res://04_assets/fonts/Themes/Tutorial.tres" type="DynamicFont" id=7]
+[ext_resource path="res://04_assets/BUTTONS_SMALL/mask.png" type="BitMap" id=8]
+[ext_resource path="res://04_assets/BUTTONS_SMALL/07_Back.png" type="Texture" id=9]
+[ext_resource path="res://04_assets/BUTTONS_SMALL/08_Next.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "touch",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "tap",
+"speed": 10.0
+} ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Next"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Plate/Background/NextButton:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.533333 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="TUTORIAL" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Plate" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="Plate"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.701961, 1, 0.952941, 0.376471 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" type="VBoxContainer" parent="Plate/Background"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -220.0
+margin_top = 72.0
+margin_right = 221.0
+margin_bottom = 302.0
+mouse_filter = 2
+custom_constants/separation = -20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_0" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 254.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_0"]
+margin_right = 441.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Hello !"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_0"]
+margin_top = 63.0
+margin_right = 441.0
+margin_bottom = 254.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "You're now in the tutorial.
+You can skip it by 
+tapping HELP ON/OFF
+button in OPTIONS"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_1" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_top = 234.0
+margin_right = 441.0
+margin_bottom = 488.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_1"]
+margin_right = 441.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Do you see this creature 
+below?"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_1"]
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 254.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Each one of them
+has a turtley 
+stucked inside."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_2" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 147.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_2"]
+margin_right = 441.0
+margin_bottom = 147.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Turtleys are those 
+little fellas inside
+these sprouts above"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_2"]
+visible = false
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 254.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_3" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 166.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_3"]
+margin_right = 441.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Tap the sprout with 
+blue turleys"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_3"]
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_4" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 122.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_4"]
+margin_right = 441.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Tap blue turley"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_4"]
+margin_top = 63.0
+margin_right = 441.0
+margin_bottom = 122.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_5" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 166.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_5"]
+margin_right = 441.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Touch screen 
+in front of the monster"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_5"]
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_6" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 166.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_6"]
+margin_right = 441.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Move your finger
+in the monster's direction"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_6"]
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_7" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 122.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_7"]
+margin_right = 441.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "And lift your finger"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_7"]
+margin_top = 63.0
+margin_right = 441.0
+margin_bottom = 122.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_8" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 166.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_8"]
+margin_right = 441.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Turtley now is changing
+its position"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_8"]
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_9" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 386.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_9"]
+margin_right = 441.0
+margin_bottom = 323.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "When monster starts 
+moving, will find 
+turtley on its way,
+swallow it
+and explode 
+from overfeeding
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_9"]
+margin_top = 327.0
+margin_right = 441.0
+margin_bottom = 386.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_10" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 342.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_10"]
+margin_right = 441.0
+margin_bottom = 279.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "On your way you'll 
+meet three types of 
+monsters,
+ larger mosters need 
+more turleys 
+to get overfeeded"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_10"]
+margin_top = 283.0
+margin_right = 441.0
+margin_bottom = 342.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_11" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 386.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_11"]
+margin_right = 441.0
+margin_bottom = 323.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Remember, to place 
+turtleys with their snouts
+pointing directly into the
+red triangles in front of 
+the monsters,
+otherwise they'll 
+be pushed back"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_11"]
+margin_top = 327.0
+margin_right = 441.0
+margin_bottom = 386.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_12" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 386.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_12"]
+margin_right = 441.0
+margin_bottom = 323.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "If the 
+monster reaches
+top of the screen,
+while this number
+falls down to 0,
+it'll be
+GAME OVER"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_12"]
+margin_top = 327.0
+margin_right = 441.0
+margin_bottom = 386.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_13" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 298.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_13"]
+margin_right = 441.0
+margin_bottom = 235.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "This button is used 
+to catch all turtley
+on the screen
+and sent them back
+to the sprouts."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_13"]
+margin_top = 239.0
+margin_right = 441.0
+margin_bottom = 298.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_14" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 122.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_14"]
+margin_right = 441.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "Tap this button."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_14"]
+margin_top = 63.0
+margin_right = 441.0
+margin_bottom = 122.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_15" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 298.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_15"]
+margin_right = 441.0
+margin_bottom = 235.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "On HARD difficulty
+you'll be forced to
+tap this button to 
+prevent from turteyls 
+floating away"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_15"]
+margin_top = 239.0
+margin_right = 441.0
+margin_bottom = 298.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="nr_16" type="VBoxContainer" parent="Plate/Background/Main"]
+visible = false
+margin_right = 441.0
+margin_bottom = 166.0
+
+[node name="text_1" type="Label" parent="Plate/Background/Main/nr_16"]
+margin_right = 441.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+text = "This is the end of tutorial
+tap NEXT or BACK"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_2" type="Label" parent="Plate/Background/Main/nr_16"]
+margin_top = 107.0
+margin_right = 441.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_constants/line_spacing = -15
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hand" type="AnimatedSprite" parent="Plate/Background"]
+position = Vector2( 240, 400 )
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 1 )
+animation = "touch"
+
+[node name="TutoriaBack" type="TextureButton" parent="Plate/Background"]
+margin_top = 655.0
+margin_right = 1920.0
+margin_bottom = 911.0
+rect_scale = Vector2( 0.25, 0.25 )
+disabled = true
+toggle_mode = true
+texture_normal = ExtResource( 9 )
+texture_click_mask = ExtResource( 8 )
+expand = true
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextButton" type="TextureButton" parent="Plate/Background"]
+visible = false
+margin_top = 500.0
+margin_right = 960.0
+margin_bottom = 716.0
+rect_scale = Vector2( 0.5, 0.5 )
+disabled = true
+texture_normal = ExtResource( 10 )
+texture_click_mask = ExtResource( 8 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimPlayer" type="AnimationPlayer" parent="."]
+anims/Next = SubResource( 2 )
+
+[node name="TutoTween" type="Tween" parent="."]
+[connection signal="gui_input" from="Plate/Background" to="." method="_on_Background_gui_input"]
+[connection signal="button_down" from="Plate/Background/TutoriaBack" to="." method="_on_TutoriaBack_button_down"]
+[connection signal="button_up" from="Plate/Background/TutoriaBack" to="." method="_on_TutoriaBack_button_up"]
+[connection signal="toggled" from="Plate/Background/TutoriaBack" to="." method="_on_TutoriaBack_toggled"]
+[connection signal="button_down" from="Plate/Background/NextButton" to="." method="_on_NextButton_button_down"]
+[connection signal="button_up" from="Plate/Background/NextButton" to="." method="_on_NextButton_button_up"]

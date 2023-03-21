@@ -1,0 +1,297 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://01_Assests/Fonts/BoardMenus_DynFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://01_Assests/Interface/Button/ButtonMask.png" type="BitMap" id=2]
+[ext_resource path="res://01_Assests/Interface/Boards/Small_board.png" type="Texture" id=3]
+[ext_resource path="res://01_Assests/Interface/Boards/Random_board_mask/Mask_pause.png" type="BitMap" id=4]
+[ext_resource path="res://03_Scripts/PausePanel.gd" type="Script" id=5]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/S.png" type="Texture" id=6]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/R.png" type="Texture" id=7]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/G.png" type="Texture" id=8]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/I.png" type="Texture" id=9]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/U.png" type="Texture" id=10]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/T.png" type="Texture" id=11]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/N.png" type="Texture" id=12]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/E.png" type="Texture" id=13]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/O.png" type="Texture" id=14]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/C.png" type="Texture" id=15]
+[ext_resource path="res://01_Assests/Interface/Boards/Random_board.png" type="Texture" id=16]
+[ext_resource path="res://01_Assests/Interface/Boards/Random_board_chain.png" type="Texture" id=17]
+[ext_resource path="res://01_Assests/Fonts/Alfabeth/ZZ_PAUSA.png" type="Texture" id=18]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Move_PauseBoard"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("PauseBoard:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -388 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PauseBoard/TextureRect/Center/Options/Continue:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PauseBoard/TextureRect/Center/Options/Resign:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, true, false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Move_PauseButton"
+length = 0.5
+
+[node name="PausePanel" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+anims/Move_PauseBoard = SubResource( 1 )
+anims/Move_PauseButton = SubResource( 2 )
+
+[node name="PauseBoard" type="CenterContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 388.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="PauseBoard"]
+margin_left = 288.0
+margin_right = 672.0
+margin_bottom = 388.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Center" type="CenterContainer" parent="PauseBoard/TextureRect"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -128.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="VBoxContainer" parent="PauseBoard/TextureRect/Center"]
+margin_left = 64.0
+margin_right = 320.0
+margin_bottom = 123.0
+custom_constants/separation = -5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="TextureButton" parent="PauseBoard/TextureRect/Center/Options"]
+margin_right = 256.0
+margin_bottom = 64.0
+texture_click_mask = ExtResource( 2 )
+
+[node name="Sign" type="HBoxContainer" parent="PauseBoard/TextureRect/Center/Options/Continue"]
+margin_right = 1138.0
+margin_bottom = 256.0
+rect_scale = Vector2( 0.25, 0.25 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = -130
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_right = 256.0
+margin_bottom = 256.0
+texture = ExtResource( 15 )
+
+[node name="O" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 126.0
+margin_right = 382.0
+margin_bottom = 256.0
+texture = ExtResource( 14 )
+
+[node name="N" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 252.0
+margin_right = 508.0
+margin_bottom = 256.0
+texture = ExtResource( 12 )
+
+[node name="T" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 378.0
+margin_right = 634.0
+margin_bottom = 256.0
+texture = ExtResource( 11 )
+
+[node name="I" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 504.0
+margin_right = 760.0
+margin_bottom = 256.0
+texture = ExtResource( 9 )
+
+[node name="N2" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 630.0
+margin_right = 886.0
+margin_bottom = 256.0
+texture = ExtResource( 12 )
+
+[node name="U" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 756.0
+margin_right = 1012.0
+margin_bottom = 256.0
+texture = ExtResource( 10 )
+
+[node name="E" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Continue/Sign"]
+margin_left = 882.0
+margin_right = 1138.0
+margin_bottom = 256.0
+texture = ExtResource( 13 )
+
+[node name="Continue" type="Label" parent="PauseBoard/TextureRect/Center/Options/Continue"]
+visible = false
+margin_left = 0.793701
+margin_right = 256.794
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Continue"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resign" type="TextureButton" parent="PauseBoard/TextureRect/Center/Options"]
+margin_top = 59.0
+margin_right = 256.0
+margin_bottom = 123.0
+texture_click_mask = ExtResource( 2 )
+
+[node name="Sign2" type="HBoxContainer" parent="PauseBoard/TextureRect/Center/Options/Resign"]
+margin_right = 1138.0
+margin_bottom = 256.0
+rect_scale = Vector2( 0.25, 0.25 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = -130
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="R" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Resign/Sign2"]
+margin_left = 126.0
+margin_right = 382.0
+margin_bottom = 256.0
+texture = ExtResource( 7 )
+
+[node name="E2" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Resign/Sign2"]
+margin_left = 252.0
+margin_right = 508.0
+margin_bottom = 256.0
+texture = ExtResource( 13 )
+
+[node name="S" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Resign/Sign2"]
+margin_left = 378.0
+margin_right = 634.0
+margin_bottom = 256.0
+texture = ExtResource( 6 )
+
+[node name="I2" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Resign/Sign2"]
+margin_left = 504.0
+margin_right = 760.0
+margin_bottom = 256.0
+texture = ExtResource( 9 )
+
+[node name="G" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Resign/Sign2"]
+margin_left = 630.0
+margin_right = 886.0
+margin_bottom = 256.0
+texture = ExtResource( 8 )
+
+[node name="N2" type="TextureRect" parent="PauseBoard/TextureRect/Center/Options/Resign/Sign2"]
+margin_left = 756.0
+margin_right = 1012.0
+margin_bottom = 256.0
+texture = ExtResource( 12 )
+
+[node name="Resign" type="Label" parent="PauseBoard/TextureRect/Center/Options/Resign"]
+visible = false
+margin_right = 256.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+text = "Resign"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseButtBoard" type="NinePatchRect" parent="."]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 110.0
+margin_bottom = 106.0
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Random_board_chain" type="Sprite" parent="PauseButtBoard"]
+position = Vector2( 30, -190 )
+texture = ExtResource( 17 )
+
+[node name="Sign" type="TextureRect" parent="PauseButtBoard"]
+margin_left = 3.43193
+margin_top = 1.53418
+margin_right = 259.432
+margin_bottom = 257.534
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pause" type="TextureButton" parent="PauseButtBoard"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture_click_mask = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseTween" type="Tween" parent="PauseButtBoard"]
+
+[connection signal="button_down" from="PauseBoard/TextureRect/Center/Options/Continue" to="." method="_on_Continue_button_down"]
+[connection signal="button_up" from="PauseBoard/TextureRect/Center/Options/Continue" to="." method="_on_Continue_button_up"]
+[connection signal="button_down" from="PauseBoard/TextureRect/Center/Options/Resign" to="." method="_on_Resign_button_down"]
+[connection signal="button_up" from="PauseBoard/TextureRect/Center/Options/Resign" to="." method="_on_Resign_button_up"]
+[connection signal="button_down" from="PauseButtBoard/Pause" to="." method="_on_Pause_button_down"]
+[connection signal="button_up" from="PauseButtBoard/Pause" to="." method="_on_Pause_button_up"]

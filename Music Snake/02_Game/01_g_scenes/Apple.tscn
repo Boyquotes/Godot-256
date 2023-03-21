@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://02_Game/02_g_scripts/World/Food/Apple.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30, 30 )
+
+[node name="Apple" type="Sprite"]
+scale = Vector2( 3, 3 )
+script = ExtResource( 2 )
+
+[node name="AppleArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape2D" parent="AppleArea"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+
+[connection signal="area_entered" from="AppleArea" to="." method="_on_Area2D_area_entered"]
